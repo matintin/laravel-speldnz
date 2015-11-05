@@ -1,15 +1,9 @@
-@extends('template.main')
+@extends('template.subPage')
 
-@section('index')	
 
-	<div class="navigation">
-		<a href="{{url('index')}}">Home</a>
-		<span> / About us</span>
-	</div>
-	
-	<div class="container">
-		<h1>About Us</h1>
+@section('content')
 		<div class="about-content">
+
 			<h3>Our mission</h3>
 			<p>The aim of the Government's special education policy is 
 				to improve learning outcomes for all children and young 
@@ -54,34 +48,4 @@
 			For a detailed, free information pack on how SPELD NZ can help, 
 			please click here </p>
 		</div>
-	</div>
-	<section>
-		
-		<h1 class="hidden">newsletter, support</h1>
-		<div class="newsletter">
-			<h5>Newsletters Sign Up</h5>
-			<p>Stay informed with our e-newsletters</p>
-
-			<form action="">
-				<input type="text" name="email" placeholder="Email Address">
-				<input type="submit" value="Sign Up">
-
-			</form>
-		</div>
-
-	<div class="donation">
-		<div class="donate-box">
-			<div class="donate-text">
-				<h2>Donate Today</h2>
-				<p>Support to continue this important work.</p>
-			</div>
-			<div class="donate-img">
-				<img src="asset/icons/donation.png" alt="" />
-			</div>
-			<div class="donate-button">
-				<a href="">Donate</a>
-			</div>
-		</div>
-	</div>
-	</section>
-@stop
+@stop		

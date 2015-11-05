@@ -379,6 +379,9 @@ main {
 				.img-wrap {
 					flex:1 0 25%;
 					text-align: center;
+					height: 110px;
+					display: flex;
+					align-items:center;
 					img {
 						width: 80%;
 						display: inline-block;

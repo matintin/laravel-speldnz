@@ -23,19 +23,22 @@
 		// font-size:3em;
 		// font-weight:600;
 	}
-	.about-content {
+	.content {
 		flex:1 0 1em;
 		padding:0 1em;
-		h3,p {
-			color:#415E6C;
-		}
-		h3 {
-			margin:2em 0 2em 0;
-		}
-		p {
-			margin:0 0 .5em 0;
-			line-height:1.5em;
+		.about-content {
 			
+			h3,p {
+				color:#415E6C;
+			}
+			h3 {
+				margin:2em 0 2em 0;
+			}
+			p {
+				margin:0 0 .5em 0;
+				line-height:1.5em;
+				
+			}
 		}
 	}
 }

@@ -1,0 +1,48 @@
+.contact-content {
+	display:flex;
+	flex-wrap:wrap;
+	.contact-wrap {
+		flex:1 0 20em;
+		h3, p {
+			color:#415E6C;
+		}
+		h3 {
+			margin-bottom: 2em ;
+		}
+		p {
+			margin:0 0 .5em 0;
+			line-height:1.5em;
+			font-size: .8em;
+			i {
+				width: 1.5em;
+				text-align: center;
+				margin-right: .2em;
+			}
+		}
+		.bottom {
+			margin-bottom: 5em;
+		}
+	}
+	.question-wrap {
+		flex:1 0 20em;
+		h3 {
+			color:#415E6C;
+			margin-bottom: 2em;
+		}
+		form {
+			width: 20em;
+			outline:1px red solid;
+			select {
+				width:70%;
+				border: .1em #888 solid;
+				border-radius: 5px;
+			}
+			input {
+				width:70%;
+				border: .1em #888 solid;
+				border-radius: 5px;
+				padding:0;
+			}
+		}
+	}
+}
