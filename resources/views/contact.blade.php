@@ -48,7 +48,7 @@
 				<input type="text" placeholder="Name" />
 				<input type="text" placeholder="Email" />
 				<input type="text" placeholder="Phone" />
-				<input type="textarea" placeholder="Message" />
+				<textarea rows="5" placeholder="Message" ></textarea>
 				<input type="submit" placeholder="Send" />
 					
 			</form>

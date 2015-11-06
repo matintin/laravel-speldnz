@@ -25,3 +25,6 @@ Route::get('contact',function() {
 
 	return view('contact');
 });
+Route::get('learning',function() {
+	return view('learning');
+});

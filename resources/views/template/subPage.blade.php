@@ -4,35 +4,25 @@
 	
 	<?php 
 
-		$page = \App\Models\Page::find(8);
+		$page = \App\Models\Page::find(2);
 	 ?>
 
 	<div class="navigation">
-		<a href="{{url('index')}}">Home</a>
+		<a href="{{url('index')}}" class="page-nav">Home</a>
 		<span> / {{$page->title}}</span>
-	</div>
 	
-	<div class="container">
-		<h1>{{$page->title}}</h1>
-		<div class="content">
-			
-			@yield('content')
+		<div class="container">
+			<h1>{{$page->title}}</h1>
+			<div class="content">
+				
+				@yield('content')
 
-		</div>
-	</div>
+			</div>
+		</div><!-- container -->
+	</div><!-- navigation -->
+
 	<section>
 		
-		<h1 class="hidden">newsletter, support</h1>
-		<div class="newsletter">
-			<h5>Newsletters Sign Up</h5>
-			<p>Stay informed with our e-newsletters</p>
-
-			<form action="">
-				<input type="text" name="email" placeholder="Email Address">
-				<input type="submit" value="Sign Up">
-
-			</form>
-		</div>
 
 	<div class="donation">
 		<div class="donate-box">
@@ -44,9 +34,20 @@
 				<img src="asset/icons/donation.png" alt="" />
 			</div>
 			<div class="donate-button">
-				<a href="">Donate</a>
+				<a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a>
 			</div>
 		</div>
+	</div>
+
+	<div class="newsletter">
+		<h5>Newsletters Sign Up</h5>
+		<p>Stay informed with our e-newsletters</p>
+
+		<form action="">
+			<input type="text" name="email" placeholder="Email Address">
+			<input type="submit" value="Sign Up">
+
+		</form>
 	</div>
 	</section>
 @stop

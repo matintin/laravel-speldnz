@@ -22,7 +22,7 @@
 	<header>
 		<div class="header-wrap">
 			<div class="logo">
-				<a href="index.htm"><img src="asset/icons/logo-yellow1.png" alt="logo"></a>
+				<a href="{{url('index')}}"><img src="asset/icons/logo-yellow1.png" alt="logo"></a>
 			</div>
 			<div class="empty"></div>
 			<div class="open menu mobile-button">
@@ -48,9 +48,9 @@
 
 		<nav>
 			<ul id="mobile-nav" >
-				<li><a href="">About</a></li>
+				<li><a href="{{url('about')}}">About</a></li>
 
-				<li class="learning"><a href="">Learning</a>
+				<li class="learning"><a href="{{url('learning')}}">Learning</a>
 					<span>
 						<img class ="plus" src="asset/icons/plus.png" alt="">
 					</span>
@@ -65,9 +65,9 @@
 
 				</li>
 
-				<li><a href="">Donate</a></li>
+				<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
 
-				<li><a href="">Contact</a></li>
+				<li><a href="{{url('contact')}}">Contact</a></li>
 			</ul>
 		</nav>
 
