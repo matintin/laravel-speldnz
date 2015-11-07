@@ -64,8 +64,9 @@
 					</ul>
 
 				</li>
-
-				<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
+				<li><a href="">News & Event</a></li>
+				<li><a href="">FAQ</a></li>
+				<li><a href="">Donate</a></li>
 
 				<li><a href="{{url('contact')}}">Contact</a></li>
 			</ul>

@@ -1,11 +1,58 @@
 
 .learning-five {
 	width:100%;
-	a {
-		flex:1 0 1em;
-		color: #000;
-		// @media only screen and (max-width : 399px) {
-		// 	font-size:.6em;
-		// }
+	position:fixed;
+	top:20em;
+	left:0;
+	display:flex;
+	flex-direction:column;
+	.five {
+		border:1px red solid;
+		width:8em;
+		display:flex;
+		flex-wrap:wrap;
+		transform:translate(-6em);
+
+		a {
+			color: #fff;
+			flex:0 0 6em;
+			padding:1em 0 1em 1em;
+			// background-color:#000;
+			// @media only screen and (max-width : 399px) {
+			// 	font-size:.6em;
+			// }
+			// &:nth-child(1) {
+			// 	background-color:#7a9eaf;
+			// }
+			// &:nth-child(2) {
+			// 	background-color:#de88a5;
+			// }
+		}
+
+		span {
+			flex:1 0 1em;
+			display:inline-block;
+			text-align:right;
+			padding:1em .5em 1em 0;
+			color:#000;
+		}
+	}
+}
+.learning {
+	span {
+		display:block;
+		margin-left:1em;
+		font-size:1em;
+
+	}
+	.accodion {
+		// display:none;
+		padding:0;
+		span {
+
+		}
+		li {
+			list-style-type: none;
+		}
 	}
 }
