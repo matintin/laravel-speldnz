@@ -1,17 +1,12 @@
-
 .learning-five {
 	width:100%;
-	position:fixed;
-	top:20em;
-	left:0;
 	display:flex;
 	flex-direction:column;
 	.five {
-		border:1px red solid;
-		width:8em;
+		width:10em;
 		display:flex;
 		flex-wrap:wrap;
-		transform:translate(-6em);
+		// transform:translate(-6em);
 
 		a {
 			color: #fff;
@@ -34,7 +29,38 @@
 			display:inline-block;
 			text-align:right;
 			padding:1em .5em 1em 0;
-			color:#000;
+			color:#fff;
+			font-weight:100;
+		}
+	}
+	.Dyslexia {
+		a, span{
+
+			background-color:#7a9eaf;
+		}
+	}
+	.Dyspraxia {
+		a, span {
+
+			background-color:#de88a5;
+		}
+	}
+	.ADHD {
+		a, span {
+
+			background-color:#655989;
+		}
+	}
+	.Dysgraphia {
+		a, span {
+
+			background-color:#9E9D24;
+		}
+	}
+	.Dyscalculia {
+		a, span {
+
+			background-color:#FF7043;
 		}
 	}
 }

@@ -1,29 +1,26 @@
 @extends('template.subPage')
 
 @section('content')
-	<h1 class="hidden">Learning Disabilities</h1>
 	<div class="learning-five">
-		<div class="five">
+		<div class="five Dyslexia">
 			<a href="">Dyslexia</a>
-			<span>Dsl</span>
+			
 		</div>
-		<div class="five">
+		<div class="five Dyspraxia">
 			<a href="">Dyspraxia</a>
-			<span>Dsp</span>
+			
 		</div>
-		<div class="five">
+		<div class="five ADHD">
 			<a href="">ADHD</a>
-			<span>AD</span>
 		</div>
-		<div class="five">
+		<div class="five Dysgraphia">
 			<a href="">Dysgraphia</a>
-			<span>Dsg</span>
 		</div>
-		<div class="five">
+		<div class="five Dyscalculia">
 			<a href="">Dyscalculia</a>
-			<span>Dsc</span>
 		</div>
 	</div>
+	<h1 class="hidden">Learning Disabilities</h1>
 	
 	<div class="about-content learning">
 
