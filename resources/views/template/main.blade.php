@@ -20,13 +20,13 @@
 <body>
 	<div id="overlay" class="hidden">checklist</div>
 	<div id="login">
-		<div class="close-login-box"><img src="asset/icons/close.png" alt=""></div>
+		<div class="close-login-box"><img src="asset/icons/close-login.png" alt=""></div>
 		<div class="login-box">
 			<form action="">
 				<h3>Login</h3>
-				<input type="text" />
-				<input type="text" />
-				<input type="submit" />
+				<input type="text" placeholder="Username"/>
+				<input type="text" placeholder="Password"/>
+				<input type="submit" value="Login"/>
 			</form>
 		</div>
 	</div>

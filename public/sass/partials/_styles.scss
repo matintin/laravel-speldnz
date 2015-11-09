@@ -17,7 +17,7 @@ body {
 		margin: 0;
 	}
 	#login {
-		display: none;
+		// display: none;
 		position:absolute;
 		z-index: 10;
 		width: 100vw;
@@ -37,10 +37,39 @@ body {
 		}
 		.login-box {
 			outline: 1px red solid;
+			width:70%;
 			position:fixed;
 			top:50%;
 			left: 50%;
+			padding:1em;
 			transform: translate(-50% , -50%);
+			form {
+				display:flex;
+				flex-direction:column;
+				h3 {
+					width:5em;
+					font-size:2em;
+					margin:0 auto 1em auto;
+					text-align:center;
+					// outline:1px red solid;
+				}
+				input[type="text"] {
+					padding:.7em;
+					margin-bottom:.5em;
+				}
+				::placeholder {
+					color:#000;
+				}
+				input[type="submit"] {
+					width:50%;
+					margin:0 auto;
+					padding:0;
+					border:none;
+					padding:.5em 0;
+					background-color:#fff;
+				}
+			}
+
 		}
 	}
 
