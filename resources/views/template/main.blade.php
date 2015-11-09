@@ -19,6 +19,17 @@
 </head>
 <body>
 	<div id="overlay" class="hidden">checklist</div>
+	<div id="login">
+		<div class="close-login-box"><img src="asset/icons/close.png" alt=""></div>
+		<div class="login-box">
+			<form action="">
+				<h3>Login</h3>
+				<input type="text" />
+				<input type="text" />
+				<input type="submit" />
+			</form>
+		</div>
+	</div>
 	<header>
 		<div class="header-wrap">
 			<div class="logo">
@@ -56,7 +67,7 @@
 					</span>
 
 					<ul id="learning-sub-menu" >
-						<li><a href="">Dyslexia</a></li>
+						<li><a href="{{url('dyslexia')}}">Dyslexia</a></li>
 						<li><a href="">Dyspraxia</a></li>
 						<li><a href="">ADHD</a></li>
 						<li><a href="">Dyscalculia</a></li>
@@ -85,7 +96,7 @@
 				<li><a href="">Learning</a></li>
 				<li><a href="">Privacy Policy</a></li>
 				<li><a href="">Contact</a></li>
-				<li><a href="">Login</a></li>
+				<li><a href="" id="login-button">Login</a></li>
 			</ul>
 		</div><!-- footer-wrap -->
 		

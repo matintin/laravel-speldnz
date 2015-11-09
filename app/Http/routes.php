@@ -28,3 +28,9 @@ Route::get('contact',function() {
 Route::get('learning',function() {
 	return view('learning');
 });
+Route::get('dyslexia',function() {
+	return view('dyslexia');
+});
+Route::get('login',function() {
+	return view('login');
+});

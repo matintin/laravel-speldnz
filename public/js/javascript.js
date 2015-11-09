@@ -103,6 +103,43 @@ var isBottomOpen = false;
 	});
 //---------------------reading-assist----------------------------
 
+
+//---------------------learning-accordion----------------------------
+var isTextOpen = false;
+	$('.img-wrap').on("click", function() {
+		if(isTextOpen == false) {
+
+			$(this).next().slideDown();
+			$(this).children().attr("src","asset/icons/minus.png");
+
+			isTextOpen = true;
+		}else {
+
+			$(this).next().slideUp();
+			$(this).children().attr("src","asset/icons/plus.png");	
+
+			isTextOpen = false;
+		}
+	});
+
+//---------------------learning-accordion----------------------------
+
+//---------------------------login-----------------------------------
+	$('#login-button').on("click",function(e) {
+		e.preventDefault();
+		$("#login").css("display","block");
+
+
+	});
+	$('.close-login-box').on("click",function() {
+		$("#login").css("display","none");
+	});
+
+//---------------------------login-----------------------------------
+
+
+
+
 });//jquery
 
 //------------------image-slider----------------------------------

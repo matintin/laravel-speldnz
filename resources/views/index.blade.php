@@ -22,7 +22,7 @@
 			
 				<h1 class="hidden">learning disabilites</h1>
 					
-				<div class="learning-box"><span><a href="">Dyslexia</a></span></div>
+				<div class="learning-box"><span><a href="{{url('dyslexia')}}">Dyslexia</a></span></div>
 				<div class="learning-box"><span><a href="">Dyspraxia</a></span></div>
 				<div class="learning-box"><span><a href="">ADHD</a></span></div>
 				<div class="learning-box"><span><a href="">Donate</a></span></div>
