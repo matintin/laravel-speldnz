@@ -3,8 +3,7 @@
 @section('content')
 	<div class="learning-five">
 		<div class="five Dyslexia">
-			<a href="{{url('dyslexia')}}">Dyslexia</a>
-			
+			<a href="{{url('dyslexia')}}">Dyslexia</a>	
 		</div>
 		<div class="five Dyspraxia">
 			<a href="">Dyspraxia</a>
@@ -48,7 +47,7 @@
 		<div class="learning-margin"></div>
 		<div class="accordion-wrap">
 			<span>Effect</span>
-			 <div class="img-wrap"><img src="asset/icons/plus.png" alt=""></div>
+			 <div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
 			<ul class="accordion">
 				<li>Faulty brain structures i.e., damage to an area or the
 				 interconnections between these.</li>
@@ -64,7 +63,7 @@
 		<div class="accordion-wrap">
 			<span>Factors<!-- that may combine to make learning difficult
 			 for so many children may include the following: --></span>
-			 <div class="img-wrap"><img src="asset/icons/plus.png" alt=""></div>
+			 <div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
 			 <ul class="accordion">
 			 	<li><span>Biochemical factors </span>Dr B Feingold 
 			 		investigated the chemical structure of food and its 
@@ -85,7 +84,7 @@
 
 		 <div class="accordion-wrap">
 		 	<span>NOT caused</span>
-		 	<div class="img-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 	<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
 		 		<ul class="accordion">
 		 			<li>Intellectual disability</li>
 		 			<li>Deficit in the sense organs - Children with

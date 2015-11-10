@@ -23,7 +23,7 @@
 		<div class="close-login-box"><img src="asset/icons/close-login.png" alt=""></div>
 		<div class="login-box">
 			<form action="">
-				<h3>Login</h3>
+				<h3>Login Form</h3>
 				<input type="text" placeholder="Username"/>
 				<input type="text" placeholder="Password"/>
 				<input type="submit" value="Login"/>
@@ -93,7 +93,7 @@
 		<div class="footer-wrap">
 			<ul>
 				<li><a href="">About</a></li>
-				<li><a href="">Learning</a></li>
+				<li><a href="{{url('learning')}}">Learning</a></li>
 				<li><a href="">Privacy Policy</a></li>
 				<li><a href="">Contact</a></li>
 				<li><a href="" id="login-button">Login</a></li>

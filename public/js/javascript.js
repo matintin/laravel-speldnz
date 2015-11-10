@@ -106,7 +106,7 @@ var isBottomOpen = false;
 
 //---------------------learning-accordion----------------------------
 var isTextOpen = false;
-	$('.img-wrap').on("click", function() {
+	$('.image-wrap').on("click", function() {
 		if(isTextOpen == false) {
 
 			$(this).next().slideDown();
@@ -119,6 +119,26 @@ var isTextOpen = false;
 			$(this).children().attr("src","asset/icons/plus.png");	
 
 			isTextOpen = false;
+		}
+	});
+
+
+	$('.learning-dyslexia-wrap .Dyslexia, .Dyspraxia, .ADHD, .Dysgraphia, .Dyscalculia').on("click",function() {
+
+
+		if($(this).data("shown") == "0") {
+
+			$(this).next().slideDown();
+			$(this).children().children().removeClass('fa-angle-down').addClass('fa-angle-up');
+			
+			$(this).data("shown","1");
+
+		}else {
+
+			$(this).next().slideUp();
+			$(this).children().children().removeClass('fa-angle-up').addClass('fa-angle-down');
+			
+			$(this).data("shown","0");
 		}
 	});
 
@@ -146,7 +166,7 @@ var isTextOpen = false;
 
 $(document).ready(function(){
   $('.image-slider').slick({
-      slidesToShow: 2,
+      slidesToShow: 3,
 	  slidesToScroll: 1,
 	  autoplay: true,
 	  autoplaySpeed: 2000,

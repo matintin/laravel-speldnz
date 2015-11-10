@@ -6,59 +6,39 @@
 		width:10em;
 		display:flex;
 		flex-wrap:wrap;
-		// transform:translate(-6em);
 
 		a {
 			color: #fff;
 			flex:0 0 6em;
 			padding:1em 0 1em 1em;
-			// background-color:#000;
-			// @media only screen and (max-width : 399px) {
-			// 	font-size:.6em;
-			// }
-			// &:nth-child(1) {
-			// 	background-color:#7a9eaf;
-			// }
-			// &:nth-child(2) {
-			// 	background-color:#de88a5;
-			// }
-		}
-
-		span {
-			flex:1 0 1em;
-			display:inline-block;
-			text-align:right;
-			padding:1em .5em 1em 0;
-			color:#fff;
-			font-weight:100;
 		}
 	}
 	.Dyslexia {
-		a, span{
+		a, p {
 
 			background-color:#7a9eaf;
 		}
 	}
 	.Dyspraxia {
-		a, span {
+		a, p {
 
 			background-color:#de88a5;
 		}
 	}
 	.ADHD {
-		a, span {
+		a, p {
 
 			background-color:#655989;
 		}
 	}
 	.Dysgraphia {
-		a, span {
+		a, p {
 
 			background-color:#9E9D24;
 		}
 	}
 	.Dyscalculia {
-		a, span {
+		a, p {
 
 			background-color:#FF7043;
 		}
@@ -97,13 +77,15 @@
 			padding:0 0 0 .5em;
 			li {
 				list-style-type: none;
+				margin-top: .5em;
 				margin-bottom: 1em;
 				font-size: .9em;
 				span {
 					display: block;
 					color: #41486c;
-					font-size: 1.1em;
-					margin-bottom: .2em;
+					font-size: 1.2em;
+					margin-bottom: .3em;
+
 				}
 			}
 			p {
@@ -124,4 +106,31 @@
 			}
 		}//accordion
 	}//accordion-wrap
+	.learning-dyslexia-wrap {
+
+		.five {
+			width: 105%;
+			p {
+				width: 100%;
+				padding:.7em;
+				font-size: 1em;
+				font-weight: 300;
+				color: #fff;
+				margin-left: -1em;
+				display: flex;
+				justify-content: space-between;
+				cursor: hand;
+				cursor: pointer;
+				i {
+					display: inline-block;
+					line-height: 1.5em;
+					
+				}
+				
+			}
+		}
+		.learning-five {
+			display: none;
+		}
+	}
 }
