@@ -92,10 +92,10 @@
 		
 		<div class="footer-wrap">
 			<ul>
-				<li><a href="">About</a></li>
+				<li><a href="{{url('about')}}">About</a></li>
 				<li><a href="{{url('learning')}}">Learning</a></li>
 				<li><a href="">Privacy Policy</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="{{url('contact')}}">Contact</a></li>
 				<li><a href="" id="login-button">Login</a></li>
 			</ul>
 		</div><!-- footer-wrap -->

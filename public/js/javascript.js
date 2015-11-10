@@ -157,6 +157,24 @@ var isTextOpen = false;
 
 //---------------------------login-----------------------------------
 
+//---------------------------scroll----------------------------------
+	$(window).on("scroll",function() {
+		var iTop = $(window).scrollTop();
+
+		if(iTop > 200) {
+			$('#go-top').css("display","block");
+		} else {
+			$('#go-top').css("display","none");
+		}
+
+	});
+
+	$('#go-top').on("click",function() {
+		$("html, body").animate({scrollTop: "0"}, 500);
+	});
+
+//---------------------------scroll----------------------------------
+
 
 
 

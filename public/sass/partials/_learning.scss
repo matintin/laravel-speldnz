@@ -60,7 +60,10 @@
 			color: #41486c;
 			font-weight: 300;
 		}
-		.img-wrap {
+		.empty {
+			flex:0 0 1em;
+		}
+		.image-wrap {
 			flex :0 0 .6em;
 			cursor:hand;
 			cursor:pointer;
@@ -83,7 +86,7 @@
 				span {
 					display: block;
 					color: #41486c;
-					font-size: 1.2em;
+					font-size: 1.1em;
 					margin-bottom: .3em;
 
 				}
@@ -104,6 +107,10 @@
 				
 				padding-left: .3em;
 			}
+			.source {
+				font-size:.7em;
+				text-align:right;
+			}
 		}//accordion
 	}//accordion-wrap
 	.learning-dyslexia-wrap {
@@ -113,7 +120,7 @@
 			p {
 				width: 100%;
 				padding:.7em;
-				font-size: 1em;
+				font-size: 1.1em;
 				font-weight: 300;
 				color: #fff;
 				margin-left: -1em;

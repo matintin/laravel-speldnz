@@ -63,7 +63,7 @@
 
 					</form>
 				</div>
-				<div class="support ">
+				<div class="support">
 					<div class="image-slider">
 						<div class="img-wrap"><img src="asset/supporters/lionredlogo.png" alt="" /></div>
 						<div class="img-wrap"><img src="asset/supporters/pubcharitylogo.png" alt="" /></div>

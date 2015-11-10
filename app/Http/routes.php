@@ -34,3 +34,6 @@ Route::get('dyslexia',function() {
 Route::get('login',function() {
 	return view('login');
 });
+Route::get('privacy',function() {
+	return view('privacy');
+});

@@ -54,11 +54,13 @@
 				border:none;
 				padding:.3em;
 				margin-bottom: 1em;
-				border-bottom: 1px #415E6C solid !important;
+				border-bottom: 1px #415E6C solid;
 				font-size: .8em;
 				background-color: rgba(255,255,255,.1);
 			}
-
+			input:focus {
+				border-bottom:1px tomato solid;
+			}
 			input::placeholder{
 				color:#415E6C;
 			}
@@ -74,12 +76,18 @@
 				background-color: rgba(255,255,255,.1);
 				outline: none;
 			}
-
+			textarea:focus {
+				border-bottom:1px tomato solid;
+			}
 			input[type="submit"] {
 				
 				width: 40%;
 				border:1px #415E6C solid;
 				padding:1em 0;
+			}
+			input[type="submit"]:hover {
+				border:1px tomato solid;
+				color:tomato;
 			}
 		}
 	}

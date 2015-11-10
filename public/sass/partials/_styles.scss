@@ -67,6 +67,10 @@ body {
 					border-bottom:1px #555 solid;
 					font-weight: 300;
 					color: #555;
+					background-color:rgba(0,0,0,0);
+				}
+				input[type="text"]:focus {
+					border-bottom:1px tomato solid;
 				}
 				::placeholder {
 					color: #555;
@@ -149,11 +153,12 @@ header {
 		input[type="text"] {
 			flex:1 0 50%;
 			border:none;
+			background-color:rgba(0,0,0,0);
 		}
 		button {
 			flex: 0 0 9%;
 			border:none;
-			background-color:#fff;
+			background-color:rgba(0,0,0,0);
 			outline:none;
 			img {
 				width: 60%;
@@ -509,6 +514,7 @@ main {
 	}//footer
 
 	#go-top {
+		display:none;
 		outline:1px #888 solid;
 		position:fixed;
 		bottom:1em;
@@ -519,6 +525,11 @@ main {
 		cursor:pointer;
 		cursor:hand;
 	}//go-top
+	#go-top:hover {
+		color:#FBFAF2;
+		background-color:#888;
+		font-weight:300;
+	}
 
 	#reading-assist{
 		position:fixed;
