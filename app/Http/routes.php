@@ -37,3 +37,6 @@ Route::get('login',function() {
 Route::get('privacy',function() {
 	return view('privacy');
 });
+Route::get('news',function() {
+	return view('news');
+});
