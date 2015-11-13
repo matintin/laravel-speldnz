@@ -75,8 +75,8 @@
 					</ul>
 
 				</li>
-				<li><a href="">News & Event</a></li>
-				<li><a href="">FAQ</a></li>
+				<li><a href="{{url('news')}}">News & Event</a></li>
+				<li><a href="{{url('faq')}}">FAQ</a></li>
 				<li><a href="">Donate</a></li>
 
 				<li><a href="{{url('contact')}}">Contact</a></li>
@@ -94,7 +94,7 @@
 			<ul>
 				<li><a href="{{url('about')}}">About</a></li>
 				<li><a href="{{url('learning')}}">Learning</a></li>
-				<li><a href="">Privacy Policy</a></li>
+				<li><a href="{{url('privacy')}}">Privacy Policy</a></li>
 				<li><a href="{{url('contact')}}">Contact</a></li>
 				<li><a href="" id="login-button">Login</a></li>
 			</ul>
