@@ -130,28 +130,58 @@
 		</div>
 
 		<div class="accordion-wrap">
-			<h3>What is SPELD NZ?</h3><div class="empty"></div><div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+			<h3>How can I get help from SPELD NZ?</h3><div class="empty"></div><div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
 			<div class="step accordion-news">
-				<span>STEP 1</span>
+				<span class="news-span">STEP 1</span>
 				<p>Ring 0800 SPELD NZ (0800 773 536) or email your SPELD NZ Regional Office from the Contacts page and ask for an application form to be posted or emailed to you.</p>
-				<span>STEP 2</span>
+				<span class="news-span">STEP 2</span>
 				<p>Complete all the forms and return them to SPELD NZ with your membership fee, either by cheque or as an online payment.</p>
-				<span>STEP 3</span>
+				<span class="news-span">STEP 3</span>
 				<p>An appointment will be made for your child to be assessed by our specially trained assessors, usually within a month.</p>
-				<span>STEP 4</span>
+				<span class="news-span">STEP 4</span>
 				<p>The assessment takes approximately 4 hours and may be carried out over two sessions.</p>
-				<span>STEP 5</span>
+				<span class="news-span">STEP 5</span>
 				<p>A full and detailed report will be sent to you approximately 4 weeks after assessment.</p>
-				<span>STEP 6</span>
+				<span class="news-span">STEP 6</span>
 				<p>The report may recommend one to one teaching by a SPELD NZ teacher, in which case this will be arranged for you, once a week, at a mutually suitable time and location. In some areas of New Zealand there may be waiting lists.</p>
-				<span>STEP 7</span>
+				<span class="news-span">STEP 7</span>
 				<p>You may choose to take the report to your child’s classroom teacher and request a meeting with the RTLB (Resource Teacher of Learning and Behaviour) at your school, to work out a plan (IEP) to maximise your child’s learning.</p>
-				<span>STEP 8</span>
+				<span class="news-span">STEP 8</span>
 				<p>A reassessment may be done within 12 – 36 months to record progress and plan the work for the next year.</p>
 				
 			</div>
 		</div>
 
+		<div class="accordion-wrap">
+			<h3>How much does it cost?</h3><div class="empty"></div><div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+			<div class="accordion-news">
+				<p>To access a SPELD NZ assessor or teacher, you need to be a financial member of SPELD NZ, by paying a membership subscription. You also need to pay the SPELD assessor and the SPELD teacher. Please call 0800 SPELD NZ (0800 773 536) for current costs.</p>
+				
+			</div>
+		</div>
 
+		<div class="accordion-wrap">
+			<h3>How can I learn more?</h3><div class="empty"></div><div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+			<div class="accordion-news">
+				<p>SPELD NZ runs courses for parents, teachers and other professionals. Refer to the Training and Events pages on our website for details.</p>
+				
+			</div>
+		</div>
+
+		<div class="accordion-wrap">
+			<h3>How can I help my child more?</h3><div class="empty"></div><div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+			<div class="accordion-news">
+				<p>Learn about dyslexia; become your child’s advocate; learn how they learn and adapt the world for them. Simple things like forming the spelling words with a ball of wool on the floor, or making the words out of blue tack or play-dough – the more multi- sensory the learning, the easier it will be to entrench the information in the long term memory.</p>
+				
+			</div>
+		</div>
+
+		<div class="accordion-wrap">
+			<h3>How can I help Speld NZ?</h3><div class="empty"></div><div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+			<div class="accordion-news">
+				<p>We receive no government funding and are constantly fundraising to keep our offices going; from sausage sizzles to grant applications. Donations of time or money are gratefully received. SPELD NZ is a registered charity (CC 46602), and donations are tax deductible. </p>
+				
+			</div>
+		</div>
 
 @stop

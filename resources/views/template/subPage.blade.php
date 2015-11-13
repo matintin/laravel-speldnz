@@ -8,7 +8,7 @@
 	 ?>
 
 	<div class="navigation">
-		<a href="{{url('index')}}" class="page-nav">Home</a>
+		<a href="{{url('/')}}" class="page-nav">Home</a>
 		<span> / {{$page->title}}</span>
 	
 		<div class="container">

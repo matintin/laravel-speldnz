@@ -94,11 +94,11 @@
 			line-height: 1.3em;
 		}
 		
-		span {
+		span.news-span {
 			display: block;
-			font-size:.7em !important;
-			font-weight: 600 !important;
-			// text-align: center;
+			font-size:.7em;
+			font-weight: 600;
+			color:#444;
 		}
 	}
 	.accordion-wrap {

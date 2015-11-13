@@ -33,7 +33,7 @@
 	<header>
 		<div class="header-wrap">
 			<div class="logo">
-				<a href="{{url('index')}}"><img src="asset/icons/logo-yellow1.png" alt="logo"></a>
+				<a href="{{url('/')}}"><img src="asset/icons/logo-yellow1.png" alt="logo"></a>
 			</div>
 			<div class="empty"></div>
 			<div class="open menu mobile-button">
