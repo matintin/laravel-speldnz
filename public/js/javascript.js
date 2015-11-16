@@ -175,6 +175,28 @@ var isTextOpen = false;
 
 //---------------------------scroll----------------------------------
 
+//---------------------------cart------------------------------------
+	$('.download-box').on("click",function() {
+		if($(this).data("shown") == "0") {
+			$('.triangle-point').css('display','block');
+			$('.download-overlay').slideDown();
+
+			$(this).data("shown","1");
+
+		}else {
+			$('.download-overlay').slideUp();
+			setTimeout(function(){
+				$('.triangle-point').css('display','none');
+			},400)
+			
+
+			$(this).data("shown","0");
+
+		}
+
+	});
+
+//---------------------------cart------------------------------------
 
 
 

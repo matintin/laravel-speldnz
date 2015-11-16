@@ -6,7 +6,8 @@
 
 		$page = \App\Models\Page::find(2);
 	 ?>
-
+<div class="triangle-point" ><img src="asset/icons/triangle1.png" alt=""></div>
+<div class="download-overlay" data-shown="0"></div>
 	<div class="navigation">
 		<a href="{{url('/')}}" class="page-nav">Home</a>
 		<span> / {{$page->title}}</span>
@@ -14,6 +15,7 @@
 		<div class="container">
 			<h1>{{$page->title}}</h1>
 			<div class="content">
+
 				
 				@yield('content')
 

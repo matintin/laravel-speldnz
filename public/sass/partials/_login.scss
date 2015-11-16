@@ -23,14 +23,16 @@
 		}
 	}
 	.download-box {
-		margin-left: .5em;
-		flex:0 0 4em;
+
+		margin:0 .5em;
+		flex:0 0 2.5em;
 		display: flex;
 		align-items:center;
 		color: tomato;
+		// border:1px red solid;
+		cursor:hand;
+		cursor:pointer;
 		.download-cart {
-			cursor:hand;
-			cursor:pointer;
 			font-size:1em;
 			color:inherit;
 		}
@@ -53,22 +55,48 @@
 
 		}
 	}
+	margin-bottom:3em;
 }
 .download-files {
 	.download-box {
-		border:1px red solid;
+		
 		width: 100%;
 		display: flex;
-		flex-wrap:wrap
+		flex-wrap:wrap;
+		margin-bottom: 1em;
 		.files {
-			flex:1 0 1em
+			flex:1 0 1em;
+			font-weight: 300;
 		}
 		.check-box {
 			flex:0 0 1em;
+			cursor: hand;
+			cursor:pointer;
+			font-size: .7em;
 		}
 	}
 }
-
+.download-overlay {
+	display:none;
+	width:100vw;
+	height:100vh;
+	background-color:#888;
+	position: absolute;
+	top:15em;
+	left:0;
+}
+.triangle-point {
+	// border:1px red solid;
+	display:none;
+	width: 1em;
+	height: 1em;
+	position:absolute;
+	top: 14.25em;
+	right:4.5em;
+	img {
+		width: 100%;
+	}
+}
 
 
 

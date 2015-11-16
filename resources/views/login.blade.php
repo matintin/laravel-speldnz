@@ -14,46 +14,47 @@
 
 </div>
 
+
 <div class="download-files">
 	<div class="download-box">
 		<div class="files">sdsfdg</div>
-		<div class="check-box">V</div>
+		<div class="check-box"><i class="fa fa-download"></i></div>
 	</div>
 	<div class="download-box">
 		<div class="files">agadgag</div>
-		<div class="check-box">V</div>
+		<div class="check-box"><i class="fa fa-download"></i></div>
 	</div>
 	<div class="download-box">
 		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box">V</div>
+		<div class="check-box"><i class="fa fa-download"></i></div>
 	</div>
 	<div class="download-box">
 		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box">V</div>
+		<div class="check-box"><i class="fa fa-download"></i></div>
 	</div>
 	<div class="download-box">
 		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box">V</div>
+		<div class="check-box"><i class="fa fa-download"></i></div>
 	</div>
 	<div class="download-box">
 		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box">V</div>
+		<div class="check-box"><i class="fa fa-download"></i></div>
 	</div>
 	<div class="download-box">
 		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box">V</div>
+		<div class="check-box"><i class="fa fa-download"></i></div>
 	</div>
 	<div class="download-box">
 		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box">V</div>
+		<div class="check-box"><i class="fa fa-download"></i></div>
 	</div>
 	<div class="download-box">
 		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box">V</div>
+		<div class="check-box"><i class="fa fa-download"></i></div>
 	</div>
 	<div class="download-box">
 		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box">V</div>
+		<div class="check-box"><i class="fa fa-download"></i></div>
 	</div>
 </div>
 @stop
