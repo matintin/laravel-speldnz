@@ -28,11 +28,11 @@ Route::get('learning',function() {
 Route::get('dyslexia',function() {
 	return view('dyslexia');
 });
-Route::post('login',function() {
-	return redirect('login');
+Route::post('download',function() {
+	return redirect('download');
 });
-Route::get('login',function() {
-	return view('login');
+Route::get('download',function() {
+	return view('download');
 });
 Route::get('privacy',function() {
 	return view('privacy');
@@ -43,3 +43,8 @@ Route::get('news',function() {
 Route::get('faq',function() {
 	return view('faq');
 });
+Route::get('loggedin',function() {
+	return view('loggedin');
+});
+Route::resource("users","MemberController");
+

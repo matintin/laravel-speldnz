@@ -6,8 +6,34 @@
 
 		$page = \App\Models\Page::find(2);
 	 ?>
-<div class="triangle-point" ><img src="asset/icons/triangle1.png" alt=""></div>
-<div class="download-overlay" data-shown="0"></div>
+<div class="triangle-point" ><img src="{{asset('asset/icons/triangle3.png')}}" alt=""></div>
+<div class="download-overlay" data-shown="0">
+	<div class="cart-box">
+		<p>download this 1</p>
+		<div class="download-each">
+			<img src="{{asset('asset/icons/download.png')}}" alt="">
+		</div>
+		<div class="download-delete">
+			<img src="{{asset('asset/icons/delete.png')}}" alt="">
+		</div>
+	</div>
+
+	<div class="cart-box">
+		<p>download this 2</p>
+		<div class="download-each">
+			<img src="{{asset('asset/icons/download.png')}}" alt="">
+		</div>
+		<div class="download-delete">
+			<img src="{{asset('asset/icons/delete.png')}}" alt="">
+		</div>
+	</div>
+
+	<div class="download-all-wrap">
+		<div class="download-all">
+			<span>Download All</span>	
+		</div>
+	</div>
+</div>
 	<div class="navigation">
 		<a href="{{url('/')}}" class="page-nav">Home</a>
 		<span> / {{$page->title}}</span>
@@ -33,7 +59,7 @@
 				<p>Support to continue this important work.</p>
 			</div>
 			<div class="donate-img">
-				<img src="asset/icons/donation.png" alt="" />
+				<img src="{{asset('asset/icons/donation.png')}}" alt="" />
 			</div>
 			<div class="donate-button">
 				<a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a>

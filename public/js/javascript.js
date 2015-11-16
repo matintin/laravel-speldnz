@@ -176,12 +176,13 @@ var isTextOpen = false;
 //---------------------------scroll----------------------------------
 
 //---------------------------cart------------------------------------
-	$('.download-box').on("click",function() {
-		if($(this).data("shown") == "0") {
+	$('.download-cart-box').on("click",function() {
+		if($('.download-overlay').data("shown") == "0") {
+
 			$('.triangle-point').css('display','block');
 			$('.download-overlay').slideDown();
 
-			$(this).data("shown","1");
+			$('.download-overlay').data("shown","1");
 
 		}else {
 			$('.download-overlay').slideUp();
@@ -190,7 +191,7 @@ var isTextOpen = false;
 			},400)
 			
 
-			$(this).data("shown","0");
+			$('.download-overlay').data("shown","0");
 
 		}
 

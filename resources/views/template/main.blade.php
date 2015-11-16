@@ -11,23 +11,23 @@
 	<link rel="stylesheet" href="{{asset('css/main.css')}}">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="asset/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="asset/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="{{asset('css/animate.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('asset/slick/slick.css')}}"/>
+	<link rel="stylesheet" type="text/css" href="{{asset('asset/slick/slick-theme.css')}}"/>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
 </head>
 <body>
 	<div id="overlay" class="hidden">checklist</div>
 	<div id="login">
-		<div class="close-login-box"><img src="asset/icons/close-login.png" alt=""></div>
+		<div class="close-login-box"><img src="{{asset('asset/icons/close-login.png')}}" alt=""></div>
 		<div class="login-box">
 			
-			{!! Form::open(['url' => 'login']) !!}
+			{!! Form::open(['url' => 'download',null,'class'=>'generic-form']) !!}
 			
 				<h3>Login Form</h3>
 				
-				{!! Form::text('username', null , ['placeholder'=>'Username']) !!}
+				{!! Form::text('email', null , ['placeholder'=>'Email']) !!}
 		
 				{!! Form::text('password', null , ['placeholder'=>'Password']) !!}
 		
@@ -40,17 +40,17 @@
 	<header>
 		<div class="header-wrap">
 			<div class="logo">
-				<a href="{{url('/')}}"><img src="asset/icons/logo-yellow1.png" alt="logo"></a>
+				<a href="{{url('/')}}"><img src="{{asset('asset/icons/logo-yellow1.png')}}" alt="logo"></a>
 			</div>
 			<div class="empty"></div>
 			<div class="open menu mobile-button">
-				<img src="asset/icons/menu-1.png" alt="menu-bar">
+				<img src="{{asset('asset/icons/menu-1.png')}}" alt="menu-bar">
 			</div>
 			<div class="close menu mobile-button hidden">
-				<img src="asset/icons/close.png" alt="menu-bar">
+				<img src="{{asset('asset/icons/close.png')}}" alt="menu-bar">
 			</div>
 			<div class="search mobile-button">
-				<img src="asset/icons/search-1.png" alt="search-bar">
+				<img src="{{asset('asset/icons/search-1.png')}}" alt="search-bar">
 			</div>
 		</div>
 	</header>
@@ -59,7 +59,7 @@
 			<form action="">
 				<input type="text">
 				<button>
-					<img src="asset/icons/search-1.png" alt="">
+					<img src="{{asset('asset/icons/search-1.png')}}" alt="">
 				</button>
 			</form>
 		</div>
@@ -70,7 +70,7 @@
 
 				<li class="learning"><a href="{{url('learning')}}">Learning</a>
 					<span>
-						<img class ="plus" src="asset/icons/plus.png" alt="">
+						<img class ="plus" src="{{asset('asset/icons/plus.png')}}" alt="">
 					</span>
 
 					<ul id="learning-sub-menu" >
@@ -117,7 +117,7 @@
 		<div class="reading-assist-top">
 			<div class="empty"></div>
 			<div class="assist-box-wrap">
-				<div class="circle"><img src="asset/icons/circle-off.png" alt=""></div>
+				<div class="circle"><img src="{{asset('asset/icons/circle-off.png')}}" alt=""></div>
 				<div class="assist-box">
 					<p>Reading<br/>Assist</p>
 				</div>
@@ -148,8 +148,8 @@
 	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript" src="asset/slick/slick.min.js"></script>
-	<script type="text/javascript" src="asset/slick/slick.js"></script>	
-	<script src="js/javascript.js"></script>
+	<script type="text/javascript" src="{{asset('asset/slick/slick.min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('asset/slick/slick.js')}}"></script>	
+	<script src="{{asset('js/javascript.js')}}"></script>
 </body>
 </html>

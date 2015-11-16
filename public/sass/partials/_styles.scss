@@ -48,56 +48,58 @@ body {
 			top:50%;
 			left: 50%;
 			transform: translate(-50% , -50%);
-			form {
-				padding:2em;
-				display:flex;
-				flex-direction:column;
-				background-color:#eee;
-				h3 {
-					
-					font-size:2em;
-					margin-bottom: 1em;
-					color:#555;
-					font-weight: 300;
-					// outline:1px red solid;
-				}
-				input[type="text"] {
-					padding:.7em;
-					margin-bottom:.5em;
-					border:none;
-					border-bottom:1px #555 solid;
-					font-weight: 300;
-					color: #555;
-					background-color:rgba(0,0,0,0);
-				}
-				input[type="text"]:focus {
-					border-bottom:1px tomato solid;
-				}
-				::placeholder {
-					color: #555;
-
-				}
-				input[type="text"]:nth-child(4) {
-					margin-bottom: 2em;
-				}
-				input[type="submit"] {
-					width:100%;
-					margin:0 auto;
-					padding:0;
-					border:none;
-					padding:.5em 0;
-					border:1px #555 solid;
-					border-radius:5px;
-					background-color:rgba(0,0,0,0);
-					color: #555;
-					font-weight: 100;
-				}
-
+			input[type="text"]:nth-child(4) {
+				margin-bottom: 2em;
 			}
 
 		}
 	}
 
+
+	.generic-form {
+		padding:2em;
+		display:flex;
+		flex-direction:column;
+		background-color:#eee;
+		h3 {
+			
+			font-size:2em;
+			margin-bottom: 1em;
+			color:#555;
+			font-weight: 300;
+			// outline:1px red solid;
+		}
+		input[type="text"],input[type="password"] {
+			padding:.7em;
+			margin-bottom:.5em;
+			border:none;
+			border-bottom:1px #555 solid;
+			font-weight: 300;
+			color: #555;
+			background-color:rgba(0,0,0,0);
+		}
+		input[type="text"]:focus,input[type="password"]:focus {
+			border-bottom:1px tomato solid;
+		}
+		::placeholder {
+			color: #555;
+		}
+
+		input[type="submit"] {
+			width:100%;
+			margin:0 auto;
+			padding:0;
+			border:none;
+			padding:.5em 0;
+			border:1px #555 solid;
+			border-radius:5px;
+			background-color:rgba(0,0,0,0);
+			color: #555;
+			font-weight: 100;
+		}
+
+
+	}
 header {
 	
 	height:4.5em;

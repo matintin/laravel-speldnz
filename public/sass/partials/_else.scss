@@ -1,0 +1,48 @@
+.loggedin {
+	margin-top:5em;
+	display:flex;
+	flex-direction:column;
+	.squire {
+		flex:0 0 7em;
+		margin-bottom:3em;
+		border:2px #E59C00 solid;
+		border-radius:5px;
+		display:flex;
+		align-items:center;
+		span {
+			width:100%;
+			text-align:center;
+			font-size:2em;
+			color:#E59C00;
+			font-weight:200;
+		}
+	}
+}
+//----------------loggedin------------------------------------
+
+
+//----------------member--------------------------------------
+
+.member-container {
+	.member-name {
+		margin-bottom:1em;
+		color:#000;
+	}
+	span {
+		color:#aaa;
+	}
+	.margin-bottom {
+		margin-bottom:.5em;
+	}
+	color:#888;
+}
+
+//================createMember--------------------------------
+
+.member-form {
+	background-color:rgba(0,0,0,0) !important;
+
+	.margin-bottom {
+		margin-bottom:3em !important;
+	}
+}
