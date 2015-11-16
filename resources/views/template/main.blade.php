@@ -22,12 +22,19 @@
 	<div id="login">
 		<div class="close-login-box"><img src="asset/icons/close-login.png" alt=""></div>
 		<div class="login-box">
-			<form action="">
+			
+			{!! Form::open(['url' => 'login']) !!}
+			
 				<h3>Login Form</h3>
-				<input type="text" placeholder="Username"/>
-				<input type="text" placeholder="Password"/>
-				<input type="submit" value="Login"/>
-			</form>
+				
+				{!! Form::text('username', null , ['placeholder'=>'Username']) !!}
+		
+				{!! Form::text('password', null , ['placeholder'=>'Password']) !!}
+		
+				{!! Form::submit('Login') !!}
+			
+			{!! Form::close() !!}
+			
 		</div>
 	</div>
 	<header>

@@ -28,6 +28,9 @@ Route::get('learning',function() {
 Route::get('dyslexia',function() {
 	return view('dyslexia');
 });
+Route::post('login',function() {
+	return redirect('login');
+});
 Route::get('login',function() {
 	return view('login');
 });
