@@ -40,8 +40,8 @@
 				</div>
 			
 				<div class="faq">
-					<div class="faq-wrap">
 						<h3>FAQ</h3>
+					<div class="faq-wrap">
 						<p><a href="">What is dyslexia?</a></p>
 						<p><a href="">What causes dyslexia?</a></p>
 						<p><a href="">What are some common symptoms of dyslexia?</a></p>
@@ -57,11 +57,14 @@
 					<h5>Newsletters Sign Up</h5>
 					<p>Stay informed with our e-newsletters</p>
 
-					<form action="">
-						<input type="text" name="email" placeholder="Email Address">
-						<input type="submit" value="Sign Up">
-
-					</form>
+					<div class="newsletter-wrap">
+						<form action="">
+							<input type="text" name="email" placeholder="Email Address">
+							<input type="submit" value="Sign Up">
+						
+						</form>
+						<div class="facebook"><span>Follow Us</span><a href=""><i class="fa fa-facebook-official"></i></a></div>
+					</div>
 				</div>
 				<div class="support">
 					<div class="image-slider">

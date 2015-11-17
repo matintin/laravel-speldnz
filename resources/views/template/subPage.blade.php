@@ -71,11 +71,14 @@
 		<h5>Newsletters Sign Up</h5>
 		<p>Stay informed with our e-newsletters</p>
 
-		<form action="">
-			<input type="text" name="email" placeholder="Email Address">
-			<input type="submit" value="Sign Up">
-
-		</form>
+		<div class="newsletter-wrap">
+			<form action="">
+				<input type="text" name="email" placeholder="Email Address">
+				<input type="submit" value="Sign Up">
+			
+			</form>
+			<div class="facebook"><span>Follow Us</span><a href=""><i class="fa fa-facebook-official"></i></a></div>
+		</div>
 	</div>
 	</section>
 @stop
