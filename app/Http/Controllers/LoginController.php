@@ -14,7 +14,7 @@ class LoginController extends Controller
 
     	if($auth->attempt($credential)){
     		//if it is professional member go to download page
-    		return redirect('download');
+    		return redirect('download/'.$user->id);
     		//if it is admin go to loggedin page
 
     	}else {

@@ -30,11 +30,15 @@ Route::get('learning',function() {
 Route::get('dyslexia',function() {
 	return view('dyslexia');
 });
-Route::post('download',function() {
-	return redirect('download');
-});
-Route::get('download',function() {
-	return view('download');
+// Route::post('download',function() {
+// 	return redirect('download');
+// });
+Route::get('download/{id}',function($id) {
+
+	$user = \App\Models\User::find($id);
+
+	return view('download',compact("user"));
+
 });
 Route::get('privacy',function() {
 	return view('privacy');
@@ -49,7 +53,10 @@ Route::get('loggedin',function() {
 	return view('loggedin');
 });
 Route::resource("users","MemberController");
+
 Route::post('login',"LoginController@processLogin");
+Route::get('logout',"LoginController@logout");
+
 Route::get('pages/{id}',function($id) {
 	$page = \App\Models\Page::find($id);
 	return view('page',compact("page"));
