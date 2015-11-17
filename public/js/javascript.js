@@ -199,11 +199,29 @@ var isTextOpen = false;
 
 //---------------------------cart------------------------------------
 
+//---------------------------checklist-------------------------------
+	
 
+
+//---------------------------checklist-------------------------------
 
 });//jquery
 
 //------------------image-slider----------------------------------
+$(document).ready(function(){
+
+	if($(".showPopUp").html()=="true"){
+
+		$('#overlay').delay(1000).fadeIn();
+
+		$('.close-checklist').on("click",function() {
+			$('#overlay').fadeOut();
+		});
+
+	}
+	
+
+});
 
 $(document).ready(function(){
   $('.image-slider').slick({

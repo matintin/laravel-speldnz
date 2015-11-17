@@ -4,10 +4,10 @@
 
 	<div class="loggedin">
 		
-		<a href="" class="download-squire squire">
+		<a href="{{url('download')}}" class="download-squire squire">
 			<span>Download</span>
 		</a>	
-		<a href="" class="member-squire squire">
+		<a href="{{url('users')}}" class="member-squire squire">
 			<span>Members</span>
 		</a>
 		<a href="" class="news-squire squire">

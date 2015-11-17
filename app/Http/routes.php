@@ -12,6 +12,8 @@
 */
 
 Route::get('/',function() {
+
+	//return \App\Models\Page::find(2)->children[0]->parent;
 	return view('index');
 });
 Route::get('about',function() {
@@ -47,4 +49,8 @@ Route::get('loggedin',function() {
 	return view('loggedin');
 });
 Route::resource("users","MemberController");
-
+Route::post('login',"LoginController@processLogin");
+Route::get('pages/{id}',function($id) {
+	$page = \App\Models\Page::find($id);
+	return view('page',compact("page"));
+});

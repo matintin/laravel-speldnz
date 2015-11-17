@@ -18,7 +18,7 @@
 
 </head>
 <body>
-	<div id="overlay" class="hidden">checklist</div>
+	
 	<div id="login">
 		<div class="close-login-box"><img src="{{asset('asset/icons/close-login.png')}}" alt=""></div>
 		<div class="login-box">
@@ -36,6 +36,87 @@
 			{!! Form::close() !!}
 			
 		</div>
+	</div>
+	<div id="overlay" >
+		<div class="close-checklist"><img src="{{asset('asset/icons/close-login.png')}}" alt=""></div>
+		<div id="checklist">
+			<h3>SLD <span>(Specific Learning Disabilities)</span> Checklist</h3>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Problems with one or more od these: maths, spelling, writing, reading.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Knows spelling and maths one day but has forgotten it the next.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Talks about their ideas well but can't write them down.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Says sounds in words in the wrong order: e.g aminale (animal), hostiple(hospital).</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Untidy, disorganised and often late.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Difficulty copying work.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Untidy writing that is hard to read.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Difficulty remembering names of things in order: e.g letters of the alphabet, days of week.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Difficulty telling time</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Difficulty learning times tables.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Difficulty with punctuation, grammar and maths symbols.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Clumsy, with poor co-ordination.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Difficulty concentrating and easily distracted.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">trouble in telling left from right, up from down, front from back.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Extremely active, easily frustrated and short-tempered. At other times may be charming abd delightful to have around.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Average or above average intelligence.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Doesn't listen, especially when there is other noise in the same area.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Doesn't cope well with sudden changes of activity.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Not good at taking a message.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Not good at following instructuibs or rules.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Seen as naughty or lazy.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Class clown, or very quite, to avoid attention.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Dislikes reading aloud.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Over-reacts in some situations.</p>
+			</div>
+			<div class="list-wrap">
+				<input type="checkbox" /><p class="checkbox">Does well in some things, but unexpectedly poorly in others.</p>
+			</div>
+		</div><!-- checklist -->
 	</div>
 	<header>
 		<div class="header-wrap">
@@ -145,6 +226,7 @@
 		
 	</div><!-- reading-assist -->
 	
+	<div class="showPopUp">{{Session::get("showPopUp")}}</div>
 	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

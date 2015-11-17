@@ -18,7 +18,7 @@ class MemberController extends Controller
     {
         $users = \App\Models\User::all();
 
-        return view('users');
+        return view('users',compact("users"));
     }
 
     /**

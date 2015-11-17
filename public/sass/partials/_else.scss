@@ -24,12 +24,15 @@
 //----------------member--------------------------------------
 
 .member-container {
+	margin-bottom:2em;
+	border-left:2px #E59C00 solid;
+	padding-left:1em;
 	.member-name {
 		margin-bottom:1em;
 		color:#000;
 	}
 	span {
-		color:#aaa;
+		color:#444;
 	}
 	.margin-bottom {
 		margin-bottom:.5em;
