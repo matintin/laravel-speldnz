@@ -140,7 +140,7 @@
 				<ul class="desktop-nav">
 					<li><a href="">About</a></li>
 
-					<li><a href="">Learning</a>
+					<li class="mouse-over"><a href="{{url('learning')}}">Learning</a>
 						<ul id="desktop-sub-menu" >
 							<li><a href="{{url('dyslexia')}}">Dyslexia</a></li>
 							<li><a href="">Dyspraxia</a></li>
@@ -154,15 +154,23 @@
 					<li><a href="">FAQ</a></li>
 					<li><a href="">Donate</a></li>
 					<li><a href="">Contact</a></li>
-					<li class="login-button"><i class="fa fa-sign-in"></i></li>
+					@if(Auth::check())
+
+					<li><a href="{{url('logout')}}" class="logout-button"><i class="fa fa-sign-out"></i><span>Log Out</span></a></li>
+
+					@else
+
+					<li class="login-button"><i class="fa fa-sign-in"></i><span>Log In</span></li>
+					@endif
+
 					<li class="search-desktop">
-						<form action="" class="hidden">
+						<form action="">
 							<input type="text">
 							<button>
 								<img src="{{asset('asset/icons/search-1.png')}}" alt="">
 							</button>
 						</form>
-						<div class="search-out-box"><img src="{{asset('asset/icons/search-1.png')}}" alt=""></div>
+						<!-- <div class="search-out-box"><img src="{{asset('asset/icons/search-1.png')}}" alt=""></div> -->
 					</li>
 				</ul>
 			</nav>
@@ -221,7 +229,15 @@
 				<li><a href="{{url('learning')}}">Learning</a></li>
 				<li><a href="{{url('privacy')}}">Privacy Policy</a></li>
 				<li><a href="{{url('contact')}}">Contact</a></li>
+
+				@if(Auth::check())
+
+				<li><a href="{{url('logout')}}" class="logout-button">Logout</a></li>
+
+				@else
+
 				<li><a href="" class="login-button">Login</a></li>
+				@endif
 			</ul>
 		</div><!-- footer-wrap -->
 		
@@ -233,7 +249,6 @@
 	<div id="reading-assist">
 	
 		<div class="reading-assist-top">
-			<div class="empty"></div>
 			<div class="assist-box-wrap">
 				<div class="circle"><img src="{{asset('asset/icons/circle-off.png')}}" alt=""></div>
 				<div class="assist-box">
@@ -242,7 +257,7 @@
 			</div>
 		</div><!-- reading-assist-top -->
 		<div class="reading-assist-bottom">
-			<div class="empty"></div>
+			<!-- <div class="empty"></div> -->
 			<div class="assist-detail">
 				<div class="text-size">
 					<p>Text-size</p>
@@ -263,7 +278,7 @@
 		
 	</div><!-- reading-assist -->
 	
-	<div class="showPopUp">{{Session::get("showPopUp")}}</div>
+	<div class="showPopUp hidden">{{Session::get("showPopUp")}}</div>
 	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

@@ -235,15 +235,16 @@ body {
 						&:nth-child(2){
 							position:relative;
 							#desktop-sub-menu {
-								display: flex;
+								display:none;
+								// display: flex;
 								flex-direction: column;
 								// width: 10em;
 								position:absolute;
-								top: 2em;
+								top: 2.5em;
 								left: 0;
 								z-index: 25;
 								padding:0;
-								background-color: rgba(255,255,255,.5);
+								background-color: rgba(0,0,0,.5);
 								padding: 1em 1em 1em .5em;
 								li {
 									font-size: .9em;
@@ -255,14 +256,23 @@ body {
 							
 						}//&:nth-child(2)
 					}//li
+					.login-button, .logout-button {
+						cursor:hand;
+						cursor:pointer;
+						span {
+							font-size:.8em;
+							margin-left:.2em;
+						}
+					}
 					.search-desktop {
 						// width:100% ;
-						// width: 5em;
+						width: 7em;
 						padding:0;
-						margin: 0;
+						margin: 0 1em 0 0;
 						display: flex;
 						flex-wrap: wrap;
 						justify-content: flex-end;
+
 						.search-out-box {
 							flex:0 0 1em;
 							border:1px #888 solid;
@@ -279,11 +289,14 @@ body {
 							display: flex;
 							flex-wrap:wrap;
 							border:.1em #888 solid;
+							border-radius:5px;
 							padding:.2em 0;
 							input[type="text"] {
 								flex:1 0 1em;
 								border:none;
 								background-color:rgba(0,0,0,0);
+								text-indent:.5em;
+								font-size:.8em;
 							}
 							button {
 								flex: 0 0 1.5em;
@@ -795,16 +808,16 @@ body {
 			margin:0;
 			display: flex;
 			flex-wrap:wrap;
-			.empty {
-				flex:1 0 1em;
-			}
+			justify-content:flex-end;
 			.assist-box-wrap {
 				background-color:#467BC1;
 				cursor:hand;
 				cursor:pointer;	
 				flex:0 0 7em;
 				display:flex;
-				flex-wrap:wrap;	
+				flex-wrap:wrap;
+				margin-right:1em;
+				
 				.circle {
 					flex:0 0 .8em;
 					display:flex;
@@ -832,6 +845,7 @@ body {
 			margin:0;
 			width: 100%;
 			flex-wrap:wrap;
+			justify-content:flex-end;
 
 			.empty {
 				flex:1 0 1em;

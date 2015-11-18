@@ -198,15 +198,27 @@ var isTextOpen = false;
 	});
 
 //---------------------------cart------------------------------------
-//---------------------------searchbox-desktop-----------------------
-	$('.search-out-box').on("click",function() {
-		$('.search-out-box').css("display","none");
-		$('.search-desktop form').removeClass('hidden');
 
+//---------------------------searchbox-desktop-----------------------
+	// $('.search-out-box').on("click",function() {
+	// 	$('.search-out-box').css("display","none");
+	// 	$('.search-desktop').css("width","7em");
+	// 	$('.search-desktop form').removeClass('hidden');
+
+	// });
+
+//---------------------------searchbox-desktop-----------------------
+
+//---------------------------mouse-over------------------------------
+	$('.mouse-over').on("mouseenter",function() {
+		$('#desktop-sub-menu').show();
+
+		$('#desktop-sub-menu').on("mouseleave",function() {
+			$(this).hide();
+		});
 	});
-
-//---------------------------searchbox-desktop-----------------------
-
+	
+//---------------------------mouse-over------------------------------
 
 
 });//jquery

@@ -20,14 +20,15 @@ class LoginController extends Controller
 
 
     	}else{
-    		return redirect("/");
+    		return redirect("/");  
+            // \hash::make();
 
         
     	}
     }
 
     public function logout(\Illuminate\Contracts\Auth\Guard $auth){
-    	$auth->logout();
+    	\Auth::logout();
     	return redirect("/");
     }
 }
