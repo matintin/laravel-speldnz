@@ -30,12 +30,12 @@ Route::get('learning',function() {
 Route::get('dyslexia',function() {
 	return view('dyslexia');
 });
-// Route::post('download',function() {
-// 	return redirect('download');
-// });
-Route::get('download/{id}',function($id) {
 
-	$user = \App\Models\User::find($id);
+Route::get('download',function() {
+
+	// $user = \App\Models\User::find(\Request::get("userid"));
+
+	$user = \Auth::user();
 
 	return view('download',compact("user"));
 

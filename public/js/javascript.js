@@ -145,7 +145,7 @@ var isTextOpen = false;
 //---------------------learning-accordion----------------------------
 
 //---------------------------login-----------------------------------
-	$('#login-button').on("click",function(e) {
+	$('.login-button').on("click",function(e) {
 		e.preventDefault();
 		$("#login").css("display","block");
 
@@ -198,16 +198,20 @@ var isTextOpen = false;
 	});
 
 //---------------------------cart------------------------------------
+//---------------------------searchbox-desktop-----------------------
+	$('.search-out-box').on("click",function() {
+		$('.search-out-box').css("display","none");
+		$('.search-desktop form').removeClass('hidden');
 
-//---------------------------checklist-------------------------------
-	
+	});
+
+//---------------------------searchbox-desktop-----------------------
 
 
-//---------------------------checklist-------------------------------
 
 });//jquery
+//---------------------------checklist-------------------------------
 
-//------------------image-slider----------------------------------
 $(document).ready(function(){
 
 	if($(".showPopUp").html()=="true"){
@@ -217,11 +221,12 @@ $(document).ready(function(){
 		$('.close-checklist').on("click",function() {
 			$('#overlay').fadeOut();
 		});
-
 	}
-	
 
 });
+//---------------------------checklist-------------------------------
+
+//------------------image-slider----------------------------------
 
 $(document).ready(function(){
   $('.image-slider').slick({

@@ -12,13 +12,17 @@ class LoginController extends Controller
     public function processLogin(Request $request, \Illuminate\Contracts\Auth\Guard $auth){
     	$credential = $request->only("email","password");
 
-    	if($auth->attempt($credential)){
+    	if(\Auth::attempt($credential)){
     		//if it is professional member go to download page
-    		return redirect('download/'.$user->id);
+    		return redirect('download?userid='.\Auth::user()->id);
     		//if it is admin go to loggedin page
 
-    	}else {
-    		return redirect("/")->with("message","Try again!");
+
+
+    	}else{
+    		return redirect("/");
+
+        
     	}
     }
 

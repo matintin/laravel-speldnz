@@ -23,13 +23,15 @@
 		<div class="close-login-box"><img src="{{asset('asset/icons/close-login.png')}}" alt=""></div>
 		<div class="login-box">
 			
-			{!! Form::open(['url' => 'download',null,'class'=>'generic-form']) !!}
+			{!! Form::open(['url' => 'login',null,'class'=>'generic-form']) !!}
 			
 				<h3>Login Form</h3>
 				
 				{!! Form::text('email', null , ['placeholder'=>'Email']) !!}
+				{!! $errors->first('email') !!}	
 		
 				{!! Form::text('password', null , ['placeholder'=>'Password']) !!}
+				{!! $errors->first('password') !!}	
 		
 				{!! Form::submit('Login') !!}
 			
@@ -118,6 +120,7 @@
 			</div>
 		</div><!-- checklist -->
 	</div>
+
 	<header>
 		<div class="header-wrap">
 			<div class="logo">
@@ -133,6 +136,36 @@
 			<div class="search mobile-button">
 				<img src="{{asset('asset/icons/search-1.png')}}" alt="search-bar">
 			</div>
+			<nav class="desktop-menu">
+				<ul class="desktop-nav">
+					<li><a href="">About</a></li>
+
+					<li><a href="">Learning</a>
+						<ul id="desktop-sub-menu" >
+							<li><a href="{{url('dyslexia')}}">Dyslexia</a></li>
+							<li><a href="">Dyspraxia</a></li>
+							<li><a href="">ADHD</a></li>
+							<li><a href="">Dyscalculia</a></li>
+							<li><a href="">Dysgraohia</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="">News & Event</a></li>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Donate</a></li>
+					<li><a href="">Contact</a></li>
+					<li class="login-button"><i class="fa fa-sign-in"></i></li>
+					<li class="search-desktop">
+						<form action="" class="hidden">
+							<input type="text">
+							<button>
+								<img src="{{asset('asset/icons/search-1.png')}}" alt="">
+							</button>
+						</form>
+						<div class="search-out-box"><img src="{{asset('asset/icons/search-1.png')}}" alt=""></div>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</header>
 
@@ -149,10 +182,14 @@
 			<ul id="mobile-nav" >
 				<li><a href="{{url('about')}}">About</a></li>
 
-				<li class="learning"><a href="{{url('learning')}}">Learning</a>
-					<span>
-						<img class ="plus" src="{{asset('asset/icons/plus.png')}}" alt="">
-					</span>
+				<li class="learning">
+
+					<div class="learning-flex">
+						<a href="{{url('learning')}}">Learning</a>
+						<span>
+							<img class ="plus" src="{{asset('asset/icons/plus.png')}}" alt="">
+						</span>
+					</div>
 
 					<ul id="learning-sub-menu" >
 						<li><a href="{{url('dyslexia')}}">Dyslexia</a></li>
@@ -184,7 +221,7 @@
 				<li><a href="{{url('learning')}}">Learning</a></li>
 				<li><a href="{{url('privacy')}}">Privacy Policy</a></li>
 				<li><a href="{{url('contact')}}">Contact</a></li>
-				<li><a href="" id="login-button">Login</a></li>
+				<li><a href="" class="login-button">Login</a></li>
 			</ul>
 		</div><!-- footer-wrap -->
 		
