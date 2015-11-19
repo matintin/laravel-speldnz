@@ -125,6 +125,9 @@
 		}
 		.image-wrap {
 			flex :0 0 .6em;
+			@media only screen and (min-width:44em) {
+				margin-right:1em;
+			}
 			cursor:hand;
 			cursor:pointer;
 			display:flex;
@@ -188,6 +191,9 @@
 
 		.five {
 			width: 105%;
+			@media only screen and (min-width:44em) {
+				width: 100%;
+			}
 			p {
 				width: 100%;
 				padding:.7em;

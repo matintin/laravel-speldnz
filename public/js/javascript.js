@@ -249,12 +249,56 @@ $(document).ready(function(){
 //------------------image-slider----------------------------------
 
 $(document).ready(function(){
-  $('.image-slider').slick({
-      slidesToShow: 3,
-	  slidesToScroll: 1,
+  // $('.image-slider').slick({
+  //     slidesToShow: 3,
+	 //  slidesToScroll: 1,
+	 //  autoplay: true,
+	 //  autoplaySpeed: 2000,
+  // });
+
+	$('.image-slider').slick({
+	  dots: true,
 	  autoplay: true,
 	  autoplaySpeed: 2000,
-  });
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	  infinite: true,
+	  responsive: [
+	    {
+	      breakpoint: 1024,
+	      settings: {
+	        slidesToShow: 4,
+	        slidesToScroll: 1,
+	        autoplay: true,
+	 		autoplaySpeed: 2000,
+	        infinite: true,
+	        dots: true
+	      }
+	    },
+	    {
+	      breakpoint: 704,
+	      settings: {
+	        slidesToShow: 3,
+	        sslidesToScroll: 1,
+	        autoplay: true,
+	  		autoplaySpeed: 2000,
+	        infinite: true
+	      }
+	    }
+	    // {
+	    //   breakpoint: 480,
+	    //   settings: {
+	    //     slidesToShow: 1,
+	    //     slidesToScroll: 1
+	    //   }
+	    // }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
+	});
+
+
 });
 //------------------image-slider----------------------------------
 	

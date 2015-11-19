@@ -5,7 +5,7 @@
 	<div class="about-content learning">
 
 		<div class="accordion-wrap">
-			<h3>What is dyslexia?</h3><div class="empty"></div><div class="image-wrap"><img src="http://localhost/laravel-speldnz/public/http://localhost/laravel-speldnz/public/asset/icons/plus.png" alt=""></div>
+			<h3>What is dyslexia?</h3><div class="empty"></div><div class="image-wrap"><img src="http://localhost/laravel-speldnz/public/asset/icons/plus.png" alt=""></div>
 			<div class="accordion-news">
 				<p>No definition is perfect or all-inclusive.</p>
 				<p>Simply put, dyslexia is a specific learning disability (‘SLD’) that makes it far harder to learn to read, write or do number work. It is a processing difficulty that makes achieving success in literacy and numeracy (reading, writing, spelling, and maths for example) a real challenge.</p>

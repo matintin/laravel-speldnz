@@ -127,13 +127,13 @@
 				<a href="{{url('/')}}"><img src="{{asset('asset/icons/logo-yellow1.png')}}" alt="logo"></a>
 			</div>
 			<div class="empty"></div>
-			<div class="open menu mobile-button hover">
+			<div class="open menu mobile-button">
 				<img src="{{asset('asset/icons/menu-1.png')}}" alt="menu-bar">
 			</div>
-			<div class="close menu mobile-button hidden hover">
+			<div class="close menu mobile-button hidden">
 				<img src="{{asset('asset/icons/close.png')}}" alt="menu-bar">
 			</div>
-			<div class="search mobile-button hover">
+			<div class="search mobile-button">
 				<img src="{{asset('asset/icons/search-1.png')}}" alt="search-bar">
 			</div>
 			<nav class="desktop-menu">

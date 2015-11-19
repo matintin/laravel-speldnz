@@ -3,16 +3,22 @@
 
 	padding: 1em;
 	a, span {
+		color:#ccc;
+		text-decoration:none;
+	}
+	span {
 		font-size:.8em;
 	}
 	a {
+		font-size: 1em;
+	}
+	.page-nav {
 		text-decoration:none;
 		color:#E59C00;
+		font-size:.9em;
 
 	}
-	span {
-		color:#ccc;
-	}
+	
 }
 .container {
 	flex:1 0 1em;

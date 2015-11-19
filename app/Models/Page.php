@@ -13,4 +13,7 @@ class Page extends Model
     public function parent(){
     	return $this->belongsTo("\App\Models\Page","parent_id");
     }
+    public function subpages(){
+    	return $this->hasMany("\App\Models\Subpage");
+    }
 }

@@ -1,22 +1,20 @@
-@extends('template.subPage')
 
-@section('content')
 	<div class="learning-five">
 		<div class="five Dyslexia">
 			<a href="{{url('pages/3')}}">Dyslexia</a>	
 		</div>
 		<div class="five Dyspraxia">
-			<a href="">Dyspraxia</a>
+			<a href="{{url('pages/4')}}">Dyspraxia</a>
 			
 		</div>
 		<div class="five ADHD">
-			<a href="">ADHD</a>
+			<a href="{{url('pages/5')}}">ADHD</a>
 		</div>
 		<div class="five Dysgraphia">
-			<a href="">Dysgraphia</a>
+			<a href="{{url('pages/6')}}">Dysgraphia</a>
 		</div>
 		<div class="five Dyscalculia">
-			<a href="">Dyscalculia</a>
+			<a href="{{url('pages/7')}}">Dyscalculia</a>
 		</div>
 	</div>
 	<h1 class="hidden">Learning Disabilities</h1>
@@ -45,6 +43,7 @@
 		  such conditions as perceptual difficulties, brain injury, 
 		  minimal brain dysfunction, dyslexia, and developmental aphasia.</p>	
 		<div class="learning-margin"></div>
+
 		<div class="accordion-wrap">
 			<span>Effect</span>
 			 <div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
@@ -111,5 +110,3 @@
 		 </div>
 	</div><!-- about-content -->
 
-
-@stop

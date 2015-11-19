@@ -1,28 +1,4 @@
-
-
-	<h1 class="hidden">Dyslexia, Dyspraxia, ADHD, Dysgraphia, Dyscalculia</h1>
-
-	<div class="about-content learning">	
-
-		<div class="learning-dyslexia-wrap learning-five">
-			<div class="five Dyslexia" data-shown="0">
-				<p>{{$page->title}}<i class="fa fa-angle-down"></i></p>
-			</div>
-				<?php $subpages = $page->subpages(); ?>
-		 	<div class="learning-five learning-dyslexia">
-		 		
-				@foreach($subpages as $subpage)
-		 		<div class="accordion-wrap">
-		 			<span>{{$subpage->title}}</span>
-		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="{{('asset/icons/plus.png')}}" alt=""></div>
-		 				<div class="accordion">
-		 					
-		 			 		{!! $subpage->content !!}	  
-		 				</div>
-		 		</div>
-		 		@endforeach
-		 		<div class="accordion-wrap">
+<div class="accordion-wrap">
 		 			<span></span>
 		 			<div class="empty"></div>
 		 			<div class="image-wrap"><img src="http://localhost/laravel-speldnz/public/asset/icons/plus.png" alt=""></div>
@@ -799,11 +775,6 @@
 		 						Mathematical Brain’; London; Papermac; 2&gt;</p>
 		 			 			  
 		 				</div>
-		 		</div>
+		 		 		</div>
 			</div><!-- learning-five -->
 	<!-- Dyscalculia	 -->
-
-		</div><!-- learning-dyslexia-wrap -->
-
-
-	</div><!-- about-content -->
