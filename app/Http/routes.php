@@ -44,6 +44,10 @@ Route::get('privacy',function() {
 	return view('privacy');
 });
 Route::get('news',function() {
+
+	//get news
+
+	//bind news object to view
 	return view('news');
 });
 Route::get('faq',function() {

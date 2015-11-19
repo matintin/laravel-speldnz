@@ -1,20 +1,20 @@
-@extends('template.subPage')
+	@extends('template.subPage')
 
-@section('content')
-	
-	<h1 class="hidden">Dyslexia</h1>
-	
+	@section('content')
+
+	<h1 class="hidden">Dyslexia, Dyspraxia, ADHD, Dysgraphia, Dyscalculia</h1>
+
 	<div class="about-content learning learning-five">	
 
 		<div class="learning-dyslexia-wrap">
 			<div class="five Dyslexia" data-shown="0">
 				<p>Dyslexia<i class="fa fa-angle-down"></i></p>
 			</div>
-		 	<div class="learning-five">
+		 	<div class="learning-five learning-dyslexia">
 		 		<div class="accordion-wrap">
 		 			<span>What is Dyslexia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>Dyslexia is a phonological-based learning 
 		 					disability. Dyslexia affects individuals throughout 
@@ -33,7 +33,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>What causes Dyslexia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>The exact causes of Dyslexia are still not 
 		 					completely clear, but anatomical and brain imagery
@@ -52,7 +52,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>How widespread is Dyslexia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>About 7% of students in New Zealand Schools have 
 		 					Dyslexia. Not all of these will qualify for special 
@@ -80,7 +80,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>What are the effects of Dyslexia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>The impact that Dyslexia has is different for 
 		 					each person and depends on the severity of the 
@@ -115,7 +115,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>What are the signs of Dyslexia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>The problems displayed by individuals with 
 		 					Dyslexia involve difficulties in acquiring and
@@ -149,7 +149,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>How is Dyslexia diagnosed?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>If a student’s learning does not accelerate 
 		 					enough with supplemental instruction to reach the
@@ -189,7 +189,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>How is Dyslexia treated?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>Dyslexia is a life-long condition. With proper 
 		 					help, many people with Dyslexia can learn to read 
@@ -222,7 +222,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>Do Emotional Disorders cause Dyslexia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>Research indicates that Dyslexia is caused by 
 		 					biological factors not emotional or family problems.
@@ -245,7 +245,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>Why is Dyslexia discouraging and frustrating?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>The frustration of children with Dyslexia often 
 		 					centres on their inability to meet expectations. Their 
@@ -290,7 +290,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>What does the dyslexic person feel?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<li><span>Anxiety</span>Anxiety is the most frequent emotional
 		 					 symptom reported by dyslexic adults. Dyslexics become fearful 
@@ -380,7 +380,7 @@
 		 				<div class="accordion-wrap">
 		 			<span>How can parents and teachers help?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>Both teachers and parents need to offer consistent, ongoing encouragement 
 		 					and support. However, one rarely hears about this very important way to help 
@@ -436,7 +436,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>What is Dyspraxia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>`Developmental Dyspraxia (also known as Developmental 
 		 						Coordination Disorder and the Clumsy Child Syndrome)
@@ -490,7 +490,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>What is ADHD?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 	 				<div class="accordion">
 	 					<li><span>Attention Deficit Hyperactivity Disorder</span>
 	 					“A persistent pattern of inattention and hyperactivity– 
@@ -503,71 +503,71 @@
 		 		<div class="accordion-wrap">
 		 			<span>Diagnostic Criteria for ADHD</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 	 				<div class="accordion">
 	 					<p>Six or more of these symptoms have persisted for at 
 	 						least six months.</p>
 	 					<p>Inattention:</p>
 	 					<ul>
- 						  	<li>- Fails to give close attention to details or makes 
- 						  		careless mistakes.</li>
- 						  	<li>- Has difficulty sustaining attention in tasks or 
- 						  		play activity.</li>
- 						  	<li>- Does not seem to listen when spoken to directly.</li>
- 						  	<li>- Does not follow through on instructions or finish work.</li>
- 						  	<li>- Has difficulty organising tasks and activities.</li>
- 						  	<li>- Avoids, dislikes or is reluctant to engage in tasks 
- 						  		that require sustained mental effort.</li>
- 						  	<li>- Loses things necessary for tasks or activities.</li>
- 						  	<li>- Is easily distracted by extraneous stimuli</li>
- 						  	<li>- Is forgetful.</li>
- 						  	<li>- Very limited attention span.</li>
- 						</ul>	
- 						<p>Hyperactivity:</p> 
- 						<ul>
- 						 	<li>- May distract others.</li>
- 						 	<li>- Fidgets with hands or feet or squirms in seat.</li>
- 						 	<li>- Leaves seat when staying in seat is expected.</li>
- 						 	<li>- Runs about or climbs excessively in situations where 
- 						 		it is inappropriate. In teens or adults there may be 
- 						 		a feeling of restlessness.</li>
- 						 	<li>- Has difficulty playing quietly.</li>
- 						 	<li>- Is often `on the go’ or seems `driven by a motor’.</li>
- 						 	<li>- Talks excessively.</li>
- 						</ul> 
- 						<p>The following must also be observed:</p>
- 						<ul>
- 							<li>- Some symptoms are present before age seven.</li>
- 							<li>- Some impairment in at least two different settings.</li>
- 							<li>- Interference with developmentally appropriate academic, 
- 								social, or occupational functioning.</li>
- 							<li>- No evidence of another mental or developmental disorder.</li>
- 						</ul>
- 						<p class="source">&lt;Source: DSM – IV Criteria&gt;</p>
- 						<p>ADHD is attention deficit without the hyperactivity</p>
- 						<p>Thank you to the International Dyslexia Association for the 
- 							following information:</p>
- 						<p>ADHD and Dyslexia are distinct conditions that frequently 
- 							overlap, thereby causing some confusion about the nature 
- 							of these two conditions. ADHD is one of the most common 
- 							developmental problems, affecting 3–5% of the school 
- 							population. It is characterized by inattention, 
- 							distractibility, hyperactivity and impulsivity. It is 
- 							estimated that 30% of those with Dyslexia have coexisting 
- 							ADHD. Coexisting means the two conditions, ADHD and Dyslexia, 
- 							can occur together, but they do not cause each other. Dyslexia 
- 							is a language-based learning disability characterized by 
- 							difficulties with accurate and fluent word recognition, 
- 							spelling, and reading decoding. People with Dyslexia have 
- 							problems discriminating sounds within a word or phonemes, 
- 							a key factor in their reading and spelling difficulties.</p>
+							  	<li>- Fails to give close attention to details or makes 
+							  		careless mistakes.</li>
+							  	<li>- Has difficulty sustaining attention in tasks or 
+							  		play activity.</li>
+							  	<li>- Does not seem to listen when spoken to directly.</li>
+							  	<li>- Does not follow through on instructions or finish work.</li>
+							  	<li>- Has difficulty organising tasks and activities.</li>
+							  	<li>- Avoids, dislikes or is reluctant to engage in tasks 
+							  		that require sustained mental effort.</li>
+							  	<li>- Loses things necessary for tasks or activities.</li>
+							  	<li>- Is easily distracted by extraneous stimuli</li>
+							  	<li>- Is forgetful.</li>
+							  	<li>- Very limited attention span.</li>
+							</ul>	
+							<p>Hyperactivity:</p> 
+							<ul>
+							 	<li>- May distract others.</li>
+							 	<li>- Fidgets with hands or feet or squirms in seat.</li>
+							 	<li>- Leaves seat when staying in seat is expected.</li>
+							 	<li>- Runs about or climbs excessively in situations where 
+							 		it is inappropriate. In teens or adults there may be 
+							 		a feeling of restlessness.</li>
+							 	<li>- Has difficulty playing quietly.</li>
+							 	<li>- Is often `on the go’ or seems `driven by a motor’.</li>
+							 	<li>- Talks excessively.</li>
+							</ul> 
+							<p>The following must also be observed:</p>
+							<ul>
+								<li>- Some symptoms are present before age seven.</li>
+								<li>- Some impairment in at least two different settings.</li>
+								<li>- Interference with developmentally appropriate academic, 
+									social, or occupational functioning.</li>
+								<li>- No evidence of another mental or developmental disorder.</li>
+							</ul>
+							<p class="source">&lt;Source: DSM – IV Criteria&gt;</p>
+							<p>ADHD is attention deficit without the hyperactivity</p>
+							<p>Thank you to the International Dyslexia Association for the 
+								following information:</p>
+							<p>ADHD and Dyslexia are distinct conditions that frequently 
+								overlap, thereby causing some confusion about the nature 
+								of these two conditions. ADHD is one of the most common 
+								developmental problems, affecting 3–5% of the school 
+								population. It is characterized by inattention, 
+								distractibility, hyperactivity and impulsivity. It is 
+								estimated that 30% of those with Dyslexia have coexisting 
+								ADHD. Coexisting means the two conditions, ADHD and Dyslexia, 
+								can occur together, but they do not cause each other. Dyslexia 
+								is a language-based learning disability characterized by 
+								difficulties with accurate and fluent word recognition, 
+								spelling, and reading decoding. People with Dyslexia have 
+								problems discriminating sounds within a word or phonemes, 
+								a key factor in their reading and spelling difficulties.</p>
 	 				</div>
 		 		</div>
 
 		 		<div class="accordion-wrap">
 		 			<span>Is ADHD over-diagnosed?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 	 				<div class="accordion">
 	 					<p>The American Medical Association and the Centers for Disease 
 	 						Control and Prevention have concluded that ADHD is not 
@@ -587,7 +587,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>Can individuals inherit ADHD and Dyslexia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 	 				<div class="accordion">
 	 					<p>Both ADHD and Dyslexia run in families. Genetics play a 
 	 						role in about half of the children diagnosed with ADHD. 
@@ -600,7 +600,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>Are there characteristics that individuals with ADHD and Dyslexia have in common?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 	 				<div class="accordion">
 	 					<p>Dyslexic children and children with ADHD have some similar 
 	 						characteristics. Dyslexic children, like children with ADHD, 
@@ -636,7 +636,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>Have neurological studies shown functional and/or anatomical differences in the brains of people with ADHD as compared to Dyslexia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 	 				<div class="accordion">
 	 					<p>The scientific community has been attempting to define the 
 	 						exact changes in the human brain that lead to ADHD and 
@@ -661,7 +661,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>What is the outlook for children with Dyslexia and ADHD?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 	 				<div class="accordion">
 	 					<p>If Dyslexia and ADHD are identified and treated early, 
 	 						children with these disorders are more likely to learn 
@@ -684,7 +684,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>What is Dysgraphia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>Dysgraphia is a specific learning disability 
 		 						that affects how easily children acquire written 
@@ -708,7 +708,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>What causes Dysgraphia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>Research to date has shown orthographic coding in 
 		 						working memory is related to handwriting. Orthographic 
@@ -728,7 +728,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>Why is diagnosis of Dysgraphia and related learning disabilities important?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>Without diagnosis, children may not receive early 
 		 						intervention or specialized instruction in all the 
@@ -751,7 +751,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>Do children with Dysgraphia make reversals or other letter production errors?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>Some children do make reversals (reversing direction 
 		 						letter faces along a vertical axis), inversions 
@@ -776,7 +776,7 @@
 		 		<div class="accordion-wrap">
 		 			<span>What is Dyscalculia?</span>
 		 			<div class="empty"></div>
-		 			<div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+		 			<div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 		 				<div class="accordion">
 		 					<p>This is a term used to indicate a lack of ability to 
 		 						perform mathematical calculations. This condition is 
@@ -820,11 +820,11 @@
 		 		</div>
 			</div><!-- learning-five -->
 	<!-- Dyscalculia	 -->
-		</div><!-- learning-dyslexia-wrap -->
 
+		</div><!-- learning-dyslexia-wrap -->
 
 
 	</div><!-- about-content -->
 
 
-@stop
+	@stop

@@ -3,7 +3,7 @@
 @section('content')
 	<div class="learning-five">
 		<div class="five Dyslexia">
-			<a href="{{url('dyslexia')}}">Dyslexia</a>	
+			<a href="{{url('pages/3')}}">Dyslexia</a>	
 		</div>
 		<div class="five Dyspraxia">
 			<a href="">Dyspraxia</a>
@@ -109,8 +109,6 @@
 		 			   is complex and must rest on a total overall view.</li>
 		 		</ul>
 		 </div>
-
-
 	</div><!-- about-content -->
 
 

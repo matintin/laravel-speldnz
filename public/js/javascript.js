@@ -19,7 +19,7 @@ $(function(){
 
 			if(isLearningOpen=true) {
 				$('#learning-sub-menu').slideUp("slow");
-				$(".plus").attr("src","asset/icons/plus.png");
+				$(".plus").attr("src","http://localhost/laravel-speldnz/public/asset/icons/plus.png");
 			}
 			isOpen = false;
 		}
@@ -38,7 +38,7 @@ $(function(){
 
 		if(isLearningOpen==false) {
 
-			$(".plus").attr("src","asset/icons/minus.png");
+			$(".plus").attr("src","http://localhost/laravel-speldnz/public/asset/icons/minus.png");
 
 			$('#learning-sub-menu').slideDown("slow");
 
@@ -46,7 +46,7 @@ $(function(){
 
 		} else {
 			
-			$(".plus").attr("src","asset/icons/plus.png");
+			$(".plus").attr("src","http://localhost/laravel-speldnz/public/asset/icons/plus.png");
 			$('#learning-sub-menu').slideUp("slow");
 			isLearningOpen=false;
 		}	
@@ -110,13 +110,13 @@ var isTextOpen = false;
 		if(isTextOpen == false) {
 
 			$(this).next().slideDown();
-			$(this).children().attr("src","asset/icons/minus.png");
+			$(this).children().attr("src","http://localhost/laravel-speldnz/public/asset/icons/minus.png");
 
 			isTextOpen = true;
 		}else {
 
 			$(this).next().slideUp();
-			$(this).children().attr("src","asset/icons/plus.png");	
+			$(this).children().attr("src","http://localhost/laravel-speldnz/public/asset/icons/plus.png");	
 
 			isTextOpen = false;
 		}
@@ -219,6 +219,14 @@ var isTextOpen = false;
 	});
 	
 //---------------------------mouse-over------------------------------
+
+
+//--------------------------mobile-hover-----------------------------
+	$('.hover').bind('touchstart touchend', function(e) {
+		e.preventDefault();
+		$(this).toggleClass('hover_effect');
+	});
+//--------------------------mobile-hover-----------------------------
 
 
 });//jquery

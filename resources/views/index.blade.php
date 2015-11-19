@@ -10,7 +10,7 @@
 						<div class="about-box">
 							<h3>SNZ love to help<br/>to drivers of success.</h3>
 							<div class="learn-more-wrap">
-								<a href="{{url('about')}}">Learn More</a>
+								<a href="{{url('pages/1')}}">Learn More</a>
 							</div>
 						</div>
 					</div>
@@ -22,10 +22,10 @@
 			
 				<h1 class="hidden">learning disabilites</h1>
 					
-				<div class="learning-box"><span><a href="{{url('dyslexia')}}">Dyslexia</a></span></div>
-				<div class="learning-box"><span><a href="">Dyspraxia</a></span></div>
-				<div class="learning-box"><span><a href="">ADHD</a></span></div>
-				<div class="learning-box"><span><a href="">Donate</a></span></div>
+				<div class="learning-box"><span><a href="{{url('pages/3')}}">Dyslexia</a></span></div>
+				<div class="learning-box"><span><a href="{{url('pages/4')}}">Dyspraxia</a></span></div>
+				<div class="learning-box"><span><a href="{{url('pages/5')}}">ADHD</a></span></div>
+				<div class="learning-box"><span><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></span></div>
 			
 			</section>
 			
@@ -36,7 +36,7 @@
 					<h3 >News & Event</h3>
 					<h2>RADIO NEW ZEALAND INTERVIEW WITH SPELD NZ</h2>
 					<p>In case you missed it, here’s a chance to listen to SPELD NZ’s recent interview on Radio New Zealand National. The “One In Five” programme focuses on the parliamentary inquiry into identification and support for pupils with dyslexia, dyspraxia and autism spectrum...</p>
-					<a href="">Read More</a>
+					<a href="{{url('news')}}">Read More</a>
 				</div>
 			
 				<div class="faq">

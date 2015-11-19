@@ -127,33 +127,33 @@
 				<a href="{{url('/')}}"><img src="{{asset('asset/icons/logo-yellow1.png')}}" alt="logo"></a>
 			</div>
 			<div class="empty"></div>
-			<div class="open menu mobile-button">
+			<div class="open menu mobile-button hover">
 				<img src="{{asset('asset/icons/menu-1.png')}}" alt="menu-bar">
 			</div>
-			<div class="close menu mobile-button hidden">
+			<div class="close menu mobile-button hidden hover">
 				<img src="{{asset('asset/icons/close.png')}}" alt="menu-bar">
 			</div>
-			<div class="search mobile-button">
+			<div class="search mobile-button hover">
 				<img src="{{asset('asset/icons/search-1.png')}}" alt="search-bar">
 			</div>
 			<nav class="desktop-menu">
 				<ul class="desktop-nav">
-					<li><a href="">About</a></li>
+					<li><a href="{{url('pages/1')}}">About</a></li>
 
-					<li class="mouse-over"><a href="{{url('learning')}}">Learning</a>
+					<li class="mouse-over"><a href="{{url('pages/2')}}">Learning</a>
 						<ul id="desktop-sub-menu" >
-							<li><a href="{{url('dyslexia')}}">Dyslexia</a></li>
-							<li><a href="">Dyspraxia</a></li>
-							<li><a href="">ADHD</a></li>
-							<li><a href="">Dyscalculia</a></li>
-							<li><a href="">Dysgraohia</a></li>
+							<li><a href="{{url('pages/3')}}">Dyslexia</a></li>
+							<li><a href="{{url('pages/4')}}">Dyspraxia</a></li>
+							<li><a href="{{url('pages/5')}}">ADHD</a></li>
+							<li><a href="{{url('pages/6')}}">Dyscalculia</a></li>
+							<li><a href="{{url('pages/7')}}">Dysgraohia</a></li>
 						</ul>
 					</li>
 					
-					<li><a href="">News & Event</a></li>
-					<li><a href="">FAQ</a></li>
+					<li><a href="{{url('news')}}">News & Event</a></li>
+					<li><a href="{{url('pages/10')}}">FAQ</a></li>
 					<li><a href="">Donate</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="{{url('pages/9')}}">Contact</a></li>
 					@if(Auth::check())
 
 					<li><a href="{{url('logout')}}" class="logout-button"><i class="fa fa-sign-out"></i><span>Log Out</span></a></li>
@@ -188,31 +188,31 @@
 
 		<nav>
 			<ul id="mobile-nav" >
-				<li><a href="{{url('about')}}">About</a></li>
+				<li><a href="{{url('pages/1')}}">About</a></li>
 
 				<li class="learning">
 
 					<div class="learning-flex">
-						<a href="{{url('learning')}}">Learning</a>
+						<a href="{{url('pages/2')}}">Learning</a>
 						<span>
 							<img class ="plus" src="{{asset('asset/icons/plus.png')}}" alt="">
 						</span>
 					</div>
 
 					<ul id="learning-sub-menu" >
-						<li><a href="{{url('dyslexia')}}">Dyslexia</a></li>
-						<li><a href="">Dyspraxia</a></li>
-						<li><a href="">ADHD</a></li>
-						<li><a href="">Dyscalculia</a></li>
-						<li><a href="">Dysgraohia</a></li>
+						<li><a href="{{url('pages/3')}}">Dyslexia</a></li>
+						<li><a href="{{url('pages/4')}}">Dyspraxia</a></li>
+						<li><a href="{{url('pages/5')}}">ADHD</a></li>
+						<li><a href="{{url('pages/6')}}">Dyscalculia</a></li>
+						<li><a href="{{url('pages/7')}}">Dysgraohia</a></li>
 					</ul>
 
 				</li>
 				<li><a href="{{url('news')}}">News & Event</a></li>
-				<li><a href="{{url('faq')}}">FAQ</a></li>
-				<li><a href="">Donate</a></li>
+				<li><a href="{{url('pages/10')}}">FAQ</a></li>
+				<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
 
-				<li><a href="{{url('contact')}}">Contact</a></li>
+				<li><a href="{{url('pages/9')}}">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -225,10 +225,10 @@
 		
 		<div class="footer-wrap">
 			<ul>
-				<li><a href="{{url('about')}}">About</a></li>
-				<li><a href="{{url('learning')}}">Learning</a></li>
-				<li><a href="{{url('privacy')}}">Privacy Policy</a></li>
-				<li><a href="{{url('contact')}}">Contact</a></li>
+				<li><a href="{{url('pages/1')}}">About</a></li>
+				<li><a href="{{url('pages/2')}}">Learning</a></li>
+				<li><a href="{{url('pages/11')}}">Privacy Policy</a></li>
+				<li><a href="{{url('pages/9')}}">Contact</a></li>
 
 				@if(Auth::check())
 

@@ -2,12 +2,9 @@
 
 @section('index')	
 	
-	<?php 
-
-		$page = \App\Models\Page::find(2);
-	 ?>
 <div class="triangle-point" ><img src="{{asset('asset/icons/triangle3.png')}}" alt=""></div>
 <div class="download-overlay" data-shown="0">
+	
 	<div class="cart-box">
 		<p>download this 1</p>
 		<div class="download-each">
@@ -34,21 +31,12 @@
 		</div>
 	</div>
 </div>
-	<div class="navigation">
-		<a href="{{url('/')}}" class="page-nav">Home</a>
-		<span> / {{$page->title}}</span>
 	
-		<div class="container">
-			<h1>{{$page->title}}</h1>
-			<div class="content">
-
-				
-				@yield('content')
-
-			</div>
-		</div><!-- container -->
-	</div><!-- navigation -->
-
+	@if(isset($page->id))
+	@include('template.navigation')
+	@else
+	@yield('content')
+	@endif
 	<section>
 		
 

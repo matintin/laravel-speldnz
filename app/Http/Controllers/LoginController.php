@@ -14,14 +14,14 @@ class LoginController extends Controller
 
     	if(\Auth::attempt($credential)){
     		//if it is professional member go to download page
-    		return redirect('download?userid='.\Auth::user()->id);
-    		//if it is admin go to loggedin page
-
-
-
+            if(\Auth::user()->role){
+                return redirect('pages/13');
+            }else {
+                return redirect('download?userid='.\Auth::user()->id);
+            }
     	}else{
     		return redirect("/");  
-            // \hash::make();
+           
 
         
     	}

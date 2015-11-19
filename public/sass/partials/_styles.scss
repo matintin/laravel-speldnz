@@ -168,12 +168,16 @@ body {
 			display:flex;
 			flex-wrap:wrap;
 			margin:0 auto;
-			
-			// @media only (min-width:500px) and (max-width : 64em) {
-			// 	width:90%;
-
-			// }
-				
+			// element:hover {
+			// 	color:rgba(0,0,0,.5);
+			// }	
+			// element:hover, element.hover_effect {
+			//     color:rgba(0,0,0,.5);
+			// }	
+			// .hover {
+			// 	-webkit-user-select: none;
+			// 	-webkit-touch-callout: none;        
+			// }		
 			.logo {
 				flex:0 0 5em;
 				margin-left:1em;
