@@ -8,7 +8,7 @@
 	<link rel="speldnz" href="{{asset('asset/icons/logo.png')}}">
 	<link rel="icon" href="{{asset('asset/icons/logo.png')}}">
 
-	<link rel="stylesheet" href="{{asset('css/main.css')}}">
+	<link rel="stylesheet" href="{{asset('css/app.css')}}">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" href="{{asset('css/animate.css')}}">

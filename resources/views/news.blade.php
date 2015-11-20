@@ -17,10 +17,9 @@
 
 		<div class="accordion-wrap">
 			
-			<h3>SPELD NZ Conference 2016</h3><div class="empty"></div><div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
+			<h3></h3><div class="empty"></div><div class="image-wrap"><img src="asset/icons/plus.png" alt=""></div>
 			<div class="accordion-news">
-				<p>InterContinental Wellington Hotel, October 7th and 8th 
-					Focus on dyscalculia and dyslexia/maths</p>
+				
 			</div>	
 		</div><!-- accordion-wrap -->
 
@@ -91,10 +90,12 @@
 			</div>
 		</div><!-- accordion-wrap -->
 
-		<div class="news-box">
-			<h3>A HUGE THANKS TO DELOITTE, THE BLACK STICKS AND ALL THOSE WHO SUPPORTED THE ONLINE AUCTION TO RAISE MONEY FOR SPELD NZ 
-				CONGRATULATIONS TO THE WINNERS WHO WILL TRAIN WITH NEW ZEALAND'S TOP 
-				HOCKEY PLAYERS!</h3>
+		<div class="accordion-wrap">
+			<div class="news-box">
+				<h3>A HUGE THANKS TO DELOITTE, THE BLACK STICKS AND ALL THOSE WHO SUPPORTED THE ONLINE AUCTION TO RAISE MONEY FOR SPELD NZ 
+					CONGRATULATIONS TO THE WINNERS WHO WILL TRAIN WITH NEW ZEALAND'S TOP 
+					HOCKEY PLAYERS!</h3>
+			</div>
 		</div>
 
 		<div class="news-box">

@@ -49,8 +49,8 @@
 		margin-bottom: 2em;
 	}
 	.news-box {
-			width: 90%;
-			margin: .5em auto;
+			flex: 1 0 1em;
+			margin: .5em 10% .5em 5%;
 			border: 2px #E59C00 solid;
 			padding:.2em 1em;
 			a {
@@ -65,7 +65,7 @@
 				margin: 0;
 			}
 			h3 {
-				font-size: .8em ;
+				font-size: .7em !important;
 				font-weight: 500;
 				margin: .5em 0 !important;
 				color: #41486c !important;
