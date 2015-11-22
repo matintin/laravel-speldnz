@@ -152,8 +152,8 @@
 					
 					<li><a href="{{url('news')}}">News & Event</a></li>
 					<li><a href="{{url('pages/10')}}">FAQ</a></li>
-					<li><a href="">Donate</a></li>
-					<li><a href="{{url('pages/9')}}">Contact</a></li>
+					<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
+					<li><a href="{{url('contact')}}">Contact</a></li>
 					@if(Auth::check())
 
 					<li><a href="{{url('logout')}}" class="logout-button"><i class="fa fa-sign-out"></i><span>Log Out</span></a></li>
@@ -212,7 +212,7 @@
 				<li><a href="{{url('pages/10')}}">FAQ</a></li>
 				<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
 
-				<li><a href="{{url('pages/9')}}">Contact</a></li>
+				<li><a href="{{url('contact')}}">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -227,8 +227,8 @@
 			<ul>
 				<li><a href="{{url('pages/1')}}">About</a></li>
 				<li><a href="{{url('pages/2')}}">Learning</a></li>
-				<li><a href="{{url('pages/11')}}">Privacy Policy</a></li>
-				<li><a href="{{url('pages/9')}}">Contact</a></li>
+				<li><a href="{{url('pages/9')}}">Privacy Policy</a></li>
+				<li><a href="{{url('contact')}}">Contact</a></li>
 
 				@if(Auth::check())
 

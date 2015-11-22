@@ -882,6 +882,9 @@ body {
     text-decoration: none; }
   .navigation span {
     font-size: .8em; }
+    .navigation span p {
+      display: inline-block;
+      font-size: .8em; }
   .navigation a {
     font-size: 1em; }
   .navigation .page-nav {
@@ -897,6 +900,9 @@ body {
   .container h1 {
     margin: 0 0 1em 0;
     color: #555; }
+    .container h1 p {
+      display: inline-block;
+      font-size: .7em; }
   .container .content {
     -webkit-flex: 1 0 1em;
     -ms-flex: 1 0 1em;

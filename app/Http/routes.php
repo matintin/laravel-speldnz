@@ -57,6 +57,7 @@ Route::get('loggedin',function() {
 	return view('loggedin');
 });
 Route::resource("users","MemberController");
+Route::resource("news","NewsController");
 
 Route::post('login',"LoginController@processLogin");
 Route::get('logout',"LoginController@logout");

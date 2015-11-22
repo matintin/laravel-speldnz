@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class PageController extends Controller
+class NewsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,7 +26,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        //
+        return view('createNews');
     }
 
     /**
@@ -48,9 +48,7 @@ class PageController extends Controller
      */
     public function show($id)
     {
-        $page = \App\Models\Page::find($id);
-        return view('navigation',compact("page"));
-
+        //
     }
 
     /**

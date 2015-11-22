@@ -27,6 +27,7 @@
 			<div class="empty"></div><div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 			<div class="accordion-news">
 				{!! $post->content !!}
+
 			</div>	
 
 			@endif
@@ -40,8 +41,4 @@
 		</div>
 	</div><!-- container -->
 </div><!-- navigation -->
-@stop		
-
-			
-			
-	
+@stop			

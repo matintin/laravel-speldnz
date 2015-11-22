@@ -1,7 +1,21 @@
 @extends('template.subPage')
 
 @section('content')
-	<div class="contact-content">
+
+<div class="navigation">
+	<a href="{{url('/')}}" class="page-nav">Home</a>
+	
+	<span>/ Contact Us</span> 
+
+	
+	<div class="container">
+		<h1>Contact Us</h1>
+		<div class="content">
+
+
+	<div class="about-content learning">
+
+		<div class="contact-content">
 		 
 		<div class="contact-wrap">	
 			<h3>National Office</h3>
@@ -14,8 +28,22 @@
 
 		<div class="question-wrap">
 			<h3>Ask Question</h3>
-					
-			<form action="">
+			{!! Form::open(['url'=>'bla']) !!}
+			
+			{!! Form::select('location',array('1'=>'1')) !!}
+
+			{!! Form::text('name',null,['placeholder'=>'Name']) !!}
+
+			{!! Form::text('email',null,['placeholder'=>'Email']) !!}
+
+			{!! Form::text('phone',null,['placeholder'=>'Contact']) !!}
+
+			{!! Form::textarea('message',null,['placeholder'=>'Message']) !!}
+
+			{!! Form::submit('Send') !!}
+
+			{!! Form::close() !!}
+			<!-- <form action="">
 				<select name="" id="" >
 					<option value="" disabled selected>choose your location</option>
 					<option value=""></option>
@@ -51,7 +79,14 @@
 				<textarea rows="5" placeholder="Message" ></textarea>
 				<input type="submit" placeholder="Send" />
 					
-			</form>
+			</form> -->
 		</div>
 	</div>
+
+	</div><!-- about-content -->
+
+		</div>
+	</div><!-- container -->
+</div><!-- navigation -->
+
 @stop
