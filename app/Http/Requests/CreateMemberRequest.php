@@ -25,12 +25,12 @@ class CreateMemberRequest extends Request
     {
         return [
             //
-            "email"=>"required|unique:users",
-            "password"=>"required|confirmed",
+            "email"=>"required|email|unique:users",
             "firstname"=>"required",
             "lastname"=>"required",
             "address"=>"required",
-            "contact"=>"required"
+            "contact"=>"required",
+            "password"=>"required|confirmed"
         ];
     }
 }

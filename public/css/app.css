@@ -1190,12 +1190,13 @@ section .donation {
     .learning .accordion-wrap .image-wrap img {
       width: 100%;
       height: 100%; }
+  .learning .accordion-wrap .accordion {
+    margin-left: 1em; }
   .learning .accordion-wrap .accordion, .learning .accordion-wrap .accordion-news {
     display: none;
     width: 90%;
     padding: 0 0 0 .5em; }
     .learning .accordion-wrap .accordion li, .learning .accordion-wrap .accordion-news li {
-      list-style-type: none;
       margin-top: .5em;
       margin-bottom: 1em;
       font-size: .9em; }
@@ -1218,6 +1219,7 @@ section .donation {
       padding: .1em .5em;
       color: tomato; }
     .learning .accordion-wrap .accordion ul, .learning .accordion-wrap .accordion-news ul {
+      margin-left: 1em;
       padding-left: .3em; }
     .learning .accordion-wrap .accordion .source, .learning .accordion-wrap .accordion-news .source {
       font-size: .6em;
@@ -1482,14 +1484,16 @@ section .donation {
     outline: none; }
 
 .alert {
-  border: 2px red solid;
+  border: 2px orange solid;
   display: inline-block;
-  margin-left: 2em; }
+  margin-left: 2em;
+  margin-bottom: 2em; }
   .alert ul {
     margin: 0;
     padding: 1em; }
     .alert ul li {
       list-style-type: none;
-      color: red; }
+      color: red;
+      font-size: .8em; }
 
 /*# sourceMappingURL=app.css.map */

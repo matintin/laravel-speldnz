@@ -83,15 +83,17 @@
 //=============================errors-alert==========================
 
 .alert {
-	border:2px red solid;
+	border:2px orange solid;
 	display:inline-block;
 	margin-left:2em;
+	margin-bottom:2em;
 	ul {
 		margin: 0;
 		padding:1em;
 		li {
 			list-style-type: none;
 			color: red;
+			font-size:.8em;
 		}
 		
 	}
