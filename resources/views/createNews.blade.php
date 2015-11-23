@@ -16,28 +16,22 @@
 	<div class="about-content learning">
 
 	
-		{!! Form::open(['url'=>'users',null,'class'=>'generic-form member-form']) !!}
+		{!! Form::open(['url'=>'news',null,'class'=>'generic-form member-form']) !!}
 
-
-
-		{!! Form::text('title', null , ['placeholder'=>'Title']) !!}
+		{!! Form::text('title', null , ['placeholder'=>'Title', 'class'=>'news-create-textarea']) !!}
 	
-		{!! Form::textarea('content', null , ['placeholder'=>'Content']) !!}
+		{!! Form::textarea('content', null , ['id'=>'content','placeholder'=>'Content']) !!}
 		
-		{!! Form::text('lastname', null , ['placeholder'=>'Lastname']) !!}
-	
-		{!! Form::text('address', null , ['placeholder'=>'Address']) !!}
-		
-		{!! Form::text('contact', null , ['placeholder'=>'Contact']) !!}
-		
-		{!! Form::password('password', ['placeholder'=>'Password']) !!}
-
-		{!! Form::password('password_confirmation', ['placeholder'=>'Password Confirm','class'=>'margin-bottom']) !!}			
+		{!! Form::select('thanks',[null=>'News & Post','1'=>'Thanks']) !!}	
 
 		{!! Form::submit('Post') !!}
 
-	{!! Form::close() !!}
+		<script>
+		CKEDITOR.replace('content');
+		</script>
 
+		{!! Form::close() !!}
+		
 		
 
 	</div><!-- about-content -->

@@ -484,6 +484,12 @@ body {
           -webkit-flex: 1 0 49%;
           -ms-flex: 1 0 49%;
           flex: 1 0 49%; } }
+      @media only screen and (min-width: 64em) {
+        body main section:nth-child(2) .learning-box {
+          -webkit-flex: 1 0 20%;
+          -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+          height: 15em; } }
       body main section:nth-child(2) .learning-box span {
         font-size: 2em;
         display: block;
@@ -501,6 +507,9 @@ body {
       background-color: #655989; }
     body main section:nth-child(2) :nth-child(5) span {
       background-color: #3b6daf; }
+    @media only screen and (min-width: 64em) {
+      body main section:nth-child(2) :nth-child(2) span, body main section:nth-child(2) :nth-child(3) span, body main section:nth-child(2) :nth-child(4) span, body main section:nth-child(2) :nth-child(5) span {
+        height: 100%; } }
   @media only screen and (min-width: 44em) {
     body main section:nth-child(3) {
       display: -webkit-flex;
@@ -1415,7 +1424,8 @@ section .donation {
     display: flex;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    text-decoration: none; }
     .loggedin .squire span {
       width: 100%;
       text-align: center;
@@ -1440,5 +1450,46 @@ section .donation {
   background-color: transparent !important; }
   .member-form .margin-bottom {
     margin-bottom: 3em !important; }
+  .member-form textarea {
+    padding: .7em;
+    margin-bottom: 1em;
+    border: none;
+    font-size: .8em;
+    border-bottom: 1px #415E6C solid;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    font: inherit;
+    color: #555;
+    font-weight: 300; }
+    .member-form textarea textarea::-webkit-input-placeholder {
+      color: #415E6C; }
+    .member-form textarea textarea::-moz-placeholder {
+      color: #415E6C; }
+    .member-form textarea textarea:-ms-input-placeholder {
+      color: #415E6C; }
+    .member-form textarea textarea::placeholder {
+      color: #415E6C; }
+    .member-form textarea:focus {
+      border-bottom: 1px tomato solid; }
+  .member-form select {
+    width: 50%;
+    border: 1px #415E6C solid;
+    padding: .8em;
+    margin-bottom: 2em;
+    background-color: transparent;
+    font-size: .8em;
+    height: 2em;
+    outline: none; }
+
+.alert {
+  border: 2px red solid;
+  display: inline-block;
+  margin-left: 2em; }
+  .alert ul {
+    margin: 0;
+    padding: 1em; }
+    .alert ul li {
+      list-style-type: none;
+      color: red; }
 
 /*# sourceMappingURL=app.css.map */

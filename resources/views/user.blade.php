@@ -1,7 +1,8 @@
 @extends('template.subPage')
 
 @section('content')
-
+<div class="container">
+<div class="content">
 	
 	<div class="member-container">
 		<div class="member-name">{{$user->firstname}} {{$user->lastname}}</div>
@@ -10,5 +11,6 @@
 		<span>Contact</span><div class="member-phone margin-bottom">{{$user->contact}}</div>
 		
 	</div>
-	
+</div>
+</div>
 @stop

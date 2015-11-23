@@ -1,7 +1,8 @@
 @extends('template.subPage')
 
 @section('content')
-
+<div class="container">
+<div class="content">
 	@foreach($users as $user)
 	<div class="member-container">
 		<div class="member-name">{{$user->firstname}} {{$user->lastname}}</div>
@@ -11,5 +12,6 @@
 		
 	</div>
 	@endforeach
-
+</div>
+</div>
 @stop

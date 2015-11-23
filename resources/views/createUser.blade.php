@@ -2,7 +2,7 @@
 
 @section('content')
 
-	{!! Form::open(['url'=>'users',null,'class'=>'generic-form member-form']) !!}
+		{!! Form::open(['url'=>'users',null,'class'=>'generic-form member-form']) !!}
 
 
 
@@ -22,6 +22,16 @@
 
 		{!! Form::submit('Create') !!}
 
-	{!! Form::close() !!}
+		{!! Form::close() !!}
+
+		@if (count($errors) > 0)
+		    <div class="alert">
+		        <ul>
+		            @foreach ($errors->all() as $error)
+		                <li>- {{ $error }}</li>
+		            @endforeach
+		        </ul>
+		    </div>
+		@endif
 
 @stop

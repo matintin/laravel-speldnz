@@ -531,6 +531,11 @@ body {
 
 					flex:1 0 49%;
 				}
+				@media only screen and (min-width : 64em) {
+
+					flex:1 0 20%;
+					height: 15em;
+				}
 					height:7em;
 					text-align:center;
 					line-height:7em;
@@ -559,6 +564,12 @@ body {
 			}
 			& :nth-child(5) span {
 				background-color:#3b6daf;
+			}
+			@media only screen and (min-width : 64em) {
+
+					& :nth-child(2) span ,& :nth-child(3) span ,& :nth-child(4) span ,& :nth-child(5) span {
+						height: 100%;
+					}
 			}
 			margin-bottom:3em;
 		}//section(2)

@@ -9,6 +9,10 @@ use App\Http\Controllers\Controller;
 
 class MemberController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('Admin',['except'=>['show']]);
+    }
     /**
      * Display a listing of the resource.
      *

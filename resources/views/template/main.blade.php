@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="{{asset('css/animate.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('asset/slick/slick.css')}}"/>
 	<link rel="stylesheet" type="text/css" href="{{asset('asset/slick/slick-theme.css')}}"/>
+	<script src="{{asset('js/ckeditor/ckeditor.js')}}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
 </head>
@@ -285,5 +286,6 @@
 	<script type="text/javascript" src="{{asset('asset/slick/slick.min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('asset/slick/slick.js')}}"></script>	
 	<script src="{{asset('js/javascript.js')}}"></script>
+	
 </body>
 </html>

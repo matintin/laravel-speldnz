@@ -40,22 +40,17 @@ Route::get('download',function() {
 	return view('download',compact("user"));
 
 });
+
 Route::get('privacy',function() {
 	return view('privacy');
 });
-Route::get('news',function() {
 
-	//get news
-
-	//bind news object to view
-	return view('news');
-});
 Route::get('faq',function() {
 	return view('faq');
 });
-Route::get('loggedin',function() {
+Route::get('loggedin',["middleware"=>"Admin",function() {
 	return view('loggedin');
-});
+}]);
 Route::resource("users","MemberController");
 Route::resource("news","NewsController");
 

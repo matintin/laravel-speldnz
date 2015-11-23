@@ -9,6 +9,7 @@
 		border-radius:5px;
 		display:flex;
 		align-items:center;
+		text-decoration: none;
 		span {
 			width:100%;
 			text-align:center;
@@ -47,5 +48,51 @@
 
 	.margin-bottom {
 		margin-bottom:3em !important;
+	}
+	textarea {
+		padding:.7em;
+		margin-bottom: 1em;
+		border: none;
+		font-size: .8em;
+		border-bottom: 1px #415E6C solid;
+		background-color: rgba(255, 255, 255, 0.1);
+		outline: none;
+		font:inherit;
+		color: #555;
+		font-weight: 300;
+		textarea::placeholder {
+				color:#415E6C;
+			}
+		&:focus {
+			border-bottom:1px tomato solid;
+		}
+	}
+	select {
+		width: 50%;
+		border:1px #415E6C solid;
+		padding:.8em;
+		margin-bottom: 2em;
+		background-color: rgba(0,0,0,0);
+		font-size:.8em;
+		height: 2em;
+		outline: none;
+
+	}
+}
+
+//=============================errors-alert==========================
+
+.alert {
+	border:2px red solid;
+	display:inline-block;
+	margin-left:2em;
+	ul {
+		margin: 0;
+		padding:1em;
+		li {
+			list-style-type: none;
+			color: red;
+		}
+		
 	}
 }
