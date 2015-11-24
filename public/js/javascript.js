@@ -169,6 +169,28 @@ var isTextOpen = false;
 //---------------------learning-accordion----------------------------
 
 //---------------------------login-----------------------------------
+
+	function getQueryString(sParam){
+
+	    var sPageURL = window.location.search.substring(1);
+	    var sURLVariables = sPageURL.split('&');
+	    for (var i = 0; i < sURLVariables.length; i++) 
+	    {
+	        var sParameterName = sURLVariables[i].split('=');
+	        if (sParameterName[0] == sParam) 
+	        {
+	            return sParameterName[1];
+	        }
+	    }
+	}
+
+	if(getQueryString("login") == "show"){
+		$("#login").css("display","block");
+	}
+
+	
+
+
 	$('.login-button').on("click",function(e) {
 		e.preventDefault();
 		$("#login").css("display","block");
@@ -234,26 +256,57 @@ var isTextOpen = false;
 //---------------------------searchbox-desktop-----------------------
 
 //---------------------------mouse-over------------------------------
-	$('.mouse-over').on("mouseenter",function() {
-		$('#desktop-sub-menu').show();
+	// $('.mouse-over').on("mouseenter",function() {
+	// 	$('#desktop-sub-menu').show();
 
-		$('#desktop-sub-menu').on("mouseleave",function() {
-			$(this).hide();
-		});
-	});
+	// 	$('#desktop-sub-menu').on("mouseleave",function() {
+	// 		$(this).hide();
+	// 	});
+	// });
 	
 //---------------------------mouse-over------------------------------
 
 
 //--------------------------mobile-hover-----------------------------
-	$('.hover').bind('touchstart touchend', function(e) {
-		e.preventDefault();
-		$(this).toggleClass('hover_effect');
-	});
+	// $('.hover').bind('touchstart touchend', function(e) {
+	// 	e.preventDefault();
+	// 	$(this).toggleClass('hover_effect');
+	// });
 //--------------------------mobile-hover-----------------------------
 
+//--------------------------jeditable--------------------------------
+
+	$("[data-field]").each(function(i,el) {
+
+		var url = "news/"+$(el).attr("data-postid");
+
+		var options = {
+			type:"textarea",
+			submitdata:{
+				_method:"PUT",
+				_token:$("#token").text(),
+				field:$(this).attr("data-field")
+			},
+			submit:"OK"
+		};
+
+		console.log(options);
+
+		$(this).editable(url,options);
+
+	});
+
+//--------------------------jeditable--------------------------------
+
+	$('.login-button a').on("click",function(e) {
+		e.preventDefault();
+	});
 
 });//jquery
+
+
+
+
 //---------------------------checklist-------------------------------
 
 $(document).ready(function(){

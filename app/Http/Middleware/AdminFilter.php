@@ -22,7 +22,7 @@ class AdminFilter
     public function handle($request, Closure $next)
     {
 
-        if($this->guard->user()->role = null) {
+        if($this->guard->user()->role != "1") {
 
 
             if($request->ajax()) {

@@ -917,13 +917,15 @@ body {
     -ms-flex: 1 0 1em;
     flex: 1 0 1em;
     padding: 0 1em; }
-    .container .content .about-content h3, .container .content .about-content p {
-      color: #415E6C; }
-    .container .content .about-content h3 {
-      margin: 2em 0 2em 0; }
-    .container .content .about-content p {
-      margin: 0 0 .5em 0;
-      line-height: 1.5em; }
+    .container .content .about-content {
+      margin-bottom: 5em; }
+      .container .content .about-content h3, .container .content .about-content p {
+        color: #415E6C; }
+      .container .content .about-content h3 {
+        margin: 2em 0 2em 0; }
+      .container .content .about-content p {
+        margin: 0 0 .5em 0;
+        line-height: 1.5em; }
 
 section .donation {
   -webkit-flex: 1 0 1em;
@@ -1406,6 +1408,9 @@ section .donation {
   .triangle-point img {
     width: 100%; }
 
+.tomato {
+  color: tomato !important; }
+
 .loggedin {
   margin-top: 5em;
   display: -webkit-flex;
@@ -1474,14 +1479,27 @@ section .donation {
     .member-form textarea:focus {
       border-bottom: 1px tomato solid; }
   .member-form select {
-    width: 50%;
+    width: 30%;
     border: 1px #415E6C solid;
     padding: .8em;
+    margin-top: 1em;
     margin-bottom: 2em;
     background-color: transparent;
     font-size: .8em;
     height: 2em;
     outline: none; }
+
+.information-pack {
+  border: 2px orange solid;
+  display: inline-block;
+  padding: 0;
+  margin-left: -1em; }
+  .information-pack p {
+    font-style: italic;
+    padding: 0 1em;
+    font-size: .8em; }
+    .information-pack p a {
+      color: tomato; }
 
 .alert {
   border: 2px orange solid;

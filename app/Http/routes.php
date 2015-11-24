@@ -11,6 +11,18 @@
 |
 */
 
+// Route::get('mail',function() {
+
+// 	$data = [];
+
+// 	Mail::send('mail',$data,function($message) {
+
+// 		$message->to('chadcho82@hotmail.com')
+// 				->subject('welcome to mailer');
+// 	});
+
+// });
+
 Route::get('/',function() {
 
 	//return \App\Models\Page::find(2)->children[0]->parent;
@@ -30,17 +42,23 @@ Route::get('learning',function() {
 Route::get('dyslexia',function() {
 	return view('dyslexia');
 });
+Route::get('news_guest',function() {
 
+	$posts = \App\Models\Post::all();
+
+	$posts = \App\Models\Post::orderByRaw('DATE(`created_at`) < CURDATE()')
+               ->orderBy('created_at', 'desc')
+               ->get();
+
+	return view('news_guest',compact('posts'));
+});
 Route::get('download',function() {
-
-	// $user = \App\Models\User::find(\Request::get("userid"));
 
 	$user = \Auth::user();
 
 	return view('download',compact("user"));
 
 });
-
 Route::get('privacy',function() {
 	return view('privacy');
 });
@@ -61,3 +79,6 @@ Route::get('pages/{id}',function($id) {
 	$page = \App\Models\Page::find($id);
 	return view('page',compact("page"));
 });
+
+
+

@@ -20,15 +20,15 @@
 			
 			@if(isset($post->thanks))
 		
-			<span data-field="content" data-postid="{{$post->id}}" style="text-align:center;">{!! $post->content !!}</span>
+			{!! $post->content !!}
 		
 			@else
-			<h3 data-field="title" data-postid="{{$post->id}}">{{$post->title}}</h3>
+			<h3>{{$post->title}}</h3>
 			<div class="empty"></div><div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 			<div class="accordion-news">
 			<p>{{$post->created_at}}</p>
-			<div data-field="content" data-postid="{{$post->id}}">{!! $post->content !!}</div>
-
+			{!! $post->content !!}
+			
 			</div>	
 
 			@endif

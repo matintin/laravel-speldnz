@@ -1,3 +1,7 @@
+.tomato {
+	color:tomato !important;
+}
+
 .loggedin {
 	margin-top:5em;
 	display:flex;
@@ -68,15 +72,30 @@
 		}
 	}
 	select {
-		width: 50%;
+		width: 30%;
 		border:1px #415E6C solid;
 		padding:.8em;
+		margin-top:1em;
 		margin-bottom: 2em;
 		background-color: rgba(0,0,0,0);
 		font-size:.8em;
 		height: 2em;
 		outline: none;
 
+	}
+}
+.information-pack {
+	border:2px orange solid;
+	display:inline-block;
+	padding:0;
+	margin-left:-1em;
+	p {	
+		font-style: italic;
+		padding:0 1em;
+		font-size:.8em;
+		a {
+			color: tomato ;
+		}
 	}
 }
 

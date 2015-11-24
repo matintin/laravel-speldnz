@@ -151,7 +151,7 @@
 						</ul>
 					</li>
 					
-					<li><a href="{{url('news')}}">News & Event</a></li>
+					<li><a href="{{url('news_guest')}}">News & Event</a></li>
 					<li><a href="{{url('pages/10')}}">FAQ</a></li>
 					<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
 					<li><a href="{{url('contact')}}">Contact</a></li>
@@ -159,11 +159,16 @@
 
 					<li><a href="{{url('logout')}}" class="logout-button"><i class="fa fa-sign-out"></i><span>Log Out</span></a></li>
 
+						@if(Auth::user()->role == "1")
+							<li><a href="{{url('loggedin')}}">Admins</a></li>
+						@endif
+
 					@else
 
 					<li class="login-button"><i class="fa fa-sign-in"></i><span>Log In</span></li>
+					
 					@endif
-
+					
 					<li class="search-desktop">
 						<form action="">
 							<input type="text">
@@ -209,11 +214,18 @@
 					</ul>
 
 				</li>
-				<li><a href="{{url('news')}}">News & Event</a></li>
+				<li><a href="{{url('news_guest')}}">News & Event</a></li>
 				<li><a href="{{url('pages/10')}}">FAQ</a></li>
 				<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
-
 				<li><a href="{{url('contact')}}">Contact</a></li>
+				@if(Auth::check())
+					<li><a href="{{url('logout')}}" class="logout-button tomato">Logout</a></li>
+				@else
+					<li class="login-button"><a href="">Log In</a></li>
+				@endif
+				@if(Auth::loginUsingId(8))
+					<li><a href="{{url('loggedin')}}">+ Admins +</a></li>
+				@endif
 			</ul>
 		</nav>
 
@@ -239,6 +251,7 @@
 
 				<li><a href="" class="login-button">Login</a></li>
 				@endif
+				
 			</ul>
 		</div><!-- footer-wrap -->
 		
@@ -280,11 +293,12 @@
 	</div><!-- reading-assist -->
 	
 	<div class="showPopUp hidden">{{Session::get("showPopUp")}}</div>
-	
+	<div id="token" class="hidden">{{ csrf_token() }}</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="{{asset('asset/slick/slick.min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('asset/slick/slick.js')}}"></script>	
+	<script src="{{asset('js/jquery.jeditable.js')}}"></script>
 	<script src="{{asset('js/javascript.js')}}"></script>
 	
 </body>

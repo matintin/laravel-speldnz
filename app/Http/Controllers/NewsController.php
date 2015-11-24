@@ -9,6 +9,12 @@ use App\Http\Controllers\Controller;
 
 class NewsController extends Controller
 {
+
+    public function __construct() {
+
+        $this->middleware('auth');
+        $this->middleware('Admin');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -58,9 +64,9 @@ class NewsController extends Controller
      */
     public function show($id)
     {
-        // $post = \App\Models\Post::find($id);
+        $post = \App\Models\Post::find($id);
 
-        // return view('singleNews',compact('post'));
+        return view('singleNews',compact('post'));
     }
 
     /**
@@ -71,7 +77,9 @@ class NewsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = \App\Models\Post::find($id);
+
+        return view('updateNews',compact('post'));
     }
 
     /**
@@ -81,9 +89,18 @@ class NewsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update($id)
     {
-        //
+        $post = \App\Models\Post::find($id);
+
+        $value = \Request::input("value");
+        $field = \Request::input("field");
+
+        $post->$field = $value;
+        $post->save();
+
+        return $value;
+
     }
 
     /**

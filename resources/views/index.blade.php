@@ -36,7 +36,7 @@
 					<h3 >News & Event</h3>
 					<h2>RADIO NEW ZEALAND INTERVIEW WITH SPELD NZ</h2>
 					<p>In case you missed it, here’s a chance to listen to SPELD NZ’s recent interview on Radio New Zealand National. The “One In Five” programme focuses on the parliamentary inquiry into identification and support for pupils with dyslexia, dyspraxia and autism spectrum...</p>
-					<a href="{{url('news')}}">Read More</a>
+					<a href="{{url('news_guest')}}">Read More</a>
 				</div>
 			
 				<div class="faq">

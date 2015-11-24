@@ -15,27 +15,26 @@
 
 	<div class="about-content learning">
 		
-		@foreach($posts as $post)
 		<div class="accordion-wrap">
 			
-			@if(isset($post->thanks))
+		{!! Form::model($post,['url'=>'news/'.$post->id,null,'class'=>'generic-form member-form','method'=>'put']) !!}
 		
-				{!! $post->content !!}
+		@if($post->title)
+		{!! Form::text('title', null , ['placeholder'=>'Title', 'class'=>'news-create-textarea']) !!}
+		@endif
+		{!! Form::textarea('content', null , ['id'=>'content','placeholder'=>'Content']) !!}
 		
-			@else
-			<h3>{{$post->title}}</h3>
-			<div class="empty"></div><div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
-			<div class="accordion-news">
-			<p>{{$post->created_at}}</p>
-				{!! $post->content !!}
+		{!! Form::select('thanks',[null=>'News & Post','1'=>'Thanks']) !!}	
 
-			</div>	
+		{!! Form::submit('Post') !!}
 
-			@endif
+		<script>
+		CKEDITOR.replace('content');
+		</script>
+
+		{!! Form::close() !!}
 
 		</div><!-- accordion-wrap -->
-
-		@endforeach
 
 	</div><!-- about-content -->
 
