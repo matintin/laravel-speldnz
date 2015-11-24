@@ -22,10 +22,45 @@
 			
 				<h1 class="hidden">learning disabilites</h1>
 					
-				<div class="learning-box"><span><a href="{{url('pages/3')}}">Dyslexia</a></span></div>
-				<div class="learning-box"><span><a href="{{url('pages/4')}}">Dyspraxia</a></span></div>
-				<div class="learning-box"><span><a href="{{url('pages/5')}}">ADHD</a></span></div>
-				<div class="learning-box"><span><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></span></div>
+				<div class="learning-box">
+					<span>
+						<a href="{{url('pages/3')}}">Dyslexia</a>
+					</span>
+				</div>
+				
+				<div class="learning-box">
+					<span class="front">
+						<a href="{{url('pages/4')}}">Dyspraxia</a>
+					</span>
+					<div class="dyslexia-desktop">
+						<div class="border"></div>
+					</div>
+				</div>
+				
+				<div class="learning-box">
+					<span>
+						<a href="{{url('pages/5')}}">ADHD</a>
+
+					</span>
+				</div>
+				
+				<div class="learning-box">
+					<span class="donation-normal"><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></span>
+					<div class="donation">
+						<div class="donate-box">
+							<div class="donate-text">
+								<h2>Donate Today</h2>
+								<p>Support to continue this important work.</p>
+							</div>
+							<div class="donate-img">
+								<img src="{{asset('asset/icons/donation.png')}}" alt="" />
+							</div>
+							<div class="donate-button">
+								<a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			
 			</section>
 			

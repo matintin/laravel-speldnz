@@ -479,6 +479,40 @@ body {
       height: 7em;
       text-align: center;
       line-height: 7em; }
+      body main section:nth-child(2) .learning-box .dyslexia-desktop {
+        width: 100%;
+        height: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-image: url(../asset/photos/dyslexia_photo.jpg);
+        background-size: 145%;
+        background-repeat: no-repeat;
+        background-position: center; }
+        body main section:nth-child(2) .learning-box .dyslexia-desktop .border {
+          display: none; }
+          @media only screen and (min-width: 64em) {
+            body main section:nth-child(2) .learning-box .dyslexia-desktop .border {
+              display: inline-block;
+              border: 2px #fff solid;
+              border-radius: 10px;
+              width: 92%;
+              height: 92%;
+              margin: 0 auto;
+              background-image: none;
+              background-color: transparent; } }
+      body main section:nth-child(2) .learning-box .donation {
+        display: none; }
+        @media only screen and (min-width: 64em) {
+          body main section:nth-child(2) .learning-box .donation {
+            display: block;
+            padding: 1em;
+            margin-bottom: 0; }
+            body main section:nth-child(2) .learning-box .donation .donate-text p {
+              margin-bottom: 1em; } }
       @media only screen and (min-width: 44em) {
         body main section:nth-child(2) .learning-box {
           -webkit-flex: 1 0 49%;
@@ -486,23 +520,35 @@ body {
           flex: 1 0 49%; } }
       @media only screen and (min-width: 64em) {
         body main section:nth-child(2) .learning-box {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
           -webkit-flex: 1 0 20%;
           -ms-flex: 1 0 20%;
           flex: 1 0 20%;
-          height: 15em; } }
+          height: 15em;
+          line-height: 1; }
+          body main section:nth-child(2) .learning-box .donation-normal {
+            display: none; } }
       body main section:nth-child(2) .learning-box span {
         font-size: 2em;
         display: block;
         font-family: helvetica;
         font-weight: 200; }
+        @media only screen and (min-width: 64em) {
+          body main section:nth-child(2) .learning-box span {
+            display: none; } }
         body main section:nth-child(2) .learning-box span a {
           display: block;
           text-decoration: none;
           color: #fff; }
     body main section:nth-child(2) :nth-child(2) span {
-      background-color: #7a9eaf; }
-    body main section:nth-child(2) :nth-child(3) span {
       background-color: #de88a5; }
+    body main section:nth-child(2) :nth-child(3) span {
+      background-color: #7a9eaf; }
     body main section:nth-child(2) :nth-child(4) span {
       background-color: #655989; }
     body main section:nth-child(2) :nth-child(5) span {
@@ -651,7 +697,7 @@ body {
               color: #000; }
             body main section:nth-child(4) .newsletter .newsletter-wrap .facebook a, body main section .newsletter .newsletter-wrap .facebook a {
               margin-left: 1em;
-              color: blue;
+              color: #3b5998;
               font-size: 2em; } }
   body main section:nth-child(4) .support, body main section .support {
     background-color: #F2F2F2;

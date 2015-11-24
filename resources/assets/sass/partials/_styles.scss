@@ -521,30 +521,77 @@ body {
 
 		& section:nth-child(2) {
 			width:auto;
+			margin-bottom:3em;
 			@media only screen and (min-width : 44em) {
 				display:flex;
 				flex-wrap:wrap;
 				width:100%;
 			}
 			.learning-box {
+				height:7em;
+				text-align:center;
+				line-height:7em;
+				.dyslexia-desktop {
+					width:100%;
+					height:100%;
+					display:flex;
+					align-items:center;
+					background-image:url(../asset/photos/dyslexia_photo.jpg);
+					background-size:145%;
+					background-repeat:no-repeat;
+					background-position:center;
+					.border {
+						display:none;
+						@media only screen and (min-width : 64em) {
+							display:inline-block;
+							border:2px #fff solid;
+							border-radius:10px;
+							width:92%;
+							height:92%;
+							margin:0 auto;
+							background-image:none;
+							background-color:rgba(0,0,0,0);
+						}
+					}
+				}
+				.donation {
+					display:none;
+					@media only screen and (min-width : 64em) {
+						display:block;
+						padding:1em;
+						margin-bottom:0;
+						.donate-text {
+							p {
+								margin-bottom:1em;
+							}
+						}
+					}
+				}
 				@media only screen and (min-width : 44em) {
 
 					flex:1 0 49%;
 				}
 				@media only screen and (min-width : 64em) {
-
+					display:flex;
+					align-items:center;
+					.donation-normal {
+						display:none;
+					}
 					flex:1 0 20%;
 					height: 15em;
+					line-height:1;
 				}
-					height:7em;
-					text-align:center;
-					line-height:7em;
+				
 				span {
 					font-size:2em;
 					display:block;
 					font-family:helvetica;
 					font-weight:200;
-
+					@media only screen and (min-width : 64em) {
+						// display:flex;
+						// align-items:center;
+						display:none;
+					}
 					a {
 						display:block;
 						text-decoration:none;
@@ -554,10 +601,10 @@ body {
 			}//learning-box
 		
 			& :nth-child(2) span {
-				background-color:#7a9eaf;
-			}
-			& :nth-child(3) span {
 				background-color:#de88a5;
+			}
+			& :nth-child(3)  span {
+				background-color:#7a9eaf;
 			}
 			& :nth-child(4) span {
 				background-color:#655989;
@@ -571,7 +618,7 @@ body {
 						height: 100%;
 					}
 			}
-			margin-bottom:3em;
+			
 		}//section(2)
 
 		& section:nth-child(3) {
@@ -720,7 +767,7 @@ body {
 							}
 							a {
 								margin-left:1em;
-								color:blue;
+								color:#3b5998;
 								font-size:2em;							
 							}
 						}

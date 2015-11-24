@@ -255,25 +255,6 @@ var isTextOpen = false;
 
 //---------------------------searchbox-desktop-----------------------
 
-//---------------------------mouse-over------------------------------
-	// $('.mouse-over').on("mouseenter",function() {
-	// 	$('#desktop-sub-menu').show();
-
-	// 	$('#desktop-sub-menu').on("mouseleave",function() {
-	// 		$(this).hide();
-	// 	});
-	// });
-	
-//---------------------------mouse-over------------------------------
-
-
-//--------------------------mobile-hover-----------------------------
-	// $('.hover').bind('touchstart touchend', function(e) {
-	// 	e.preventDefault();
-	// 	$(this).toggleClass('hover_effect');
-	// });
-//--------------------------mobile-hover-----------------------------
-
 //--------------------------jeditable--------------------------------
 
 	$("[data-field]").each(function(i,el) {

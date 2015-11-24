@@ -220,12 +220,14 @@
 				<li><a href="{{url('contact')}}">Contact</a></li>
 				@if(Auth::check())
 					<li><a href="{{url('logout')}}" class="logout-button tomato">Logout</a></li>
+					@if(Auth::user()->role == "1")
+							<li><a href="{{url('loggedin')}}">Admins</a></li>
+					@endif
+
 				@else
 					<li class="login-button"><a href="">Log In</a></li>
 				@endif
-				@if(Auth::loginUsingId(8))
-					<li><a href="{{url('loggedin')}}">+ Admins +</a></li>
-				@endif
+				
 			</ul>
 		</nav>
 
