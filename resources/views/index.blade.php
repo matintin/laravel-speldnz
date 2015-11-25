@@ -26,15 +26,32 @@
 					<span>
 						<a href="{{url('pages/3')}}">Dyslexia</a>
 					</span>
+					<div class="inspire">
+						<?php 
+							$quotes = \App\Models\Quote::all();
+							$quote = $quotes->random();
+
+						 ?>
+						<h2>Inspire Quotes</h2>
+						<p class="quote-content"><i class="fa fa-quote-left"></i> {{$quote->content}} <i class="fa fa-quote-right"></i></p>
+						<p class="quote-person">{{$quote->name}}</p>
+					</div>
 				</div>
 				
 				<div class="learning-box">
-					<span class="front">
+					<span>
 						<a href="{{url('pages/4')}}">Dyspraxia</a>
 					</span>
 					<div class="dyslexia-desktop">
-						<div class="border"></div>
-					</div>
+						<div class="flipper">
+							<div class="front">
+								<div class="border"><h3>Dyslexia</h3></div>
+							</div><!-- front -->
+							<div class="back">
+								lalalal
+							</div><!-- back -->
+						</div>
+					</div><!-- dyslexia-desktop -->
 				</div>
 				
 				<div class="learning-box">
@@ -50,7 +67,7 @@
 						<div class="donate-box">
 							<div class="donate-text">
 								<h2>Donate Today</h2>
-								<p>Support to continue this important work.</p>
+								<p>Support to continue important work.</p>
 							</div>
 							<div class="donate-img">
 								<img src="{{asset('asset/icons/donation.png')}}" alt="" />

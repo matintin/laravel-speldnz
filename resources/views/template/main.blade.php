@@ -121,65 +121,66 @@
 			</div>
 		</div><!-- checklist -->
 	</div>
-
 	<header>
-		<div class="header-wrap">
-			<div class="logo">
-				<a href="{{url('/')}}"><img src="{{asset('asset/icons/logo-yellow1.png')}}" alt="logo"></a>
-			</div>
-			<div class="empty"></div>
-			<div class="open menu mobile-button">
-				<img src="{{asset('asset/icons/menu-1.png')}}" alt="menu-bar">
-			</div>
-			<div class="close menu mobile-button hidden">
-				<img src="{{asset('asset/icons/close.png')}}" alt="menu-bar">
-			</div>
-			<div class="search mobile-button">
-				<img src="{{asset('asset/icons/search-1.png')}}" alt="search-bar">
-			</div>
-			<nav class="desktop-menu">
-				<ul class="desktop-nav">
-					<li><a href="{{url('pages/1')}}">About</a></li>
+		<div class="inner">
+			<div class="header-wrap">
+				<div class="logo">
+					<a href="{{url('/')}}"><img src="{{asset('asset/icons/logo-yellow1.png')}}" alt="logo"></a>
+				</div>
+				<div class="empty"></div>
+				<div class="open menu mobile-button">
+					<img src="{{asset('asset/icons/menu-1.png')}}" alt="menu-bar">
+				</div>
+				<div class="close menu mobile-button hidden">
+					<img src="{{asset('asset/icons/close.png')}}" alt="menu-bar">
+				</div>
+				<div class="search mobile-button">
+					<img src="{{asset('asset/icons/search-1.png')}}" alt="search-bar">
+				</div>
+				<nav class="desktop-menu">
+					<ul class="desktop-nav">
+						<li><a href="{{url('pages/1')}}">About</a></li>
 
-					<li class="mouse-over"><a href="{{url('pages/2')}}">Learning</a>
-						<ul id="desktop-sub-menu" >
-							<li><a href="{{url('pages/3')}}">Dyslexia</a></li>
-							<li><a href="{{url('pages/4')}}">Dyspraxia</a></li>
-							<li><a href="{{url('pages/5')}}">ADHD</a></li>
-							<li><a href="{{url('pages/6')}}">Dyscalculia</a></li>
-							<li><a href="{{url('pages/7')}}">Dysgraohia</a></li>
-						</ul>
-					</li>
-					
-					<li><a href="{{url('news_guest')}}">News & Event</a></li>
-					<li><a href="{{url('pages/10')}}">FAQ</a></li>
-					<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
-					<li><a href="{{url('contact')}}">Contact</a></li>
-					@if(Auth::check())
+						<li class="mouse-over"><a href="{{url('pages/2')}}">Learning</a>
+							<ul id="desktop-sub-menu" >
+								<li><a href="{{url('pages/3')}}">Dyslexia</a></li>
+								<li><a href="{{url('pages/4')}}">Dyspraxia</a></li>
+								<li><a href="{{url('pages/5')}}">ADHD</a></li>
+								<li><a href="{{url('pages/6')}}">Dyscalculia</a></li>
+								<li><a href="{{url('pages/7')}}">Dysgraohia</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="{{url('news_guest')}}">News & Event</a></li>
+						<li><a href="{{url('pages/10')}}">FAQ</a></li>
+						<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
+						<li><a href="{{url('contact')}}">Contact</a></li>
+						@if(Auth::check())
 
-					<li><a href="{{url('logout')}}" class="logout-button"><i class="fa fa-sign-out"></i><span>Log Out</span></a></li>
+						<li><a href="{{url('logout')}}" class="logout-button"><i class="fa fa-sign-out"></i><span>Log Out</span></a></li>
 
-						@if(Auth::user()->role == "1")
-							<li><a href="{{url('loggedin')}}">Admins</a></li>
+							@if(Auth::user()->role == "1")
+								<li><a href="{{url('loggedin')}}">Admins</a></li>
+							@endif
+
+						@else
+
+						<li class="login-button"><i class="fa fa-sign-in"></i><span>Log In</span></li>
+						
 						@endif
-
-					@else
-
-					<li class="login-button"><i class="fa fa-sign-in"></i><span>Log In</span></li>
-					
-					@endif
-					
-					<li class="search-desktop">
-						<form action="">
-							<input type="text">
-							<button>
-								<img src="{{asset('asset/icons/search-1.png')}}" alt="">
-							</button>
-						</form>
-						<!-- <div class="search-out-box"><img src="{{asset('asset/icons/search-1.png')}}" alt=""></div> -->
-					</li>
-				</ul>
-			</nav>
+						
+						<li class="search-desktop">
+							<form action="">
+								<input type="text">
+								<button>
+									<img src="{{asset('asset/icons/search-1.png')}}" alt="">
+								</button>
+							</form>
+							<!-- <div class="search-out-box"><img src="{{asset('asset/icons/search-1.png')}}" alt=""></div> -->
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 
@@ -232,9 +233,9 @@
 		</nav>
 
 	<main>
-		
+		<div class="inner">
 		@yield('index')
-
+		</div>
 	</main>
 	<footer>
 		

@@ -144,7 +144,11 @@ body {
       font-weight: 100; }
   body header {
     height: 4.5em; }
-    body header .header-wrap {
+    @media only screen and (min-width: 80em) {
+      body header .inner {
+        width: 78em;
+        margin: 0 auto; } }
+    body header .inner .header-wrap {
       padding-top: 1em;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -153,19 +157,19 @@ body {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       margin: 0 auto; }
-      body header .header-wrap .logo {
+      body header .inner .header-wrap .logo {
         -webkit-flex: 0 0 5em;
         -ms-flex: 0 0 5em;
         flex: 0 0 5em;
         margin-left: 1em; }
       @media only screen and (min-width: 64em) {
-        body header .header-wrap .empty, body header .header-wrap .mobile-button, body header .header-wrap .search-box {
+        body header .inner .header-wrap .empty, body header .inner .header-wrap .mobile-button, body header .inner .header-wrap .search-box {
           display: none; } }
-      body header .header-wrap .empty {
+      body header .inner .header-wrap .empty {
         -webkit-flex: 1 0 1em;
         -ms-flex: 1 0 1em;
         flex: 1 0 1em; }
-      body header .header-wrap .mobile-button {
+      body header .inner .header-wrap .mobile-button {
         -webkit-flex: 0 0 1.5em;
         -ms-flex: 0 0 1.5em;
         flex: 0 0 1.5em;
@@ -176,19 +180,19 @@ body {
         border-radius: 100%;
         cursor: hand;
         cursor: pointer; }
-      body header .header-wrap .search {
+      body header .inner .header-wrap .search {
         margin-right: 1em; }
-      body header .header-wrap img {
+      body header .inner .header-wrap img {
         width: 100%; }
-      body header .header-wrap .desktop-menu {
+      body header .inner .header-wrap .desktop-menu {
         display: none;
         -webkit-flex: 1 0 1em;
         -ms-flex: 1 0 1em;
         flex: 1 0 1em; }
         @media only screen and (min-width: 64em) {
-          body header .header-wrap .desktop-menu {
+          body header .inner .header-wrap .desktop-menu {
             display: block; } }
-        body header .header-wrap .desktop-menu .desktop-nav {
+        body header .inner .header-wrap .desktop-menu .desktop-nav {
           margin: 0;
           padding: 0;
           height: 50px;
@@ -205,19 +209,19 @@ body {
           -webkit-align-items: center;
           -ms-flex-align: center;
           align-items: center; }
-          body header .header-wrap .desktop-menu .desktop-nav li {
+          body header .inner .header-wrap .desktop-menu .desktop-nav li {
             display: inline-block;
             padding: 0 1em; }
-            body header .header-wrap .desktop-menu .desktop-nav li a {
+            body header .inner .header-wrap .desktop-menu .desktop-nav li a {
               text-decoration: none;
               color: #000;
               font-weight: 300; }
-            body header .header-wrap .desktop-menu .desktop-nav li a:hover {
+            body header .inner .header-wrap .desktop-menu .desktop-nav li a:hover {
               color: tomato;
               font-weight: 100; }
-            body header .header-wrap .desktop-menu .desktop-nav li:nth-child(2) {
+            body header .inner .header-wrap .desktop-menu .desktop-nav li:nth-child(2) {
               position: relative; }
-              body header .header-wrap .desktop-menu .desktop-nav li:nth-child(2) #desktop-sub-menu {
+              body header .inner .header-wrap .desktop-menu .desktop-nav li:nth-child(2) #desktop-sub-menu {
                 display: none;
                 -webkit-flex-direction: column;
                 -ms-flex-direction: column;
@@ -229,16 +233,16 @@ body {
                 padding: 0;
                 background-color: rgba(0, 0, 0, 0.5);
                 padding: 1em 1em 1em .5em; }
-                body header .header-wrap .desktop-menu .desktop-nav li:nth-child(2) #desktop-sub-menu li {
+                body header .inner .header-wrap .desktop-menu .desktop-nav li:nth-child(2) #desktop-sub-menu li {
                   font-size: .9em;
                   line-height: 1.6em; }
-          body header .header-wrap .desktop-menu .desktop-nav .login-button, body header .header-wrap .desktop-menu .desktop-nav .logout-button {
+          body header .inner .header-wrap .desktop-menu .desktop-nav .login-button, body header .inner .header-wrap .desktop-menu .desktop-nav .logout-button {
             cursor: hand;
             cursor: pointer; }
-            body header .header-wrap .desktop-menu .desktop-nav .login-button span, body header .header-wrap .desktop-menu .desktop-nav .logout-button span {
+            body header .inner .header-wrap .desktop-menu .desktop-nav .login-button span, body header .inner .header-wrap .desktop-menu .desktop-nav .logout-button span {
               font-size: .8em;
               margin-left: .2em; }
-          body header .header-wrap .desktop-menu .desktop-nav .search-desktop {
+          body header .inner .header-wrap .desktop-menu .desktop-nav .search-desktop {
             width: 7em;
             padding: 0;
             margin: 0 1em 0 0;
@@ -251,17 +255,17 @@ body {
             -webkit-justify-content: flex-end;
             -ms-flex-pack: end;
             justify-content: flex-end; }
-            body header .header-wrap .desktop-menu .desktop-nav .search-desktop .search-out-box {
+            body header .inner .header-wrap .desktop-menu .desktop-nav .search-desktop .search-out-box {
               -webkit-flex: 0 0 1em;
               -ms-flex: 0 0 1em;
               flex: 0 0 1em;
               border: 1px #888 solid;
               border-radius: 50%;
               padding: .3em; }
-              body header .header-wrap .desktop-menu .desktop-nav .search-desktop .search-out-box img {
+              body header .inner .header-wrap .desktop-menu .desktop-nav .search-desktop .search-out-box img {
                 width: 100%;
                 display: block; }
-            body header .header-wrap .desktop-menu .desktop-nav .search-desktop form {
+            body header .inner .header-wrap .desktop-menu .desktop-nav .search-desktop form {
               -webkit-flex: 1 0 1em;
               -ms-flex: 1 0 1em;
               flex: 1 0 1em;
@@ -274,7 +278,7 @@ body {
               border: .1em #888 solid;
               border-radius: 5px;
               padding: .2em 0; }
-              body header .header-wrap .desktop-menu .desktop-nav .search-desktop form input[type="text"] {
+              body header .inner .header-wrap .desktop-menu .desktop-nav .search-desktop form input[type="text"] {
                 -webkit-flex: 1 0 1em;
                 -ms-flex: 1 0 1em;
                 flex: 1 0 1em;
@@ -282,14 +286,14 @@ body {
                 background-color: transparent;
                 text-indent: .5em;
                 font-size: .8em; }
-              body header .header-wrap .desktop-menu .desktop-nav .search-desktop form button {
+              body header .inner .header-wrap .desktop-menu .desktop-nav .search-desktop form button {
                 -webkit-flex: 0 0 1.5em;
                 -ms-flex: 0 0 1.5em;
                 flex: 0 0 1.5em;
                 border: none;
                 background-color: transparent;
                 outline: none; }
-                body header .header-wrap .desktop-menu .desktop-nav .search-desktop form button img {
+                body header .inner .header-wrap .desktop-menu .desktop-nav .search-desktop form button img {
                   width: 100%;
                   display: block; }
   body #search-box {
@@ -395,7 +399,11 @@ body {
           -webkit-flex: 0 0 1em;
           -ms-flex: 0 0 1em;
           flex: 0 0 1em; }
-  body main section:nth-child(1) .main-photo {
+  @media only screen and (min-width: 80em) {
+    body main .inner {
+      width: 78em;
+      margin: 0 auto; } }
+  body main .inner section:nth-child(1) .main-photo {
     position: relative;
     z-index: 5;
     background-image: url(../asset/photos/section1.jpg);
@@ -404,29 +412,29 @@ body {
     background-repeat: no-repeat;
     background-attachment: cover; }
     @media only screen and (min-width: 450px) {
-      body main section:nth-child(1) .main-photo {
+      body main .inner section:nth-child(1) .main-photo {
         width: 100%;
         margin: 0 auto; } }
     @media only screen and (min-width: 44em) {
-      body main section:nth-child(1) .main-photo {
+      body main .inner section:nth-child(1) .main-photo {
         height: 20em;
         width: auto;
         margin: 0; } }
-    body main section:nth-child(1) .main-photo .photo-wrap {
+    body main .inner section:nth-child(1) .main-photo .photo-wrap {
       padding: 2em;
       position: relative;
       z-index: 20;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)); }
       @media only screen and (min-width: 44em) {
-        body main section:nth-child(1) .main-photo .photo-wrap {
+        body main .inner section:nth-child(1) .main-photo .photo-wrap {
           height: 20em;
           width: auto;
           margin: 0;
           padding: 0; } }
       @media only screen and (min-width: 44em) {
-        body main section:nth-child(1) .main-photo .photo-wrap .about-box {
+        body main .inner section:nth-child(1) .main-photo .photo-wrap .about-box {
           padding: 4em 0 0 2em; } }
-      body main section:nth-child(1) .main-photo .photo-wrap .about-box h3 {
+      body main .inner section:nth-child(1) .main-photo .photo-wrap .about-box h3 {
         text-align: center;
         color: #fff;
         font-weight: 600;
@@ -434,10 +442,10 @@ body {
         font-size: 1.5em;
         line-height: 1.2em; }
         @media only screen and (min-width: 44em) {
-          body main section:nth-child(1) .main-photo .photo-wrap .about-box h3 {
+          body main .inner section:nth-child(1) .main-photo .photo-wrap .about-box h3 {
             text-align: left;
             font-size: 2em; } }
-      body main section:nth-child(1) .main-photo .photo-wrap .about-box .learn-more-wrap {
+      body main .inner section:nth-child(1) .main-photo .photo-wrap .about-box .learn-more-wrap {
         width: 100%;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -447,11 +455,11 @@ body {
         align-items: center;
         margin-top: 5em; }
         @media only screen and (min-width: 44em) {
-          body main section:nth-child(1) .main-photo .photo-wrap .about-box .learn-more-wrap {
+          body main .inner section:nth-child(1) .main-photo .photo-wrap .about-box .learn-more-wrap {
             -webkit-align-items: flex-start;
             -ms-flex-align: start;
             align-items: flex-start; } }
-        body main section:nth-child(1) .main-photo .photo-wrap .about-box .learn-more-wrap a {
+        body main .inner section:nth-child(1) .main-photo .photo-wrap .about-box .learn-more-wrap a {
           margin: 0 auto;
           text-decoration: none;
           padding: .5em 1em;
@@ -461,13 +469,13 @@ body {
           color: #fff;
           background-color: #FFAF02; }
           @media only screen and (min-width: 44em) {
-            body main section:nth-child(1) .main-photo .photo-wrap .about-box .learn-more-wrap a {
+            body main .inner section:nth-child(1) .main-photo .photo-wrap .about-box .learn-more-wrap a {
               margin: 0; } }
-  body main section:nth-child(2) {
+  body main .inner section:nth-child(2) {
     width: auto;
     margin-bottom: 3em; }
     @media only screen and (min-width: 44em) {
-      body main section:nth-child(2) {
+      body main .inner section:nth-child(2) {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
@@ -475,51 +483,108 @@ body {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         width: 100%; } }
-    body main section:nth-child(2) .learning-box {
+    body main .inner section:nth-child(2) .learning-box {
       height: 7em;
       text-align: center;
       line-height: 7em; }
-      body main section:nth-child(2) .learning-box .dyslexia-desktop {
+      body main .inner section:nth-child(2) .learning-box .inspire, body main .inner section:nth-child(2) .learning-box .dyslexia-desktop {
         width: 100%;
         height: 100%;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        background-image: url(../asset/photos/dyslexia_photo.jpg);
-        background-size: 145%;
-        background-repeat: no-repeat;
-        background-position: center; }
-        body main section:nth-child(2) .learning-box .dyslexia-desktop .border {
-          display: none; }
-          @media only screen and (min-width: 64em) {
-            body main section:nth-child(2) .learning-box .dyslexia-desktop .border {
-              display: inline-block;
-              border: 2px #fff solid;
-              border-radius: 10px;
-              width: 92%;
-              height: 92%;
-              margin: 0 auto;
-              background-image: none;
-              background-color: transparent; } }
-      body main section:nth-child(2) .learning-box .donation {
+        display: none; }
+      body main .inner section:nth-child(2) .learning-box .inspire {
+        background-color: #de88a5;
+        position: relative; }
+        @media only screen and (min-width: 64em) {
+          body main .inner section:nth-child(2) .learning-box .inspire {
+            display: block; } }
+        body main .inner section:nth-child(2) .learning-box .inspire h2 {
+          margin: 1em 0 1em .5em;
+          text-align: left;
+          color: #fff;
+          font-weight: 500; }
+        body main .inner section:nth-child(2) .learning-box .inspire .quote-content {
+          width: 85%;
+          margin: 0 auto;
+          font-size: .9em; }
+          body main .inner section:nth-child(2) .learning-box .inspire .quote-content i {
+            display: block;
+            margin: .5em 0;
+            font-size: 1.3em; }
+        body main .inner section:nth-child(2) .learning-box .inspire .quote-person {
+          position: absolute;
+          bottom: 1.5em;
+          right: .5em;
+          color: #AEE9E4;
+          font-size: 1em;
+          font-weight: 200;
+          margin: 0; }
+      body main .inner section:nth-child(2) .learning-box .dyslexia-desktop:hover .flipper, body main .inner section:nth-child(2) .learning-box .dyslexia-desktop.hover .flipper {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
+      @media only screen and (min-width: 64em) {
+        body main .inner section:nth-child(2) .learning-box .dyslexia-desktop {
+          display: block;
+          -webkit-perspective: 1000;
+          perspective: 1000; } }
+      body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper {
+        transition: .6s;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        position: relative;
+        height: 100%; }
+        body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .front, body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .back {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .front {
+          z-index: 2;
+          -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+          width: 100%;
+          height: 100%;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          background-image: url(../asset/photos/dyslexia_photo.jpg);
+          background-size: 145%;
+          background-repeat: no-repeat;
+          background-position: center; }
+          body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .front .border {
+            display: none; }
+            @media only screen and (min-width: 64em) {
+              body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .front .border {
+                display: inline-block;
+                border: 2px #fff solid;
+                border-radius: 10px;
+                width: 92%;
+                height: 92%;
+                margin: 0 auto;
+                background-image: none;
+                background-color: transparent; } }
+        body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .back {
+          -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+      body main .inner section:nth-child(2) .learning-box .donation {
         display: none; }
         @media only screen and (min-width: 64em) {
-          body main section:nth-child(2) .learning-box .donation {
+          body main .inner section:nth-child(2) .learning-box .donation {
             display: block;
             padding: 1em;
             margin-bottom: 0; }
-            body main section:nth-child(2) .learning-box .donation .donate-text p {
+            body main .inner section:nth-child(2) .learning-box .donation .donate-text p {
               margin-bottom: 1em; } }
       @media only screen and (min-width: 44em) {
-        body main section:nth-child(2) .learning-box {
+        body main .inner section:nth-child(2) .learning-box {
           -webkit-flex: 1 0 49%;
           -ms-flex: 1 0 49%;
           flex: 1 0 49%; } }
       @media only screen and (min-width: 64em) {
-        body main section:nth-child(2) .learning-box {
+        body main .inner section:nth-child(2) .learning-box {
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
@@ -531,33 +596,33 @@ body {
           flex: 1 0 20%;
           height: 15em;
           line-height: 1; }
-          body main section:nth-child(2) .learning-box .donation-normal {
+          body main .inner section:nth-child(2) .learning-box .donation-normal {
             display: none; } }
-      body main section:nth-child(2) .learning-box span {
+      body main .inner section:nth-child(2) .learning-box span {
         font-size: 2em;
         display: block;
         font-family: helvetica;
         font-weight: 200; }
         @media only screen and (min-width: 64em) {
-          body main section:nth-child(2) .learning-box span {
+          body main .inner section:nth-child(2) .learning-box span {
             display: none; } }
-        body main section:nth-child(2) .learning-box span a {
+        body main .inner section:nth-child(2) .learning-box span a {
           display: block;
           text-decoration: none;
           color: #fff; }
-    body main section:nth-child(2) :nth-child(2) span {
+    body main .inner section:nth-child(2) :nth-child(2) span {
       background-color: #de88a5; }
-    body main section:nth-child(2) :nth-child(3) span {
+    body main .inner section:nth-child(2) :nth-child(3) span {
       background-color: #7a9eaf; }
-    body main section:nth-child(2) :nth-child(4) span {
+    body main .inner section:nth-child(2) :nth-child(4) span {
       background-color: #655989; }
-    body main section:nth-child(2) :nth-child(5) span {
+    body main .inner section:nth-child(2) :nth-child(5) span {
       background-color: #3b6daf; }
     @media only screen and (min-width: 64em) {
-      body main section:nth-child(2) :nth-child(2) span, body main section:nth-child(2) :nth-child(3) span, body main section:nth-child(2) :nth-child(4) span, body main section:nth-child(2) :nth-child(5) span {
+      body main .inner section:nth-child(2) :nth-child(2) span, body main .inner section:nth-child(2) :nth-child(3) span, body main .inner section:nth-child(2) :nth-child(4) span, body main .inner section:nth-child(2) :nth-child(5) span {
         height: 100%; } }
   @media only screen and (min-width: 44em) {
-    body main section:nth-child(3) {
+    body main .inner section:nth-child(3) {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
@@ -566,11 +631,11 @@ body {
       flex-wrap: wrap;
       width: 100%; } }
   @media only screen and (min-width: 44em) {
-    body main section:nth-child(3) .news, body main section:nth-child(3) .faq {
+    body main .inner section:nth-child(3) .news, body main .inner section:nth-child(3) .faq {
       -webkit-flex: 1 0 45%;
       -ms-flex: 1 0 45%;
       flex: 1 0 45%; } }
-  body main section:nth-child(3) .news h3, body main section:nth-child(3) .faq h3 {
+  body main .inner section:nth-child(3) .news h3, body main .inner section:nth-child(3) .faq h3 {
     text-align: right;
     margin-right: 5%;
     font-family: helvetica;
@@ -578,17 +643,17 @@ body {
     font-weight: 500;
     margin-bottom: 2em;
     color: #888; }
-  body main section:nth-child(3) .news h2, body main section:nth-child(3) .news p, body main section:nth-child(3) .faq h2, body main section:nth-child(3) .faq p {
+  body main .inner section:nth-child(3) .news h2, body main .inner section:nth-child(3) .news p, body main .inner section:nth-child(3) .faq h2, body main .inner section:nth-child(3) .faq p {
     width: 90%;
     margin: 0 auto;
     font-family: helvetica; }
-  body main section:nth-child(3) .news h2, body main section:nth-child(3) .faq h2 {
+  body main .inner section:nth-child(3) .news h2, body main .inner section:nth-child(3) .faq h2 {
     margin-bottom: 1em;
     color: #FFAF02;
     font-weight: 600; }
-  body main section:nth-child(3) .news {
+  body main .inner section:nth-child(3) .news {
     margin-bottom: 3em; }
-    body main section:nth-child(3) .news a {
+    body main .inner section:nth-child(3) .news a {
       display: inline-block;
       padding: .5em 1em;
       border: .1em #FFAF02 solid;
@@ -599,46 +664,46 @@ body {
       text-decoration: none;
       margin-top: 2em;
       margin-left: 5%; }
-    body main section:nth-child(3) .news p {
+    body main .inner section:nth-child(3) .news p {
       color: #415E6C;
       font-size: 0.8em; }
-  body main section:nth-child(3) .faq {
+  body main .inner section:nth-child(3) .faq {
     width: 90%;
     margin: 0 auto 3em auto;
     padding: 5% 1%;
     border: .1em #FFAF02 solid; }
     @media only screen and (min-width: 44em) {
-      body main section:nth-child(3) .faq {
+      body main .inner section:nth-child(3) .faq {
         padding: 0;
         border: none; } }
     @media only screen and (min-width: 44em) {
-      body main section:nth-child(3) .faq .faq-wrap {
+      body main .inner section:nth-child(3) .faq .faq-wrap {
         padding: 2em .1em;
         width: 90%;
         margin: 0 auto;
         border: .1em #FFAF02 solid; } }
-    body main section:nth-child(3) .faq a {
+    body main .inner section:nth-child(3) .faq a {
       text-decoration: none;
       color: #415E6C;
       font-size: .8em; }
-  body main section:nth-child(4) .newsletter, body main section .newsletter {
+  body main .inner section:nth-child(4) .newsletter, body main .inner section .newsletter {
     -webkit-flex: 1 0 1em;
     -ms-flex: 1 0 1em;
     flex: 1 0 1em;
     padding: 3%;
     background-color: #F2F2F2;
     margin-bottom: 1em; }
-    body main section:nth-child(4) .newsletter h5, body main section .newsletter h5 {
+    body main .inner section:nth-child(4) .newsletter h5, body main .inner section .newsletter h5 {
       font-weight: 300;
       margin: 0;
       text-indent: 1em; }
-    body main section:nth-child(4) .newsletter p, body main section .newsletter p {
+    body main .inner section:nth-child(4) .newsletter p, body main .inner section .newsletter p {
       font-size: .6em;
       font-style: italic;
       margin: .5em 0 2em 0;
       text-indent: 2.5em;
       color: #415E6C; }
-    body main section:nth-child(4) .newsletter .newsletter-wrap, body main section .newsletter .newsletter-wrap {
+    body main .inner section:nth-child(4) .newsletter .newsletter-wrap, body main .inner section .newsletter .newsletter-wrap {
       width: 100%;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -649,22 +714,22 @@ body {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center; }
-      body main section:nth-child(4) .newsletter .newsletter-wrap form, body main section .newsletter .newsletter-wrap form {
+      body main .inner section:nth-child(4) .newsletter .newsletter-wrap form, body main .inner section .newsletter .newsletter-wrap form {
         width: 95%;
         margin-left: .5em; }
         @media only screen and (min-width: 44em) {
-          body main section:nth-child(4) .newsletter .newsletter-wrap form, body main section .newsletter .newsletter-wrap form {
+          body main .inner section:nth-child(4) .newsletter .newsletter-wrap form, body main .inner section .newsletter .newsletter-wrap form {
             -webkit-flex: 1 0 1em;
             -ms-flex: 1 0 1em;
             flex: 1 0 1em; } }
-        body main section:nth-child(4) .newsletter .newsletter-wrap form input[type="text"], body main section .newsletter .newsletter-wrap form input[type="text"] {
+        body main .inner section:nth-child(4) .newsletter .newsletter-wrap form input[type="text"], body main .inner section .newsletter .newsletter-wrap form input[type="text"] {
           width: 65%;
           padding: .5em;
           font-size: .8em;
           border: 1px #fff solid;
           text-indent: 1em;
           font-weight: 300; }
-        body main section:nth-child(4) .newsletter .newsletter-wrap form input[type="submit"], body main section .newsletter .newsletter-wrap form input[type="submit"] {
+        body main .inner section:nth-child(4) .newsletter .newsletter-wrap form input[type="submit"], body main .inner section .newsletter .newsletter-wrap form input[type="submit"] {
           width: 20%;
           padding: .5em;
           font-size: .8em;
@@ -673,10 +738,10 @@ body {
           background-color: #FFAF02;
           color: #fff;
           font-weight: 100; }
-      body main section:nth-child(4) .newsletter .newsletter-wrap .facebook, body main section .newsletter .newsletter-wrap .facebook {
+      body main .inner section:nth-child(4) .newsletter .newsletter-wrap .facebook, body main .inner section .newsletter .newsletter-wrap .facebook {
         display: none; }
         @media only screen and (min-width: 44em) {
-          body main section:nth-child(4) .newsletter .newsletter-wrap .facebook, body main section .newsletter .newsletter-wrap .facebook {
+          body main .inner section:nth-child(4) .newsletter .newsletter-wrap .facebook, body main .inner section .newsletter .newsletter-wrap .facebook {
             margin: 0 auto;
             -webkit-flex: 0 0 30%;
             -ms-flex: 0 0 30%;
@@ -691,15 +756,15 @@ body {
             -ms-flex-align: center;
             align-items: center;
             border-left: 1px #ccc solid; }
-            body main section:nth-child(4) .newsletter .newsletter-wrap .facebook span, body main section .newsletter .newsletter-wrap .facebook span {
+            body main .inner section:nth-child(4) .newsletter .newsletter-wrap .facebook span, body main .inner section .newsletter .newsletter-wrap .facebook span {
               font-size: .8em;
               display: inline-block;
               color: #000; }
-            body main section:nth-child(4) .newsletter .newsletter-wrap .facebook a, body main section .newsletter .newsletter-wrap .facebook a {
+            body main .inner section:nth-child(4) .newsletter .newsletter-wrap .facebook a, body main .inner section .newsletter .newsletter-wrap .facebook a {
               margin-left: 1em;
               color: #3b5998;
               font-size: 2em; } }
-  body main section:nth-child(4) .support, body main section .support {
+  body main .inner section:nth-child(4) .support, body main .inner section .support {
     background-color: #F2F2F2;
     width: 100%;
     display: -webkit-flex;
@@ -708,7 +773,7 @@ body {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    body main section:nth-child(4) .support .image-slider, body main section .support .image-slider {
+    body main .inner section:nth-child(4) .support .image-slider, body main .inner section .support .image-slider {
       padding: 3em 0;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -718,7 +783,7 @@ body {
       flex-wrap: wrap;
       width: 80%;
       margin-bottom: 0; }
-      body main section:nth-child(4) .support .image-slider .slick-track, body main section .support .image-slider .slick-track {
+      body main .inner section:nth-child(4) .support .image-slider .slick-track, body main .inner section .support .image-slider .slick-track {
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
@@ -728,13 +793,13 @@ body {
         -webkit-flex: 1 0 25%;
         -ms-flex: 1 0 25%;
         flex: 1 0 25%; }
-      body main section:nth-child(4) .support .image-slider .img-wrap, body main section .support .image-slider .img-wrap {
+      body main .inner section:nth-child(4) .support .image-slider .img-wrap, body main .inner section .support .image-slider .img-wrap {
         text-align: center;
         outline: none; }
-        body main section:nth-child(4) .support .image-slider .img-wrap img, body main section .support .image-slider .img-wrap img {
-          width: 80%;
+        body main .inner section:nth-child(4) .support .image-slider .img-wrap img, body main .inner section .support .image-slider .img-wrap img {
+          width: 60%;
           display: inline-block; }
-      body main section:nth-child(4) .support .image-slider button, body main section .support .image-slider button {
+      body main .inner section:nth-child(4) .support .image-slider button, body main .inner section .support .image-slider button {
         background-color: #888;
         border-radius: 50%; }
   body footer .footer-wrap {
