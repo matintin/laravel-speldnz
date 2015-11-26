@@ -144,9 +144,9 @@ body {
       font-weight: 100; }
   body header {
     height: 4.5em; }
-    @media only screen and (min-width: 80em) {
+    @media only screen and (min-width: 75em) {
       body header .inner {
-        width: 78em;
+        width: 72em;
         margin: 0 auto; } }
     body header .inner .header-wrap {
       padding-top: 1em;
@@ -399,9 +399,9 @@ body {
           -webkit-flex: 0 0 1em;
           -ms-flex: 0 0 1em;
           flex: 0 0 1em; }
-  @media only screen and (min-width: 80em) {
+  @media only screen and (min-width: 75em) {
     body main .inner {
-      width: 78em;
+      width: 72em;
       margin: 0 auto; } }
   body main .inner section:nth-child(1) .main-photo {
     position: relative;
@@ -492,32 +492,40 @@ body {
         height: 100%;
         display: none; }
       body main .inner section:nth-child(2) .learning-box .inspire {
-        background-color: #de88a5;
+        background-color: #F26E22;
         position: relative; }
         @media only screen and (min-width: 64em) {
           body main .inner section:nth-child(2) .learning-box .inspire {
             display: block; } }
         body main .inner section:nth-child(2) .learning-box .inspire h2 {
-          margin: 1em 0 1em .5em;
+          margin: .8em 0 1em 1.5em;
           text-align: left;
           color: #fff;
-          font-weight: 500; }
+          font-weight: 600; }
         body main .inner section:nth-child(2) .learning-box .inspire .quote-content {
-          width: 85%;
+          width: 90%;
           margin: 0 auto;
-          font-size: .9em; }
+          font-size: .9em;
+          line-height: 1.3em;
+          font-family: dyslexia;
+          color: #fff; }
           body main .inner section:nth-child(2) .learning-box .inspire .quote-content i {
             display: block;
             margin: .5em 0;
-            font-size: 1.3em; }
+            font-size: 1.3em;
+            color: #f59056; }
         body main .inner section:nth-child(2) .learning-box .inspire .quote-person {
           position: absolute;
           bottom: 1.5em;
-          right: .5em;
-          color: #AEE9E4;
-          font-size: 1em;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          color: #fff;
+          font-size: .7em;
           font-weight: 200;
-          margin: 0; }
+          margin: 0;
+          font-family: dyslexia;
+          font-style: italic; }
       body main .inner section:nth-child(2) .learning-box .dyslexia-desktop:hover .flipper, body main .inner section:nth-child(2) .learning-box .dyslexia-desktop.hover .flipper {
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg); }
@@ -532,7 +540,7 @@ body {
         transform-style: preserve-3d;
         position: relative;
         height: 100%; }
-        body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .front, body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .back {
+        body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .front, body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .back, body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-front, body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-back {
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
           position: absolute;
@@ -565,10 +573,109 @@ body {
                 height: 92%;
                 margin: 0 auto;
                 background-image: none;
-                background-color: transparent; } }
+                background-color: transparent;
+                text-align: left; }
+                body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .front .border h2 {
+                  color: #fff;
+                  font-weight: 400;
+                  display: inline-block;
+                  margin-left: .5em;
+                  margin-top: 4em; } }
+        body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-front {
+          z-index: 2;
+          -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+          width: 100%;
+          height: 100%;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          background-image: url(../asset/photos/training.jpeg);
+          background-size: 170%;
+          background-repeat: no-repeat;
+          background-position: center; }
+          body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-front .border {
+            display: none; }
+            @media only screen and (min-width: 64em) {
+              body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-front .border {
+                display: inline-block;
+                border: 2px #fff solid;
+                border-radius: 10px;
+                width: 92%;
+                height: 92%;
+                margin: 0 auto;
+                background-image: none;
+                background-color: transparent;
+                text-align: right; }
+                body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-front .border h2 {
+                  color: #fff;
+                  font-weight: 400;
+                  display: inline-block;
+                  margin-right: .5em;
+                  margin-top: 4em; } }
         body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .back {
           -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg); }
+          transform: rotateY(180deg);
+          background-color: #555e77;
+          width: 100%;
+          height: 100%; }
+          body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .back .dyslexia-flip-box {
+            color: #fff; }
+            body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .back .dyslexia-flip-box h3 {
+              margin: 2em 0;
+              font-weight: 400;
+              text-align: center; }
+            body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .back .dyslexia-flip-box p {
+              width: 90%;
+              margin: 0 0 3em 10%;
+              font-size: .9em;
+              font-weight: 300;
+              line-height: 1.2em;
+              text-align: left; }
+            body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .back .dyslexia-flip-box a {
+              border-radius: 5px;
+              border: 2px #fff solid;
+              text-decoration: none;
+              color: #fff;
+              font-weight: 300;
+              padding: .4em;
+              margin-left: 7em; }
+            body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .back .dyslexia-flip-box a:hover {
+              border: 2px #F26E22 solid;
+              color: #F26E22; }
+        body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-back {
+          -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+          background-color: #68604a;
+          width: 100%;
+          height: 100%; }
+          body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-back .dyslexia-flip-box {
+            color: #fff; }
+            body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-back .dyslexia-flip-box h3 {
+              margin: 2em 0;
+              font-weight: 400;
+              text-align: center; }
+            body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-back .dyslexia-flip-box p {
+              width: 90%;
+              margin: 0 0 3em 10%;
+              font-size: .9em;
+              font-weight: 300;
+              line-height: 1.2em;
+              text-align: left; }
+            body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-back .dyslexia-flip-box a {
+              border-radius: 5px;
+              border: 2px #fff solid;
+              text-decoration: none;
+              color: #fff;
+              font-weight: 300;
+              padding: .4em;
+              margin-right: 7em; }
+            body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-back .dyslexia-flip-box a:hover {
+              border: 2px #F26E22 solid;
+              color: #F26E22; }
       body main .inner section:nth-child(2) .learning-box .donation {
         display: none; }
         @media only screen and (min-width: 64em) {
@@ -821,179 +928,195 @@ body {
           color: #888; }
       body footer .footer-wrap ul li:nth-child(n+2) {
         margin-left: .5em; }
-  body #go-top {
-    display: none;
-    outline: 1px #888 solid;
+  body .bottom-ids {
+    width: 100%;
     position: fixed;
-    bottom: 1em;
-    left: 1em;
-    padding: 1em;
-    color: #888;
-    font-size: .7em;
-    cursor: pointer;
-    cursor: hand; }
-  body #go-top:hover {
-    color: #FBFAF2;
-    background-color: #888;
-    font-weight: 300; }
-  body #reading-assist {
-    position: fixed;
-    bottom: 0;
-    right: 3%;
-    width: 70%; }
-    body #reading-assist .reading-assist-top {
-      margin: 0;
+    bottom: 0; }
+    body .bottom-ids .inner {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-      body #reading-assist .reading-assist-top .assist-box-wrap {
-        background-color: #467BC1;
-        cursor: hand;
+      flex-wrap: wrap; }
+      @media only screen and (min-width: 75em) {
+        body .bottom-ids .inner {
+          position: relative;
+          width: 72em;
+          margin: 0 auto; } }
+      body .bottom-ids .inner #go-top {
+        display: none;
+        height: 1.5em;
+        outline: 1px #888 solid;
+        position: absolute;
+        bottom: 1em;
+        left: 3em;
+        padding: 1em;
+        color: #888;
+        font-size: .7em;
         cursor: pointer;
-        -webkit-flex: 0 0 7em;
-        -ms-flex: 0 0 7em;
-        flex: 0 0 7em;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-right: 1em; }
-        body #reading-assist .reading-assist-top .assist-box-wrap .circle {
-          -webkit-flex: 0 0 .8em;
-          -ms-flex: 0 0 .8em;
-          flex: 0 0 .8em;
+        cursor: hand; }
+      body .bottom-ids .inner #go-top:hover {
+        color: #FBFAF2;
+        background-color: #888;
+        font-weight: 300; }
+      body .bottom-ids .inner #reading-assist {
+        bottom: 0;
+        right: 3%;
+        width: 95%; }
+        body .bottom-ids .inner #reading-assist .reading-assist-top {
+          margin: 0;
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
-          -webkit-align-items: center;
-          -ms-flex-align: center;
-          align-items: center;
-          padding-left: .5em; }
-          body #reading-assist .reading-assist-top .assist-box-wrap .circle img {
-            width: 100%; }
-        body #reading-assist .reading-assist-top .assist-box-wrap .assist-box {
-          -webkit-flex: 0 0 5em;
-          -ms-flex: 0 0 5em;
-          flex: 0 0 5em;
-          font-size: .8em;
-          color: #fff;
-          font-weight: 200;
-          padding: 1em; }
-          body #reading-assist .reading-assist-top .assist-box-wrap .assist-box p {
-            margin: 0; }
-    body #reading-assist .reading-assist-bottom {
-      display: none;
-      margin: 0;
-      width: 100%;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-      body #reading-assist .reading-assist-bottom .empty {
-        -webkit-flex: 1 0 1em;
-        -ms-flex: 1 0 1em;
-        flex: 1 0 1em;
-        height: 1em; }
-      body #reading-assist .reading-assist-bottom .assist-detail {
-        background-color: #fff;
-        -webkit-flex: 0 0 15em;
-        -ms-flex: 0 0 15em;
-        flex: 0 0 15em;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-        body #reading-assist .reading-assist-bottom .assist-detail .text-size {
-          -webkit-flex: 1 0 50%;
-          -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
-          padding-left: 1em; }
-          body #reading-assist .reading-assist-bottom .assist-detail .text-size p {
-            font-size: .8em;
-            color: tomato;
-            text-align: center; }
-          body #reading-assist .reading-assist-bottom .assist-detail .text-size ul {
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+          justify-content: flex-end; }
+          body .bottom-ids .inner #reading-assist .reading-assist-top .assist-box-wrap {
+            background-color: #467BC1;
+            cursor: hand;
+            cursor: pointer;
+            -webkit-flex: 0 0 7em;
+            -ms-flex: 0 0 7em;
+            flex: 0 0 7em;
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
             -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            padding: 0; }
-            body #reading-assist .reading-assist-bottom .assist-detail .text-size ul li {
-              -webkit-flex: 1 0 20%;
-              -ms-flex: 1 0 20%;
-              flex: 1 0 20%;
-              margin: 0 2px;
-              list-style-type: none;
-              text-align: center;
-              line-height: 21px;
-              background-color: #f4f2f1;
-              border-radius: 4px;
-              box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.48);
-              cursor: hand;
-              cursor: pointer; }
-            body #reading-assist .reading-assist-bottom .assist-detail .text-size ul li:nth-child(1) {
-              font-size: .7em; }
-            body #reading-assist .reading-assist-bottom .assist-detail .text-size ul li:nth-child(2) {
-              font-size: .9em; }
-            body #reading-assist .reading-assist-bottom .assist-detail .text-size ul li:nth-child(3) {
-              font-size: 1.1em; }
-        body #reading-assist .reading-assist-bottom .assist-detail .assist-on-off {
-          -webkit-flex: 0 0 40%;
-          -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-align-items: center;
-          -ms-flex-align: center;
-          align-items: center; }
-          body #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap {
-            border: 2px #888 solid;
-            background-color: #888;
-            border-radius: 5px;
-            width: 70%;
-            height: 2.5em;
-            margin: 0 auto;
+            margin-right: 1em; }
+            body .bottom-ids .inner #reading-assist .reading-assist-top .assist-box-wrap .circle {
+              -webkit-flex: 0 0 .8em;
+              -ms-flex: 0 0 .8em;
+              flex: 0 0 .8em;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              padding-left: .5em; }
+              body .bottom-ids .inner #reading-assist .reading-assist-top .assist-box-wrap .circle img {
+                width: 100%; }
+            body .bottom-ids .inner #reading-assist .reading-assist-top .assist-box-wrap .assist-box {
+              -webkit-flex: 0 0 5em;
+              -ms-flex: 0 0 5em;
+              flex: 0 0 5em;
+              font-size: .8em;
+              color: #fff;
+              font-weight: 200;
+              padding: 1em; }
+              body .bottom-ids .inner #reading-assist .reading-assist-top .assist-box-wrap .assist-box p {
+                margin: 0; }
+        body .bottom-ids .inner #reading-assist .reading-assist-bottom {
+          display: none;
+          margin: 0;
+          width: 100%;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+          justify-content: flex-end; }
+          body .bottom-ids .inner #reading-assist .reading-assist-bottom .empty {
+            -webkit-flex: 1 0 1em;
+            -ms-flex: 1 0 1em;
+            flex: 1 0 1em;
+            height: 1em; }
+          body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail {
+            background-color: #fff;
+            -webkit-flex: 0 0 15em;
+            -ms-flex: 0 0 15em;
+            flex: 0 0 15em;
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
             -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-            body #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .on-box, body #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .off-box {
-              -webkit-flex: 1 0 40%;
-              -ms-flex: 1 0 40%;
-              flex: 1 0 40%;
-              margin: 1px;
-              cursor: pointer;
-              cursor: hand; }
-              body #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .on-box p, body #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .off-box p {
-                margin: 0;
-                line-height: 40px;
+            body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .text-size {
+              -webkit-flex: 1 0 50%;
+              -ms-flex: 1 0 50%;
+              flex: 1 0 50%;
+              padding-left: 1em; }
+              body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .text-size p {
+                font-size: .8em;
+                color: tomato;
                 text-align: center; }
-            body #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .on-box {
-              border: 1px #fff solid;
-              background-color: #fff;
-              border-radius: 3px;
-              color: tomato; }
-            body #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .off-box {
-              background-color: transparent;
-              color: #fff;
-              font-weight: 100; }
+              body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .text-size ul {
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding: 0; }
+                body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .text-size ul li {
+                  -webkit-flex: 1 0 20%;
+                  -ms-flex: 1 0 20%;
+                  flex: 1 0 20%;
+                  margin: 0 2px;
+                  list-style-type: none;
+                  text-align: center;
+                  line-height: 21px;
+                  background-color: #f4f2f1;
+                  border-radius: 4px;
+                  box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.48);
+                  cursor: hand;
+                  cursor: pointer; }
+                body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .text-size ul li:nth-child(1) {
+                  font-size: .7em; }
+                body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .text-size ul li:nth-child(2) {
+                  font-size: .9em; }
+                body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .text-size ul li:nth-child(3) {
+                  font-size: 1.1em; }
+            body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .assist-on-off {
+              -webkit-flex: 0 0 40%;
+              -ms-flex: 0 0 40%;
+              flex: 0 0 40%;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center; }
+              body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap {
+                border: 2px #888 solid;
+                background-color: #888;
+                border-radius: 5px;
+                width: 70%;
+                height: 2.5em;
+                margin: 0 auto;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+                body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .on-box, body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .off-box {
+                  -webkit-flex: 1 0 40%;
+                  -ms-flex: 1 0 40%;
+                  flex: 1 0 40%;
+                  margin: 1px;
+                  cursor: pointer;
+                  cursor: hand; }
+                  body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .on-box p, body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .off-box p {
+                    margin: 0;
+                    line-height: 40px;
+                    text-align: center; }
+                body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .on-box {
+                  border: 1px #fff solid;
+                  background-color: #fff;
+                  border-radius: 3px;
+                  color: tomato; }
+                body .bottom-ids .inner #reading-assist .reading-assist-bottom .assist-detail .assist-on-off .on-off-wrap .off-box {
+                  background-color: transparent;
+                  color: #fff;
+                  font-weight: 100; }
 
 .navigation {
   padding: 1em; }

@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="{{asset('css/app.css')}}">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<link rel="stylesheet" href="{{asset('css/animate.css')}}">
+	<!-- <link rel="stylesheet" href="{{asset('css/animate.css')}}"> -->
 	<link rel="stylesheet" type="text/css" href="{{asset('asset/slick/slick.css')}}"/>
 	<link rel="stylesheet" type="text/css" href="{{asset('asset/slick/slick-theme.css')}}"/>
 	<script src="{{asset('js/ckeditor/ckeditor.js')}}"></script>
@@ -260,41 +260,45 @@
 		
 	</footer>
 
-	<div id="go-top">Top</div>
-
-	
-	<div id="reading-assist">
-	
-		<div class="reading-assist-top">
-			<div class="assist-box-wrap">
-				<div class="circle"><img src="{{asset('asset/icons/circle-off.png')}}" alt=""></div>
-				<div class="assist-box">
-					<p>Reading<br/>Assist</p>
-				</div>
-			</div>
-		</div><!-- reading-assist-top -->
-		<div class="reading-assist-bottom">
-			<!-- <div class="empty"></div> -->
-			<div class="assist-detail">
-				<div class="text-size">
-					<p>Text-size</p>
-					<ul>
-						<li>A</li>
-						<li>A</li>
-						<li>A</li>
-					</ul>
-				</div><!-- text-size -->
-				<div class="assist-on-off">
-					<div class="on-off-wrap">
-						<div class="on-box"><p>Off</p></div>
-						<div class="off-box"><p>On</p></div>
+	<div class="bottom-ids">
+		<div class="inner">
+		    
+			
+			<div id="go-top">Top</div>
+			
+			
+			<div id="reading-assist">
+		
+			<div class="reading-assist-top">
+				<div class="assist-box-wrap">
+					<div class="circle"><img src="{{asset('asset/icons/circle-off.png')}}" alt=""></div>
+					<div class="assist-box">
+						<p>Reading<br/>Assist</p>
 					</div>
 				</div>
-			</div>
-		</div><!-- reading-assist-bottom -->
-		
-	</div><!-- reading-assist -->
-	
+			</div><!-- reading-assist-top -->
+			<div class="reading-assist-bottom">
+				<!-- <div class="empty"></div> -->
+				<div class="assist-detail">
+					<div class="text-size">
+						<p>Text-size</p>
+						<ul>
+							<li>A</li>
+							<li>A</li>
+							<li>A</li>
+						</ul>
+					</div><!-- text-size -->
+					<div class="assist-on-off">
+						<div class="on-off-wrap">
+							<div class="on-box"><p>Off</p></div>
+							<div class="off-box"><p>On</p></div>
+						</div>
+					</div>
+				</div>
+			</div><!-- reading-assist-bottom -->
+			</div><!-- reading-assist -->
+		</div>
+	</div>
 	<div class="showPopUp hidden">{{Session::get("showPopUp")}}</div>
 	<div id="token" class="hidden">{{ csrf_token() }}</div>
 

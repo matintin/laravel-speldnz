@@ -32,9 +32,9 @@
 							$quote = $quotes->random();
 
 						 ?>
-						<h2>Inspire Quotes</h2>
+						<h2>Inspiration</h2>
 						<p class="quote-content"><i class="fa fa-quote-left"></i> {{$quote->content}} <i class="fa fa-quote-right"></i></p>
-						<p class="quote-person">{{$quote->name}}</p>
+						<p class="quote-person">- {{$quote->name}} -</p>
 					</div>
 				</div>
 				
@@ -45,10 +45,14 @@
 					<div class="dyslexia-desktop">
 						<div class="flipper">
 							<div class="front">
-								<div class="border"><h3>Dyslexia</h3></div>
+								<div class="border"><h2>Learning</h2></div>
 							</div><!-- front -->
 							<div class="back">
-								lalalal
+								<div class="dyslexia-flip-box">
+									<h3>Learning Issues</h3>
+									<p>Looking for information about learning and attention issues like dyslexia, dypraxia and ADHD?</p>
+									<a href="{{url('pages/2')}}">Let's start</a>
+								</div>
 							</div><!-- back -->
 						</div>
 					</div><!-- dyslexia-desktop -->
@@ -57,8 +61,24 @@
 				<div class="learning-box">
 					<span>
 						<a href="{{url('pages/5')}}">ADHD</a>
-
 					</span>
+					<div class="dyslexia-desktop">
+						<div class="flipper">
+							<div class="training-front">
+								<div class="border"><h2>Training</h2></div>
+							</div><!-- front -->
+							<div class="training-back">
+								<div class="dyslexia-flip-box">
+									<h3>SNZ Courses</h3>
+									<p>SNZ level 5 CCSLD<br />
+									SNZ level 3 ISLD<br />
+									SNZ Assessor Training</p>
+									<a href="{{url('pages/2')}}">Read More</a>
+								</div>
+							</div><!-- back -->
+						</div>
+					</div><!-- dyslexia-desktop -->
+					
 				</div>
 				
 				<div class="learning-box">

@@ -1,4 +1,3 @@
-
 	<div class="learning-five">
 		<div class="five Dyslexia">
 			<a href="{{url('pages/3')}}">Dyslexia</a>	
@@ -109,4 +108,3 @@
 		 		</ul>
 		 </div>
 	</div><!-- about-content -->
-
