@@ -106,6 +106,14 @@ var isBottomOpen = false;
 
 //---------------------learning-accordion----------------------------
 var isTextOpen = false;
+	
+	$('.image-wrap').each(function(i,el) {
+		if($(el).data("shown") == "1") {
+			$(this).next().slideDown();
+			$(this).children().attr("src","http://localhost/laravel-speldnz/public/asset/icons/minus.png");
+		}
+	});
+
 	$('.image-wrap').on("click", function() {
 		if(isTextOpen == false) {
 
@@ -133,6 +141,12 @@ var isTextOpen = false;
 		}
 
 	});
+	// $('.training .image-wrap').each(function(el) {
+	// 	if($(el).data("shown")=="1") {
+	// 		$(this).next().slideDown();
+
+	// 	}
+	// });
 	
 
 	$('.learning-dyslexia-wrap .Dyslexia, .Dyspraxia, .ADHD, .Dysgraphia, .Dyscalculia').on("click",function() {
@@ -153,17 +167,6 @@ var isTextOpen = false;
 			$(this).data("shown","0");
 		}
 	});
-
-	// $('.learning-five .Dyslexia').on("click",function() {
-		
-	// 	if($('.learning-dyslexia-wrap .Dyslexia').data("shown")=="0"){
-
-	// 		$('.learning-dyslexia-wrap .Dyslexia').next().slideDown();
-	// 		$('.learning-dyslexia-wrap .Dyslexia').children().children().removeClass('fa-angle-down').addClass('fa-angle-up');
-				
-	// 		$('.learning-dyslexia-wrap .Dyslexia').data("shown","1");
-	// 	}
-	// });
 
 
 //---------------------learning-accordion----------------------------

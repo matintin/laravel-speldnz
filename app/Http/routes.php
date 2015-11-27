@@ -42,6 +42,9 @@ Route::get('learning',function() {
 Route::get('dyslexia',function() {
 	return view('dyslexia');
 });
+Route::get('training',function() {
+	return view('training');
+});
 Route::get('news_guest',function() {
 
 	$posts = \App\Models\Post::all();

@@ -73,7 +73,7 @@
 									<p>SNZ level 5 CCSLD<br />
 									SNZ level 3 ISLD<br />
 									SNZ Assessor Training</p>
-									<a href="{{url('pages/2')}}">Read More</a>
+									<a href="{{url('training')}}">Read More</a>
 								</div>
 							</div><!-- back -->
 						</div>
@@ -135,7 +135,7 @@
 							<input type="submit" value="Sign Up">
 						
 						</form>
-						<div class="facebook"><span>Follow Us</span><a href=""><i class="fa fa-facebook-official"></i></a></div>
+						<div class="facebook"><span>Follow Us</span><a href="https://www.facebook.com/SPELD-New-Zealand-1512199148997024"><i class="fa fa-facebook-official"></i></a></div>
 					</div>
 				</div>
 				<div class="support">
