@@ -153,6 +153,7 @@
 						
 						<li><a href="{{url('news_guest')}}">News & Event</a></li>
 						<li><a href="{{url('pages/10')}}">FAQ</a></li>
+						<li><a href="{{url('training')}}">Training</a></li>
 						<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
 						<li><a href="{{url('contact')}}">Contact</a></li>
 						@if(Auth::check())
@@ -217,6 +218,7 @@
 				</li>
 				<li><a href="{{url('news_guest')}}">News & Event</a></li>
 				<li><a href="{{url('pages/10')}}">FAQ</a></li>
+				<li><a href="{{url('training')}}">Training</a></li>
 				<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
 				<li><a href="{{url('contact')}}">Contact</a></li>
 				@if(Auth::check())
@@ -244,6 +246,7 @@
 				<li><a href="{{url('pages/1')}}">About</a></li>
 				<li><a href="{{url('pages/2')}}">Learning</a></li>
 				<li><a href="{{url('pages/9')}}">Privacy Policy</a></li>
+				<li><a href="{{url('training')}}">Training</a></li>
 				<li><a href="{{url('contact')}}">Contact</a></li>
 
 				@if(Auth::check())

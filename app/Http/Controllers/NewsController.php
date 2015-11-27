@@ -111,6 +111,10 @@ class NewsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = \App\Models\Post::find($id);
+
+        $post->delete();
+
+        return redirect("news");
     }
 }

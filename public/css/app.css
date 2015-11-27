@@ -354,7 +354,7 @@ body {
       -webkit-flex: 0 0 4em;
       -ms-flex: 0 0 4em;
       flex: 0 0 4em;
-      line-height: 4em; }
+      line-height: 3.5em; }
       body #mobile-nav li:nth-child(2) #learning-sub-menu {
         display: none;
         -webkit-flex-direction: column;
@@ -649,7 +649,7 @@ body {
         body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-back {
           -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-          background-color: #68604a;
+          background-color: #ac3954;
           width: 100%;
           height: 100%; }
           body main .inner section:nth-child(2) .learning-box .dyslexia-desktop .flipper .training-back .dyslexia-flip-box {
@@ -850,9 +850,9 @@ body {
         @media only screen and (min-width: 44em) {
           body main .inner section:nth-child(4) .newsletter .newsletter-wrap .facebook, body main .inner section .newsletter .newsletter-wrap .facebook {
             margin: 0 auto;
-            -webkit-flex: 0 0 30%;
-            -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
+            -webkit-flex: 0 0 20%;
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
@@ -1120,6 +1120,11 @@ body {
 
 .navigation {
   padding: 1em; }
+  @media only screen and (min-width: 64em) {
+    .navigation {
+      width: 54%;
+      display: inline-block;
+      vertical-align: top; } }
   .navigation a, .navigation span {
     color: #ccc;
     text-decoration: none; }
@@ -1134,34 +1139,54 @@ body {
     text-decoration: none;
     color: #E59C00;
     font-size: .9em; }
-
-.container {
-  -webkit-flex: 1 0 1em;
-  -ms-flex: 1 0 1em;
-  flex: 1 0 1em;
-  padding: 1em; }
-  .container h1 {
-    margin: 0 0 1em 0;
-    color: #555; }
-    .container h1 p {
-      display: inline-block;
-      font-size: .7em; }
-  .container .content {
+  .navigation .container {
     -webkit-flex: 1 0 1em;
     -ms-flex: 1 0 1em;
     flex: 1 0 1em;
-    padding: 0 1em; }
-    .container .content .about-content {
-      margin-bottom: 5em; }
-      .container .content .about-content h3, .container .content .about-content p {
-        color: #415E6C; }
-      .container .content .about-content h3 {
-        margin: 2em 0 2em 0; }
-      .container .content .about-content p {
-        margin: 0 0 .5em 0;
-        line-height: 1.5em; }
+    padding: 1em; }
+    .navigation .container h1 {
+      margin: 0 0 1em 0;
+      color: #555; }
+      .navigation .container h1 p {
+        display: inline-block;
+        font-size: .7em; }
+    .navigation .container .content {
+      -webkit-flex: 1 0 1em;
+      -ms-flex: 1 0 1em;
+      flex: 1 0 1em;
+      padding: 0 1em; }
+      .navigation .container .content .about-content {
+        margin-bottom: 5em; }
+        .navigation .container .content .about-content h3, .navigation .container .content .about-content p {
+          color: #415E6C; }
+        .navigation .container .content .about-content h3 {
+          margin: 2em 0 2em 0; }
+        .navigation .container .content .about-content p {
+          margin: 0 0 .5em 0;
+          line-height: 1.5em; }
 
-section .donation {
+@media only screen and (min-width: 64em) {
+  section.pages {
+    width: 40%;
+    display: inline-block !important;
+    margin-top: 7.5em; } }
+
+section.pages .snz-intro {
+  -webkit-flex: 1 0 1em;
+  -ms-flex: 1 0 1em;
+  flex: 1 0 1em;
+  margin: 0 auto 1em auto;
+  padding: 2em;
+  text-align: center;
+  background-color: #B27815;
+  color: #fff; }
+  section.pages .snz-intro h4 {
+    font-weight: 200; }
+    section.pages .snz-intro h4 span {
+      font-weight: 500;
+      font-size: 1.1em; }
+
+.donation {
   -webkit-flex: 1 0 1em;
   -ms-flex: 1 0 1em;
   flex: 1 0 1em;
@@ -1169,27 +1194,27 @@ section .donation {
   padding: 2em;
   text-align: center;
   margin-bottom: 1em; }
-  section .donation .donate-box {
+  .donation .donate-box {
     color: #fff; }
-    section .donation .donate-box .donate-text {
+    .donation .donate-box .donate-text {
       display: inline-block; }
-      section .donation .donate-box .donate-text h2, section .donation .donate-box .donate-text p {
+      .donation .donate-box .donate-text h2, .donation .donate-box .donate-text p {
         text-align: left; }
-      section .donation .donate-box .donate-text h2 {
+      .donation .donate-box .donate-text h2 {
         width: 100%; }
-      section .donation .donate-box .donate-text p {
+      .donation .donate-box .donate-text p {
         width: 100%;
         font-size: .8em;
         font-weight: 100;
         margin-bottom: 4em; }
-    section .donation .donate-box .donate-img {
+    .donation .donate-box .donate-img {
       width: 20%;
       margin: 0 auto 2em auto; }
-      section .donation .donate-box .donate-img img {
+      .donation .donate-box .donate-img img {
         width: 5em; }
-    section .donation .donate-box .donate-button {
+    .donation .donate-box .donate-button {
       text-align: center; }
-      section .donation .donate-box .donate-button a {
+      .donation .donate-box .donate-button a {
         display: inline-block;
         font-size: .8em;
         text-decoration: none;
@@ -1332,165 +1357,206 @@ section .donation {
   .learning-five .Dyscalculia a, .learning-five .Dyscalculia p {
     background-color: #FF7043; }
 
-.learning .learning-margin {
-  margin-bottom: 2em; }
-
-.learning .news-box {
-  -webkit-flex: 1 0 1em;
-  -ms-flex: 1 0 1em;
-  flex: 1 0 1em;
-  margin: .5em 10% .5em 5%;
-  border: 2px #E59C00 solid;
-  padding: .2em 1em; }
-  .learning .news-box a {
-    color: tomato;
-    font-size: .7em;
-    border: 1px tomato solid;
-    border-radius: 3px;
-    padding: .1em .3em; }
-  .learning .news-box h3, .learning .news-box p, .learning .news-box span {
-    text-align: center;
-    margin: 0; }
-  .learning .news-box h3 {
-    font-size: .7em !important;
-    font-weight: 500;
-    margin: .5em 0 !important;
-    color: #41486c !important; }
-  .learning .news-box span {
-    display: block;
-    font-size: .8em;
-    font-weight: 500;
-    margin: .5em 0;
-    color: #41486c; }
-  .learning .news-box p {
-    font-size: .7em;
-    font-weight: 400;
-    color: #555 !important; }
-  .learning .news-box p:nth-child(3) {
-    margin-bottom: .5em; }
-
-.learning .step {
-  margin: .5em 0; }
-  .learning .step p {
-    margin: .5em 0 !important;
-    line-height: 1.3em; }
-  .learning .step span.news-span {
-    display: block;
-    font-size: .7em;
-    font-weight: 600;
-    color: #444; }
-
-.learning .accordion-wrap {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-bottom: .8em;
-  color: #41486c; }
-  .learning .accordion-wrap h3 {
-    margin: 0 !important;
-    -webkit-flex: 1 0 8em;
-    -ms-flex: 1 0 8em;
-    flex: 1 0 8em;
-    display: inline-block;
-    font-size: .95em;
-    color: #41486c !important; }
-  .learning .accordion-wrap span {
-    -webkit-flex: 1 0 10em;
-    -ms-flex: 1 0 10em;
-    flex: 1 0 10em;
-    font-size: 1.1em;
-    color: #41486c;
-    font-weight: 300; }
-  .learning .accordion-wrap .empty {
-    -webkit-flex: 0 0 1em;
-    -ms-flex: 0 0 1em;
-    flex: 0 0 1em; }
-  .learning .accordion-wrap .image-wrap {
-    -webkit-flex: 0 0 .6em;
-    -ms-flex: 0 0 .6em;
-    flex: 0 0 .6em;
-    cursor: hand;
-    cursor: pointer;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    @media only screen and (min-width: 44em) {
-      .learning .accordion-wrap .image-wrap {
-        margin-right: 1em; } }
-    .learning .accordion-wrap .image-wrap img {
-      width: 100%;
-      height: 100%; }
-  .learning .accordion-wrap .accordion {
-    margin-left: 1em; }
-  .learning .accordion-wrap .accordion, .learning .accordion-wrap .accordion-news {
-    display: none;
-    width: 90%;
-    padding: 0 0 0 .5em; }
-    .learning .accordion-wrap .accordion li, .learning .accordion-wrap .accordion-news li {
-      margin-top: .5em;
-      margin-bottom: 1em;
-      font-size: .9em; }
-      .learning .accordion-wrap .accordion li span, .learning .accordion-wrap .accordion-news li span {
-        display: block;
-        color: #41486c;
-        font-size: 1.1em;
-        margin-bottom: .3em; }
-    .learning .accordion-wrap .accordion p, .learning .accordion-wrap .accordion-news p {
-      margin: 1em 0;
-      font-size: .9em;
-      color: #41486c; }
-      .learning .accordion-wrap .accordion p span, .learning .accordion-wrap .accordion-news p span {
-        font-size: .9em;
-        font-weight: 600;
-        display: block; }
-    .learning .accordion-wrap .accordion a, .learning .accordion-wrap .accordion-news a {
+.learning {
+  position: relative; }
+  .learning .admin-creater {
+    top: 8em;
+    left: 70%; }
+    @media only screen and (min-width: 64em) {
+      .learning .admin-creater {
+        left: 40%; } }
+  .learning .learning-margin {
+    margin-bottom: 2em; }
+  .learning .news-box {
+    -webkit-flex: 1 0 1em;
+    -ms-flex: 1 0 1em;
+    flex: 1 0 1em;
+    margin: .5em 10% .5em 5%;
+    border: 2px #E59C00 solid;
+    padding: .2em 1em; }
+    .learning .news-box a {
+      color: tomato;
+      font-size: .7em;
       border: 1px tomato solid;
-      border-radius: 5px;
-      padding: .1em .5em;
-      color: tomato; }
-    .learning .accordion-wrap .accordion ul, .learning .accordion-wrap .accordion-news ul {
-      margin-left: 1em;
-      padding-left: .3em; }
-    .learning .accordion-wrap .accordion .source, .learning .accordion-wrap .accordion-news .source {
-      font-size: .6em;
-      text-align: right;
-      font-style: italic; }
-    .learning .accordion-wrap .accordion i, .learning .accordion-wrap .accordion-news i {
+      border-radius: 3px;
+      padding: .1em .3em; }
+    .learning .news-box h3, .learning .news-box p, .learning .news-box span {
+      text-align: center;
+      margin: 0; }
+    .learning .news-box h3 {
+      font-size: .7em !important;
+      font-weight: 500;
+      margin: .5em 0 !important;
+      color: #41486c !important; }
+    .learning .news-box span {
       display: block;
-      text-align: center; }
-
-.learning .learning-dyslexia-wrap .five {
-  width: 105%; }
-  @media only screen and (min-width: 44em) {
-    .learning .learning-dyslexia-wrap .five {
-      width: 100%; } }
-  .learning .learning-dyslexia-wrap .five p {
-    width: 100%;
-    padding: .7em;
-    font-size: 1.1em;
-    font-weight: 300;
-    color: #fff;
-    margin-left: -1em;
+      font-size: .8em;
+      font-weight: 500;
+      margin: .5em 0;
+      color: #41486c; }
+    .learning .news-box p {
+      font-size: .7em;
+      font-weight: 400;
+      color: #555 !important; }
+    .learning .news-box p:nth-child(3) {
+      margin-bottom: .5em; }
+  .learning .step {
+    margin: .5em 0; }
+    .learning .step p {
+      margin: .5em 0 !important;
+      line-height: 1.3em; }
+    .learning .step span.news-span {
+      display: block;
+      font-size: .7em;
+      font-weight: 600;
+      color: #444; }
+  .learning .accordion-wrap {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    cursor: hand;
-    cursor: pointer; }
-    .learning .learning-dyslexia-wrap .five p i {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: .8em;
+    color: #41486c; }
+    .learning .accordion-wrap h3 {
+      margin: 0 !important;
+      -webkit-flex: 1 0 8em;
+      -ms-flex: 1 0 8em;
+      flex: 1 0 8em;
       display: inline-block;
-      line-height: 1.5em; }
-
-.learning .learning-dyslexia-wrap .learning-five {
-  display: none; }
+      font-size: .95em;
+      color: #41486c !important; }
+    .learning .accordion-wrap span {
+      -webkit-flex: 1 0 10em;
+      -ms-flex: 1 0 10em;
+      flex: 1 0 10em;
+      font-size: 1.1em;
+      color: #41486c;
+      font-weight: 300; }
+    .learning .accordion-wrap .empty {
+      -webkit-flex: 0 0 1em;
+      -ms-flex: 0 0 1em;
+      flex: 0 0 1em; }
+    .learning .accordion-wrap .image-wrap {
+      -webkit-flex: 0 0 .6em;
+      -ms-flex: 0 0 .6em;
+      flex: 0 0 .6em;
+      margin-right: 1em;
+      cursor: hand;
+      cursor: pointer;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .learning .accordion-wrap .image-wrap img {
+        width: 100%;
+        height: 100%; }
+    .learning .accordion-wrap form {
+      -webkit-flex: 0 0 .6em;
+      -ms-flex: 0 0 .6em;
+      flex: 0 0 .6em;
+      margin-right: 1em;
+      cursor: hand;
+      cursor: pointer;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .learning .accordion-wrap form .hiddenDelete {
+        background: #fff url(../asset/icons/close-news.png) no-repeat;
+        background-size: 80%;
+        background-position: center;
+        border: 0;
+        width: 1em;
+        height: 1em; }
+    .learning .accordion-wrap form:hover {
+      -webkit-flex: 0 0 .6em;
+      -ms-flex: 0 0 .6em;
+      flex: 0 0 .6em;
+      margin-right: 1em;
+      cursor: hand;
+      cursor: pointer;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .learning .accordion-wrap form:hover .hiddenDelete {
+        background: #fff url(../asset/icons/close-news2.png) no-repeat;
+        background-size: 80%;
+        background-position: center;
+        border: 0;
+        width: 1em;
+        height: 1em; }
+    .learning .accordion-wrap .accordion {
+      margin-left: 1em; }
+    .learning .accordion-wrap .accordion, .learning .accordion-wrap .accordion-news {
+      display: none;
+      width: 90%;
+      padding: 0 0 0 .5em; }
+      .learning .accordion-wrap .accordion li, .learning .accordion-wrap .accordion-news li {
+        margin-top: .5em;
+        margin-bottom: 1em;
+        font-size: .9em; }
+        .learning .accordion-wrap .accordion li span, .learning .accordion-wrap .accordion-news li span {
+          display: block;
+          color: #41486c;
+          font-size: 1.1em;
+          margin-bottom: .3em; }
+      .learning .accordion-wrap .accordion p.posted-time, .learning .accordion-wrap .accordion-news p.posted-time {
+        margin: 1em 0 !important;
+        font-size: .9em;
+        color: #41486c; }
+        .learning .accordion-wrap .accordion p.posted-time span, .learning .accordion-wrap .accordion-news p.posted-time span {
+          font-size: .9em;
+          font-weight: 600;
+          display: block; }
+      .learning .accordion-wrap .accordion a, .learning .accordion-wrap .accordion-news a {
+        border: 1px tomato solid;
+        border-radius: 5px;
+        padding: .1em .5em;
+        color: tomato; }
+      .learning .accordion-wrap .accordion ul, .learning .accordion-wrap .accordion-news ul {
+        margin-left: 1em;
+        padding-left: .3em; }
+      .learning .accordion-wrap .accordion .source, .learning .accordion-wrap .accordion-news .source {
+        font-size: .6em;
+        text-align: right;
+        font-style: italic; }
+      .learning .accordion-wrap .accordion i, .learning .accordion-wrap .accordion-news i {
+        display: block;
+        text-align: center; }
+  .learning .learning-dyslexia-wrap .five {
+    width: 105%; }
+    @media only screen and (min-width: 44em) {
+      .learning .learning-dyslexia-wrap .five {
+        width: 100%; } }
+    .learning .learning-dyslexia-wrap .five p {
+      width: 100%;
+      padding: .7em;
+      font-size: 1.1em;
+      font-weight: 300;
+      color: #fff;
+      margin-left: -1em;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      cursor: hand;
+      cursor: pointer; }
+      .learning .learning-dyslexia-wrap .five p i {
+        display: inline-block;
+        line-height: 1.5em; }
+  .learning .learning-dyslexia-wrap .learning-five {
+    display: none; }
 
 .login-page {
   display: -webkit-flex;
@@ -1657,6 +1723,7 @@ section .donation {
     -webkit-flex: 0 0 7em;
     -ms-flex: 0 0 7em;
     flex: 0 0 7em;
+    margin-top: 1em;
     margin-bottom: 3em;
     border: 2px #E59C00 solid;
     border-radius: 5px;
@@ -1666,18 +1733,43 @@ section .donation {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: ease all .2s; }
     .loggedin .squire span {
       width: 100%;
       text-align: center;
       font-size: 2em;
       color: #E59C00;
       font-weight: 200; }
+  .loggedin .squire:hover {
+    border: 2px #E59C00 solid;
+    background-color: #E59C00; }
+    .loggedin .squire:hover span {
+      color: #fff;
+      font-weight: 100; }
+
+.admin-creater {
+  width: 3em;
+  height: 3em;
+  position: fixed;
+  z-index: 20;
+  bottom: 10em;
+  right: 3em;
+  display: block; }
+  @media only screen and (min-width: 64em) {
+    .admin-creater {
+      bottom: 10em;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); } }
+  .admin-creater img {
+    width: 100%; }
 
 .member-container {
   margin-bottom: 2em;
   border-left: 2px #E59C00 solid;
   padding-left: 1em;
+  position: relative;
   color: #888; }
   .member-container .member-name {
     margin-bottom: 1em;
@@ -1686,6 +1778,19 @@ section .donation {
     color: #444; }
   .member-container .margin-bottom {
     margin-bottom: .5em; }
+  .member-container .margin-bottom2 {
+    margin-bottom: 1em; }
+  .member-container .user-delete {
+    padding: .5em;
+    color: #F44336;
+    border: 1px #F44336 solid;
+    font-weight: 300;
+    background-color: transparent; }
+  .member-container .user-delete:hover {
+    color: #FBFAF2;
+    border: 1px #F44336 solid;
+    font-weight: 100;
+    background-color: #F44336; }
 
 .member-form {
   background-color: transparent !important; }
@@ -1726,8 +1831,7 @@ section .donation {
 .information-pack {
   border: 2px orange solid;
   display: inline-block;
-  padding: 0;
-  margin-left: -1em; }
+  padding: 0; }
   .information-pack p {
     font-style: italic;
     padding: 0 1em;

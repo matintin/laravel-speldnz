@@ -135,7 +135,7 @@
 							<input type="submit" value="Sign Up">
 						
 						</form>
-						<div class="facebook"><span>Follow Us</span><a href="https://www.facebook.com/SPELD-New-Zealand-1512199148997024"><i class="fa fa-facebook-official"></i></a></div>
+						<div class="facebook"><a href="https://www.facebook.com/SPELD-New-Zealand-1512199148997024"><i class="fa fa-facebook-official"></i></a></div>
 					</div>
 				</div>
 				<div class="support">

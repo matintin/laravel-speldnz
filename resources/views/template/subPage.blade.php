@@ -37,9 +37,14 @@
 	@else
 	@yield('content')
 	@endif
-	<section>
+	<section class="pages">
 		
 
+	<div class="snz-intro">
+		<h4><span>SNZ</span> believes that every person with learning disabilities can be successful at school, 
+			at work, in relationships, and in the community
+		 – given the right opportunities. Join <span>SNZ</span> in creating those opportunities.</h4>
+	</div>
 	<div class="donation">
 		<div class="donate-box">
 			<div class="donate-text">
@@ -65,7 +70,7 @@
 				<input type="submit" value="Sign Up">
 			
 			</form>
-			<div class="facebook"><span>Follow Us</span><a href="https://www.facebook.com/SPELD-New-Zealand-1512199148997024"><i class="fa fa-facebook-official"></i></a></div>
+			<div class="facebook"><a href="https://www.facebook.com/SPELD-New-Zealand-1512199148997024"><i class="fa fa-facebook-official"></i></a></div>
 		</div>
 	</div>
 	</section>

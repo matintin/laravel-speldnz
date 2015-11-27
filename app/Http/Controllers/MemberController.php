@@ -86,15 +86,17 @@ class MemberController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(\App\Http\Requests\UpdateMemberRequest $request, $id)
+    public function update($id)
     {
         $user = \App\Models\User::find($id);
 
-        $user->fill($request->all());
+        $value = \Request::input("value");
+        $field = \Request::input("field");
 
+        $user->$field = $value;
         $user->save();
 
-        return redirect('users/'.$user->id);    
+        return $value;   
     }
 
     /**
@@ -105,6 +107,10 @@ class MemberController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = \App\Models\User::find($id);
+
+        $user->delete();
+
+        return redirect("users");
     }
 }

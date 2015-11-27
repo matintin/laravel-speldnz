@@ -1,6 +1,24 @@
 @extends('template.subPage')
 
 @section('content')
+<div class="navigation">
+	<a href="{{url('/')}}" class="page-nav">Home</a>
+	
+	<a href="{{url('loggedin')}}">
+		<span>
+
+		/ Administor Page
+		</span>
+	</a>
+	
+	<a href="{{url('users')}}">
+	<span>/ Member Details</span> 
+	</a>
+
+	<span>/ Member Create</span>
+
+	<div class="container">
+		<div class="content">
 
 		{!! Form::open(['url'=>'users',null,'class'=>'generic-form member-form']) !!}
 
@@ -33,5 +51,7 @@
 		        </ul>
 		    </div>
 		@endif
-
+		</div>
+	</div>
+</div>
 @stop

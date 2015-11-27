@@ -1,7 +1,12 @@
 
 .navigation {
-
+	
 	padding: 1em;
+	@media only screen and (min-width : 64em) {
+		width:54%;
+		display:inline-block;
+		vertical-align:top;
+	}
 	a, span {
 		color:#ccc;
 		text-decoration:none;
@@ -23,42 +28,68 @@
 
 	}
 	
-}
-.container {
-	flex:1 0 1em;
-	padding:1em;
-	h1 {
-		margin:0 0 1em 0;
-		color:#555;
-		p {
-			display:inline-block;
-			font-size:.7em;
-		}
-		// font-size:3em;
-		// font-weight:600;
-	}
-	.content {
+
+	.container {
 		flex:1 0 1em;
-		padding:0 1em;
-		// position:relative;
-		.about-content {
-			margin-bottom:5em;
-			h3,p {
-				color:#415E6C;
-			}
-			h3 {
-				margin:2em 0 2em 0;
-			}
+		padding:1em;
+
+		h1 {
+			margin:0 0 1em 0;
+			color:#555;
 			p {
-				margin:0 0 .5em 0;
-				line-height:1.5em;
-				
+				display:inline-block;
+				font-size:.7em;
+			}
+			// font-size:3em;
+			// font-weight:600;
+		}
+		.content {
+			flex:1 0 1em;
+			padding:0 1em;
+			// position:relative;
+			.about-content {
+				margin-bottom:5em;
+				h3,p {
+					color:#415E6C;
+				}
+				h3 {
+					margin:2em 0 2em 0;
+				}
+				p {
+					margin:0 0 .5em 0;
+					line-height:1.5em;
+					
+				}
 			}
 		}
 	}
 }
-section{
-	.donation {
+section.pages{
+		@media only screen and (min-width : 64em) {
+			width:40%;
+			display:inline-block !important;
+			margin-top:7.5em;
+		}
+	.snz-intro {
+		flex:1 0 1em;
+		
+		margin:0 auto 1em auto;
+		padding:2em;
+		text-align:center;
+		background-color:#B27815;
+		color:#fff;
+		h4 {
+			font-weight:200;
+			// font-size:1em;
+			span {
+				font-weight:500;
+				font-size:1.1em;
+			}
+		}
+	}
+	
+}
+.donation {
 		flex:1 0 1em;
 		background-color:#3b6daf;
 		padding:2em;
@@ -104,4 +135,3 @@ section{
 			}
 		}
 	}
-}

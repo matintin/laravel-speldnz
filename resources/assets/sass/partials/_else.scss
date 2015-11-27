@@ -8,6 +8,7 @@
 	flex-direction:column;
 	.squire {
 		flex:0 0 7em;
+		margin-top:1em;
 		margin-bottom:3em;
 		border:2px #E59C00 solid;
 		border-radius:5px;
@@ -21,17 +22,43 @@
 			color:#E59C00;
 			font-weight:200;
 		}
+		transition:ease all .2s;
+	}
+	.squire:hover {
+		border:2px #E59C00 solid;
+		background-color:#E59C00;
+		span {
+			color:#fff;
+			font-weight:100;
+		}
 	}
 }
 //----------------loggedin------------------------------------
 
 
 //----------------member--------------------------------------
-
+.admin-creater {
+	width:3em;
+	height:3em;
+	position:fixed;
+	z-index:20;
+	bottom:10em;
+	right:3em;
+	@media only screen and (min-width : 64em) {
+		bottom:10em;
+		left:50%;
+		transform:translateX(-50%);
+	}
+	display:block;
+	img {
+		width:100%;
+	}
+}
 .member-container {
 	margin-bottom:2em;
 	border-left:2px #E59C00 solid;
 	padding-left:1em;
+	position:relative;
 	.member-name {
 		margin-bottom:1em;
 		color:#000;
@@ -42,7 +69,25 @@
 	.margin-bottom {
 		margin-bottom:.5em;
 	}
+	.margin-bottom2 {
+		margin-bottom:1em;
+	}
 	color:#888;
+
+	.user-delete {
+		padding:.5em;
+		color:#F44336;
+		border:1px #F44336 solid;
+		font-weight:300;
+		background-color:rgba(0,0,0,0);
+	}
+	.user-delete:hover {
+		color:#FBFAF2;
+		border:1px #F44336 solid;
+		font-weight:100;
+		background-color:#F44336;
+	}
+		
 }
 
 //================createMember--------------------------------
@@ -88,7 +133,7 @@
 	border:2px orange solid;
 	display:inline-block;
 	padding:0;
-	margin-left:-1em;
+	// margin-left:-1em;
 	p {	
 		font-style: italic;
 		padding:0 1em;

@@ -385,7 +385,7 @@ body {
 		
 			list-style-type: none;
 			flex:0 0 4em;
-			line-height:4em;
+			line-height:3.5em;
 			// border-bottom:.1em #ddd solid;
 			
 			&:nth-child(2){
@@ -716,7 +716,7 @@ body {
 							}
 							.training-back {
 								transform: rotateY(180deg);	
-								background-color:#68604a;
+								background-color:#ac3954;
 								width:100%;
 								height:100%;
 								.dyslexia-flip-box {
@@ -954,7 +954,7 @@ body {
 							display:none;
 							@media only screen and (min-width : 44em) {
 								margin:0 auto;
-								flex:0 0 30%;
+								flex:0 0 20%;
 								display:flex;
 								justify-content:center;
 								align-items:center;

@@ -26,7 +26,7 @@
 			<h3>{{$post->title}}</h3>
 			<div class="empty"></div><div class="image-wrap"><img src="{{asset('asset/icons/plus.png')}}" alt=""></div>
 			<div class="accordion-news">
-			<p>{{$post->created_at}}</p>
+			<p class="posted-time">{{$post->created_at}}</p>
 			{!! $post->content !!}
 			
 			</div>	

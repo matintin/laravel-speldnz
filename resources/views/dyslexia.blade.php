@@ -6,7 +6,7 @@
 
 		<div class="learning-dyslexia-wrap learning-five">
 			<div class="five Dyslexia" data-shown="{{$page->id==3 ? 1 : 0}}">
-				<p>Dyslexia bla<i class="fa fa-angle-down"></i></p>
+				<p>Dyslexia<i class="fa fa-angle-down"></i></p>
 			</div>
 	
 		 	<div class="learning-five learning-dyslexia">
