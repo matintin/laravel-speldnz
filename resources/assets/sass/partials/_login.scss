@@ -32,27 +32,23 @@
 		// border:1px red solid;
 		cursor:hand;
 		cursor:pointer;
-		.download-cart {
-			font-size:1em;
-			color:inherit;
-		}
-		.download-no {
-			display: flex;
-			width: .8em;
-			height: .8em;
-			padding: .1em;
-			border: 1px tomato solid;
-			border-radius:50%;
-			color:inherit;
-			margin-left: .3em;
-			align-items:center;
-			span {
-				display: block;
-				color: inherit;
-				margin: 0 auto;
-				font-size: .7em;
+		.counter {
+			svg {
+				fill: tomato;
 			}
-
+			.counter-number {
+					width: 1.5em;
+					height: 1.5em;
+					padding: .1em;
+					line-height: 1.5em;
+					display: block;
+					margin: 0 auto;
+					color: inherit;
+					font-size: .7em;
+					text-align:center;
+					border:1px tomato solid;
+					border-radius:100%;
+			}
 		}
 	}
 	margin-bottom:3em;
@@ -151,8 +147,5 @@
 		width: 100%;
 	}
 }
-
-
-
 
 

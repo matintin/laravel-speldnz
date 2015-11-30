@@ -114,23 +114,16 @@ body {
 			input[type="text"]:nth-child(4) {
 				margin-bottom: 2em;
 			}
+			.login-error {
+				li {
+					font-size:.9em;
+					color: tomato;
+					font-weight:200;
+				}
+			}
 
 		}
 	}//login
-
-	.login-button, .logout-button {
-		cursor:hand;
-		cursor:pointer;
-		color:#ff6347;
-		span {
-			font-size:.8em;
-			margin-left:.2em;
-		}
-		
-		&:hover {
-			color: #446600;
-		}
-	}
 	.generic-form {
 		padding:2em;
 		display:flex;
@@ -330,6 +323,21 @@ body {
 			}//header-wrap
 		}
 	}//header
+	.login-button, .logout-button {
+		cursor:hand;
+		cursor:pointer;
+		span {
+			font-size:.8em;
+			margin-left:.2em;
+		}
+	}
+	.login-button {
+		color:#19a319 !important;
+	}
+	.logout-button {
+		color: tomato !important;
+	}
+	
 	#search-box {
 		display: none;
 		width:100%;

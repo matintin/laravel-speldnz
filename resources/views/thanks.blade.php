@@ -15,7 +15,9 @@
 
 	<div class="learning">
 		
-		Thank You
+		<h3>Thank you for contacting us</h3>
+
+		
 
 	</div><!-- about-content -->
 

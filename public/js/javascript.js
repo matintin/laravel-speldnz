@@ -141,16 +141,8 @@ var isTextOpen = false;
 		}
 
 	});
-	// $('.training .image-wrap').each(function(el) {
-	// 	if($(el).data("shown")=="1") {
-	// 		$(this).next().slideDown();
-
-	// 	}
-	// });
-	
 
 	$('.learning-dyslexia-wrap .Dyslexia, .Dyspraxia, .ADHD, .Dysgraphia, .Dyscalculia').on("click",function() {
-
 
 		if($(this).data("shown") == "0") {
 
@@ -190,9 +182,6 @@ var isTextOpen = false;
 	if(getQueryString("login") == "show"){
 		$("#login").css("display","block");
 	}
-
-	
-
 
 	$('.login-button').on("click",function(e) {
 		e.preventDefault();
@@ -248,15 +237,6 @@ var isTextOpen = false;
 
 //---------------------------cart------------------------------------
 
-//---------------------------searchbox-desktop-----------------------
-	// $('.search-out-box').on("click",function() {
-	// 	$('.search-out-box').css("display","none");
-	// 	$('.search-desktop').css("width","7em");
-	// 	$('.search-desktop form').removeClass('hidden');
-
-	// });
-
-//---------------------------searchbox-desktop-----------------------
 
 //--------------------------jeditable--------------------------------
 
@@ -286,8 +266,6 @@ var isTextOpen = false;
 		e.preventDefault();
 	});
 
-
-
 	$(".list-wrap input").on("change",function(){
 		if($(".list-wrap input:checked").length >= 5){
 
@@ -295,6 +273,40 @@ var isTextOpen = false;
 
 		}
 	});
+
+//--------------------------download---------------------------------	
+	var i=1;
+	$('.check-box').on("click",function() {
+
+		$(this).parent().css("display","none");
+		
+		$('.counter-number').html(i);
+		i = i+1;
+	});
+//--------------------------download---------------------------------	
+
+//--------------------------font-size--------------------------------
+
+	$('#sfont').on("click",function() {
+		curSize = parseInt($('.navigation').css('font-size')) - 2;
+		if(curSize>=12) {
+
+			$('.navigation').css('font-size',curSize);
+		}
+	});
+
+	$('#lfont').on("click",function() {
+		curSize = parseInt($('.navigation').css('font-size')) + 2;
+		if(curSize<=20){
+
+			$('.navigation').css('font-size',curSize);
+		}
+
+	});
+
+//--------------------------font-size--------------------------------
+
+
 
 });//jquery
 

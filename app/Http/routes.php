@@ -10,23 +10,21 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-// Route::get('mail',function() {
-
-// 	$data = [];
-
-// 	Mail::send('mail',$data,function($message) {
-
-// 		$message->to('chadcho82@hotmail.com')
-// 				->subject('welcome to mailer');
-// 	});
-
-// });
+use Illuminate\Support\Facades\Mail;
 
 Route::get('/',function() {
 
 	//return \App\Models\Page::find(2)->children[0]->parent;
 	return view('index');
+});
+Route::get('mail',function() {
+
+	Mail::send('mail',['name'=>'Meme'],function($message) {
+
+		$message->to('chadcho82@hotmail.com')
+				->subject('welcome to mailer');
+	});
+
 });
 Route::get('about',function() {
 

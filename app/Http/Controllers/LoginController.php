@@ -24,7 +24,8 @@ class LoginController extends Controller
             }
     	}else{
 
-    		return redirect('/');
+    		\Session::flash("error","Check your Email and Password Please");
+            return redirect('/?login=show');  
            
     	}
     }

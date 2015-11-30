@@ -99,15 +99,10 @@ body {
           width: 50%; } }
       body #login .login-box input[type="text"]:nth-child(4) {
         margin-bottom: 2em; }
-  body .login-button, body .logout-button {
-    cursor: hand;
-    cursor: pointer;
-    color: #ff6347; }
-    body .login-button span, body .logout-button span {
-      font-size: .8em;
-      margin-left: .2em; }
-    body .login-button:hover, body .logout-button:hover {
-      color: #446600; }
+      body #login .login-box .login-error li {
+        font-size: .9em;
+        color: tomato;
+        font-weight: 200; }
   body .generic-form {
     padding: 2em;
     display: -webkit-flex;
@@ -299,6 +294,16 @@ body {
                 body header .inner .header-wrap .desktop-menu .desktop-nav .search-desktop form button img {
                   width: 100%;
                   display: block; }
+  body .login-button, body .logout-button {
+    cursor: hand;
+    cursor: pointer; }
+    body .login-button span, body .logout-button span {
+      font-size: .8em;
+      margin-left: .2em; }
+  body .login-button {
+    color: #19a319 !important; }
+  body .logout-button {
+    color: tomato !important; }
   body #search-box {
     display: none;
     width: 100%;
@@ -1342,6 +1347,18 @@ section.pages .snz-intro {
       .contact-content .question-wrap form input[type="submit"]:hover {
         border: 1px tomato solid;
         color: tomato; }
+    .contact-content .question-wrap .contact-alert {
+      border: 2px orange solid;
+      display: inline-block;
+      margin-bottom: 2em;
+      margin-bottom: 2em; }
+      .contact-content .question-wrap .contact-alert ul {
+        margin: 0;
+        padding: 1em; }
+        .contact-content .question-wrap .contact-alert ul li {
+          list-style-type: none;
+          color: red;
+          font-size: .8em; }
 
 .learning-five {
   width: 100%;
@@ -1378,12 +1395,6 @@ section.pages .snz-intro {
 
 .learning {
   position: relative; }
-  .learning .admin-creater {
-    top: 8em;
-    left: 70%; }
-    @media only screen and (min-width: 64em) {
-      .learning .admin-creater {
-        left: 40%; } }
   .learning .learning-margin {
     margin-bottom: 2em; }
   .learning .news-box {
@@ -1528,6 +1539,8 @@ section.pages .snz-intro {
           color: #41486c;
           font-size: 1.1em;
           margin-bottom: .3em; }
+      .learning .accordion-wrap .accordion p, .learning .accordion-wrap .accordion-news p {
+        margin-top: 1em !important; }
       .learning .accordion-wrap .accordion p.posted-time, .learning .accordion-wrap .accordion-news p.posted-time {
         margin: 1em 0 !important;
         font-size: .9em;
@@ -1616,28 +1629,20 @@ section.pages .snz-intro {
     color: tomato;
     cursor: hand;
     cursor: pointer; }
-    .login-page .download-cart-box .download-cart {
-      font-size: 1em;
-      color: inherit; }
-    .login-page .download-cart-box .download-no {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      width: .8em;
-      height: .8em;
+    .login-page .download-cart-box .counter svg {
+      fill: tomato; }
+    .login-page .download-cart-box .counter .counter-number {
+      width: 1.5em;
+      height: 1.5em;
       padding: .1em;
-      border: 1px tomato solid;
-      border-radius: 50%;
+      line-height: 1.5em;
+      display: block;
+      margin: 0 auto;
       color: inherit;
-      margin-left: .3em;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .login-page .download-cart-box .download-no span {
-        display: block;
-        color: inherit;
-        margin: 0 auto;
-        font-size: .7em; }
+      font-size: .7em;
+      text-align: center;
+      border: 1px tomato solid;
+      border-radius: 100%; }
 
 .download-files .download-box {
   width: 100%;
@@ -1768,8 +1773,8 @@ section.pages .snz-intro {
       font-weight: 100; }
 
 .admin-creater {
-  width: 3em;
-  height: 3em;
+  width: 2.5em;
+  height: 2.5em;
   position: fixed;
   z-index: 20;
   bottom: 10em;
@@ -1777,7 +1782,6 @@ section.pages .snz-intro {
   display: block; }
   @media only screen and (min-width: 64em) {
     .admin-creater {
-      bottom: 10em;
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%); } }
@@ -1870,5 +1874,53 @@ section.pages .snz-intro {
       list-style-type: none;
       color: red;
       font-size: .8em; }
+
+h3 {
+  font-size: 1.2em !important; }
+
+.training span {
+  font-size: .9em;
+  margin-top: 1em;
+  display: block; }
+
+.training p {
+  font-size: .9em;
+  margin-top: 2em; }
+
+.training .info-training {
+  border: none !important;
+  display: block;
+  margin-bottom: .5em; }
+  .training .info-training i {
+    display: inline-block !important;
+    margin-right: .2em;
+    color: #415E6C; }
+
+.training .info-training:hover {
+  text-decoration: underline; }
+
+.training .hours-course {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .training .hours-course p {
+    margin-bottom: 1em !important; }
+  .training .hours-course .hour-content {
+    -webkit-flex: 1 0 1em;
+    -ms-flex: 1 0 1em;
+    flex: 1 0 1em; }
+  .training .hours-course .hour-number {
+    -webkit-flex: 0 0 2em;
+    -ms-flex: 0 0 2em;
+    flex: 0 0 2em;
+    margin-left: .5em !important;
+    text-align: right; }
 
 /*# sourceMappingURL=app.css.map */

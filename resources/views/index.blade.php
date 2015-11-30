@@ -114,9 +114,9 @@
 				<div class="faq">
 						<h3>FAQ</h3>
 					<div class="faq-wrap">
-						<p><a href="">What is dyslexia?</a></p>
-						<p><a href="">What causes dyslexia?</a></p>
-						<p><a href="">What are some common symptoms of dyslexia?</a></p>
+						<p><a href="{{url('pages/10')}}">What is dyslexia?</a></p>
+						<p><a href="{{url('pages/10')}}">What causes dyslexia?</a></p>
+						<p><a href="{{url('pages/10')}}">What are some common symptoms of dyslexia?</a></p>
 					</div>
 				</div>
 			

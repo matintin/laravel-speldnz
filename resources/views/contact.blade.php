@@ -45,7 +45,7 @@
 			{!! Form::close() !!}
 
 			@if (count($errors) > 0)
-			    <div class="alert">
+			    <div class="contact-alert">
 			        <ul>
 			            @foreach ($errors->all() as $error)
 			                <li>- {{ $error }}</li>

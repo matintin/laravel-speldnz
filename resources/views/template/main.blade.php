@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Speld NZ</title>
 
+	<meta content="Aiming to help children who are not realizing their educational potential because of specific learning disabilities like dyslexia." name="description" />
+    <meta content="speld nz, specific learning disabilities, difficulties, children, child, educational, potential, learn differently, parents, tutors, aides, problems, dyslexia, dyscalculia, dyspraxia, aphasia, attention deficits ADD, ADHD autism, school, difficult, neurological, behavioural problems, frustration, anger, cognitive ability, number skills, reading, memory, laterality, motor co-ordination, remedial, above average, intellectual, dyscalculia, writing, spelling, spatial relationships, memory, auditory, visual, perception, advocacy, training, professional development, tutors, nzqa, approved, distance, block, course, anatomy, eye, ear, assessment, exceptional, emotional development, sdl neurology reading, spelling, writing, sensory integration, motor development, parents, failure, frustration, trouble, literacy, numeracy" name="keywords" />
+
 	<link rel="speldnz" href="{{asset('asset/icons/logo.png')}}">
 	<link rel="icon" href="{{asset('asset/icons/logo.png')}}">
 
@@ -35,12 +38,12 @@
 				{!! Form::submit('Login') !!}
 			
 			{!! Form::close() !!}
-			@if (count($errors) > 0)
-			    <div class="alert">
+			@if (\Session::has("error"))
+			    <div class="login-error">
 			        <ul>
-			            @foreach ($errors->all() as $error)
-			                <li>- {{ $error }}</li>
-			            @endforeach
+			            
+			            <li>{{\Session::get("error") }}</li>
+			           
 			        </ul>
 			    </div>
 			@endif
@@ -161,7 +164,7 @@
 						<li><a href="{{url('news_guest')}}">News & Event</a></li>
 						<li><a href="{{url('pages/10')}}">FAQ</a></li>
 						<li><a href="{{url('training')}}">Training</a></li>
-						<li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li>
+						<!-- <li><a href="https://www.fundraiseonline.co.nz/fundraise/makedonation_direct.aspx?c=203">Donate</a></li> -->
 						<li><a href="{{url('contact')}}">Contact</a></li>
 						@if(Auth::check())
 
@@ -293,9 +296,9 @@
 					<div class="text-size">
 						<p>Text-size</p>
 						<ul>
-							<li>A</li>
-							<li>A</li>
-							<li>A</li>
+							<li id="sfont">A</li>
+						
+							<li id="lfont">A</li>
 						</ul>
 					</div><!-- text-size -->
 					<div class="assist-on-off">
