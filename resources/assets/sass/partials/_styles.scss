@@ -118,7 +118,19 @@ body {
 		}
 	}//login
 
-
+	.login-button, .logout-button {
+		cursor:hand;
+		cursor:pointer;
+		color:#ff6347;
+		span {
+			font-size:.8em;
+			margin-left:.2em;
+		}
+		
+		&:hover {
+			color: #446600;
+		}
+	}
 	.generic-form {
 		padding:2em;
 		display:flex;
@@ -266,14 +278,7 @@ body {
 								
 							}//&:nth-child(2)
 						}//li
-						.login-button, .logout-button {
-							cursor:hand;
-							cursor:pointer;
-							span {
-								font-size:.8em;
-								margin-left:.2em;
-							}
-						}
+						
 						.search-desktop {
 							// width:100% ;
 							width: 7em;
@@ -387,7 +392,6 @@ body {
 			flex:0 0 4em;
 			line-height:3.5em;
 			// border-bottom:.1em #ddd solid;
-			
 			&:nth-child(2){
 
 				#learning-sub-menu {

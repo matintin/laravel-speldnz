@@ -13,7 +13,7 @@
 		<div class="content">
 
 
-	<div class="about-content learning">
+	<div class="learning">
 
 		<div class="contact-content">
 		 
@@ -38,48 +38,22 @@
 
 			{!! Form::text('phone',null,['placeholder'=>'Contact']) !!}
 
-			{!! Form::textarea('message',null,['placeholder'=>'Message']) !!}
+			{!! Form::textarea('message',null,['placeholder'=>'Message','rows'=>7]) !!}
 
 			{!! Form::submit('Send') !!}
 
 			{!! Form::close() !!}
-			<!-- <form action="">
-				<select name="" id="" >
-					<option value="" disabled selected>choose your location</option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-					
-				<input type="text" placeholder="Name" />
-				<input type="text" placeholder="Email" />
-				<input type="text" placeholder="Phone" />
-				<textarea rows="5" placeholder="Message" ></textarea>
-				<input type="submit" placeholder="Send" />
-					
-			</form> -->
+
+			@if (count($errors) > 0)
+			    <div class="alert">
+			        <ul>
+			            @foreach ($errors->all() as $error)
+			                <li>- {{ $error }}</li>
+			            @endforeach
+			        </ul>
+			    </div>
+			@endif
+			
 		</div>
 	</div>
 

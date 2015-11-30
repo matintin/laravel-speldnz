@@ -1,13 +1,18 @@
 .contact-content {
 	display:flex;
 	flex-wrap:wrap;
+	@media only screen and (min-width : 64em) {
+		flex-direction:column;
+	}
 	
 	.contact-wrap {
 		flex:1 0 15em;
+		margin-right:2em;
 		h3, p {
 			color:#415E6C;
 		}
 		h3 {
+			margin-top:0;
 			margin-bottom: 2em ;
 		}
 		p {
@@ -29,17 +34,23 @@
 			flex:0 0 16em;
 		}
 		flex:1 0 16em;
+		@media only screen and (min-width : 64em) {
+			flex:0 0 25em;
+			margin-bottom:2em;
+		}
+		max-width: 25em;
 		margin-bottom:2em;
+		margin-right:2em;
 		h3 {
 			color:#415E6C;
 			margin-bottom: 2em;
 		}
 		form {
-			flex:1 1 15em;
+		
 			display: flex;
 			flex-direction: column;
 			color:#415E6C;
-
+			box-sizing:border-box;
 			select {	
 				width: 50%;
 				border:1px #415E6C solid;
@@ -49,8 +60,10 @@
 				font-size:.8em;
 				height: 2em;
 				outline: none;
+				box-sizing:border-box;
 			}
 			input {	
+				box-sizing:border-box;
 				border:none;
 				padding:.3em;
 				margin-bottom: 1em;
@@ -75,6 +88,7 @@
 				border-bottom:1px #415E6C solid;
 				background-color: rgba(255,255,255,.1);
 				outline: none;
+				box-sizing:border-box;
 			}
 			textarea:focus {
 				border-bottom:1px tomato solid;

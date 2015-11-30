@@ -29,14 +29,21 @@
 				<h3>Login Form</h3>
 				
 				{!! Form::text('email', null , ['placeholder'=>'Email']) !!}
-				{!! $errors->first('email') !!}	
 		
 				{!! Form::text('password', null , ['placeholder'=>'Password']) !!}
-				{!! $errors->first('password') !!}	
 		
 				{!! Form::submit('Login') !!}
 			
 			{!! Form::close() !!}
+			@if (count($errors) > 0)
+			    <div class="alert">
+			        <ul>
+			            @foreach ($errors->all() as $error)
+			                <li>- {{ $error }}</li>
+			            @endforeach
+			        </ul>
+			    </div>
+			@endif
 			
 		</div>
 	</div>

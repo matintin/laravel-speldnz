@@ -99,6 +99,15 @@ body {
           width: 50%; } }
       body #login .login-box input[type="text"]:nth-child(4) {
         margin-bottom: 2em; }
+  body .login-button, body .logout-button {
+    cursor: hand;
+    cursor: pointer;
+    color: #ff6347; }
+    body .login-button span, body .logout-button span {
+      font-size: .8em;
+      margin-left: .2em; }
+    body .login-button:hover, body .logout-button:hover {
+      color: #446600; }
   body .generic-form {
     padding: 2em;
     display: -webkit-flex;
@@ -236,12 +245,6 @@ body {
                 body header .inner .header-wrap .desktop-menu .desktop-nav li:nth-child(2) #desktop-sub-menu li {
                   font-size: .9em;
                   line-height: 1.6em; }
-          body header .inner .header-wrap .desktop-menu .desktop-nav .login-button, body header .inner .header-wrap .desktop-menu .desktop-nav .logout-button {
-            cursor: hand;
-            cursor: pointer; }
-            body header .inner .header-wrap .desktop-menu .desktop-nav .login-button span, body header .inner .header-wrap .desktop-menu .desktop-nav .logout-button span {
-              font-size: .8em;
-              margin-left: .2em; }
           body header .inner .header-wrap .desktop-menu .desktop-nav .search-desktop {
             width: 7em;
             padding: 0;
@@ -1231,13 +1234,20 @@ section.pages .snz-intro {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  @media only screen and (min-width: 64em) {
+    .contact-content {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .contact-content .contact-wrap {
     -webkit-flex: 1 0 15em;
     -ms-flex: 1 0 15em;
-    flex: 1 0 15em; }
+    flex: 1 0 15em;
+    margin-right: 2em; }
     .contact-content .contact-wrap h3, .contact-content .contact-wrap p {
       color: #415E6C; }
     .contact-content .contact-wrap h3 {
+      margin-top: 0;
       margin-bottom: 2em; }
     .contact-content .contact-wrap p {
       margin: 0 0 .5em 0;
@@ -1253,26 +1263,32 @@ section.pages .snz-intro {
     -webkit-flex: 1 0 16em;
     -ms-flex: 1 0 16em;
     flex: 1 0 16em;
-    margin-bottom: 2em; }
+    max-width: 25em;
+    margin-bottom: 2em;
+    margin-right: 2em; }
     @media only screen and (max-width: 399px) {
       .contact-content .question-wrap {
         -webkit-flex: 0 0 16em;
         -ms-flex: 0 0 16em;
         flex: 0 0 16em; } }
+    @media only screen and (min-width: 64em) {
+      .contact-content .question-wrap {
+        -webkit-flex: 0 0 25em;
+        -ms-flex: 0 0 25em;
+        flex: 0 0 25em;
+        margin-bottom: 2em; } }
     .contact-content .question-wrap h3 {
       color: #415E6C;
       margin-bottom: 2em; }
     .contact-content .question-wrap form {
-      -webkit-flex: 1 1 15em;
-      -ms-flex: 1 1 15em;
-      flex: 1 1 15em;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      color: #415E6C; }
+      color: #415E6C;
+      box-sizing: border-box; }
       .contact-content .question-wrap form select {
         width: 50%;
         border: 1px #415E6C solid;
@@ -1281,8 +1297,10 @@ section.pages .snz-intro {
         background-color: transparent;
         font-size: .8em;
         height: 2em;
-        outline: none; }
+        outline: none;
+        box-sizing: border-box; }
       .contact-content .question-wrap form input {
+        box-sizing: border-box;
         border: none;
         padding: .3em;
         margin-bottom: 1em;
@@ -1313,7 +1331,8 @@ section.pages .snz-intro {
         font-size: .8em;
         border-bottom: 1px #415E6C solid;
         background-color: rgba(255, 255, 255, 0.1);
-        outline: none; }
+        outline: none;
+        box-sizing: border-box; }
       .contact-content .question-wrap form textarea:focus {
         border-bottom: 1px tomato solid; }
       .contact-content .question-wrap form input[type="submit"] {

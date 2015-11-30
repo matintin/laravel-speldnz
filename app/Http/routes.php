@@ -83,5 +83,15 @@ Route::get('pages/{id}',function($id) {
 	return view('page',compact("page"));
 });
 
+Route::post('bla',function(\App\Http\Requests\ContactRequest $request) {
+	$contact = \App\Models\Contact::create($request->all());
+
+	$contact->save();
+
+	return redirect('thanks');
+});
+Route::get('thanks',function() {
+	return view('thanks');
+});
 
 

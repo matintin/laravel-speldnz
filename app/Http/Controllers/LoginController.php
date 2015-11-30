@@ -9,8 +9,10 @@ use App\Http\Controllers\Controller;
 
 class LoginController extends Controller
 {
-    public function processLogin(Request $request, \Illuminate\Contracts\Auth\Guard $auth){
-    	$credential = $request->only("email","password");
+    public function processLogin(\App\Http\Requests\LoginRequest $request, \Illuminate\Contracts\Auth\Guard $auth){
+    	
+
+        $credential = $request->only("email","password");
 
     	if(\Auth::attempt($credential)){
     		//if it is professional member go to download page
@@ -21,10 +23,9 @@ class LoginController extends Controller
                 return redirect('download?userid='.\Auth::user()->id);
             }
     	}else{
-    		return redirect("/");  
-           
 
-        
+    		return redirect('/');
+           
     	}
     }
 
