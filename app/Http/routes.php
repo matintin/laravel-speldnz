@@ -30,9 +30,16 @@ Route::get('mail',function() {
 
 Route::post('signupnewsletter',function() {
 
+	$newsletter = \App\Models\Newsletter::create();
+
 	$email = Request::get("email");
 
+	$newsletter->email = $email;
+
+	$newsletter->save();
+
 	//add email to database
+
 
 	Mail::send('mail',['name'=>'Meme'],function($message) use($email){
 
@@ -41,9 +48,11 @@ Route::post('signupnewsletter',function() {
 				->subject('welcome to mailer');
 	});
 
-	//redirect
+	return redirect('/');
 
 });
+
+
 
 Route::post('bla',function() {
 

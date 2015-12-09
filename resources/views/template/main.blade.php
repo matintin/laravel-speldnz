@@ -249,6 +249,7 @@
 		@yield('index')
 		</div>
 	</main>
+
 	<footer>
 		
 		<div class="footer-wrap">

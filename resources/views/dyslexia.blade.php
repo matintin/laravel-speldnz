@@ -6,7 +6,7 @@
 
 		<div class="learning-dyslexia-wrap learning-five">
 			<div class="five Dyslexia" data-shown="{{$page->id==3 ? 1 : 0}}">
-				<p>Dyslexia<i class="fa fa-angle-down"></i></p>
+				<p class="color-white">Dyslexia<i class="fa fa-angle-down"></i></p>
 			</div>
 	
 		 	<div class="learning-five learning-dyslexia">
@@ -27,7 +27,7 @@
 
 
 		 	<div class="five Dyspraxia" data-shown="{{$page->id==4 ? 1 : 0}}">
-				<p>Dyspraxia<i class="fa fa-angle-down"></i></p>
+				<p class="color-white">Dyspraxia<i class="fa fa-angle-down"></i></p>
 			</div>
 			<div class="learning-five">
 
@@ -47,7 +47,7 @@
 
 
 			<div class="five ADHD" data-shown="{{$page->id==5 ? 1 : 0}}">
-				<p>ADHD<i class="fa fa-angle-down"></i></p>
+				<p class="color-white">ADHD<i class="fa fa-angle-down"></i></p>
 			</div>
 			<div class="learning-five">
 
@@ -66,7 +66,7 @@
 			<!-- ADHD -->
 
 			<div class="five Dysgraphia" data-shown="{{$page->id==6 ? 1 : 0}}">
-				<p>Dysgraphia<i class="fa fa-angle-down"></i></p>
+				<p class="color-white">Dysgraphia<i class="fa fa-angle-down"></i></p>
 			</div>
 			<div class="learning-five">
 
@@ -85,7 +85,7 @@
 			<!-- Dysgraphia -->
 
 			<div class="five Dyscalculia" data-shown="{{$page->id==7 ? 1 : 0}}">
-				<p>Dyscalculia<i class="fa fa-angle-down"></i></p>
+				<p class="color-white">Dyscalculia<i class="fa fa-angle-down"></i></p>
 			</div>
 			<div class="learning-five">
 
