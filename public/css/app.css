@@ -837,7 +837,7 @@ body {
             -webkit-flex: 1 0 1em;
             -ms-flex: 1 0 1em;
             flex: 1 0 1em; } }
-        body main .inner section:nth-child(4) .newsletter .newsletter-wrap form input[type="text"], body main .inner section .newsletter .newsletter-wrap form input[type="text"] {
+        body main .inner section:nth-child(4) .newsletter .newsletter-wrap form .news-email, body main .inner section .newsletter .newsletter-wrap form .news-email {
           width: 65%;
           padding: .5em;
           font-size: .8em;
@@ -1382,6 +1382,8 @@ section.pages .snz-intro {
       -ms-flex: 0 0 6em;
       flex: 0 0 6em;
       padding: 1em 0 1em 1em; }
+    .learning-five .five p {
+      color: #fff !important; }
   .learning-five .Dyslexia a, .learning-five .Dyslexia p {
     background-color: #7a9eaf; }
   .learning-five .Dyspraxia a, .learning-five .Dyspraxia p {

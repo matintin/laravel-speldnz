@@ -21,11 +21,28 @@ Route::get('mail',function() {
 
 	Mail::send('mail',['name'=>'Meme'],function($message) {
 
-		$message->to('chadcho82@hotmail.com')
+		$message->to('chadcho82@hotmail.com',"Name")
+				->from('admin@gmail.com', 'Laravel')
 				->subject('welcome to mailer');
 	});
 
 });
+
+Route::post('signupnewsletter',function() {
+
+	$email = Request::get("email");
+
+	//add email to database
+
+	Mail::send('mail',['name'=>'Meme'],function($message) use($email){
+
+		$message->to($email,"name")
+				->from('admin@gmail.com', 'Laravel')
+				->subject('welcome to mailer');
+	});
+
+});
+
 Route::get('about',function() {
 
 	return view('about');

@@ -321,5 +321,6 @@
 	<script src="{{asset('js/jquery.jeditable.js')}}"></script>
 	<script src="{{asset('js/javascript.js')}}"></script>
 	
+	
 </body>
 </html>

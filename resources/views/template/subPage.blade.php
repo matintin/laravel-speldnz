@@ -65,11 +65,12 @@
 		<p>Stay informed with our e-newsletters</p>
 
 		<div class="newsletter-wrap">
-			<form action="">
-				<input type="text" name="email" placeholder="Email Address">
+			{!! Form::open(["url"=>"signupnewsletter"])!!}
+			{!! Form::email("email", "", ["class"=>"news-email","placeholder"=>"Email Address"]) !!}
+		
 				<input type="submit" value="Sign Up">
 			
-			</form>
+			{!! Form::close()!!}
 			<div class="facebook"><a href="https://www.facebook.com/SPELD-New-Zealand-1512199148997024"><i class="fa fa-facebook-official"></i></a></div>
 		</div>
 	</div>

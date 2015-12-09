@@ -5,6 +5,6 @@
 	<title></title>
 </head>
 <body>
-	Welcome to mailer!
+	Welcome to mailer! {{$name}}
 </body>
 </html>
