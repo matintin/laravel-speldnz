@@ -28,6 +28,7 @@
 
 		<div class="question-wrap">
 			<h3>Ask Question</h3>
+
 			{!! Form::open(['url'=>'bla']) !!}
 			
 			{!! Form::select('location',array('1'=>'1')) !!}
@@ -38,7 +39,7 @@
 
 			{!! Form::text('phone',null,['placeholder'=>'Contact']) !!}
 
-			{!! Form::textarea('message',null,['placeholder'=>'Message','rows'=>7]) !!}
+			{!! Form::textarea('content',null,['placeholder'=>'Message','rows'=>7]) !!}
 
 			{!! Form::submit('Send') !!}
 

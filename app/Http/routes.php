@@ -36,10 +36,31 @@ Route::post('signupnewsletter',function() {
 
 	Mail::send('mail',['name'=>'Meme'],function($message) use($email){
 
-		$message->to($email,"name")
+		$message->to($email,"User")
 				->from('admin@gmail.com', 'Laravel')
 				->subject('welcome to mailer');
 	});
+
+	//redirect
+
+});
+
+Route::post('bla',function() {
+
+	$data = Request::all();
+
+	//add email to database
+
+	Mail::send('mailcontact',$data,function($message)  {
+
+		$message->to("admin email","User")
+				->from('admin@gmail.com', 'Laravel')
+				->subject('welcome to mailer');
+	});
+
+
+
+	//redirect
 
 });
 
