@@ -274,7 +274,7 @@ body {
 						
 						.search-desktop {
 							// width:100% ;
-							width: 7em;
+							max-width: 7em;
 							padding:0;
 							margin: 0 1em 0 0;
 							display: flex;
@@ -349,19 +349,22 @@ body {
 				display:none;
 			}
 			flex:1 0 1em;
-
+			border-sizing: border-box;
 			display: flex;
 			flex-wrap:wrap;
 			border:.1em #888 solid;
 			padding:.2em 0;
 			margin:0 1em;
 			input[type="text"] {
+				border-sizing: border-box;
 				flex:1 0 1em;
 				border:none;
-				background-color:rgba(0,0,0,0);
+				background-color: rgba(0,0,0,0);
+				padding-left: 10px;
+				-webkit-appearance: none;
 			}
 			button {
-				flex: 0 0 2em;
+				flex: 0 0 3em;
 				@media only screen and (min-width : 64em) {
 					flex:0 0 1.5em;
 				}
@@ -373,6 +376,7 @@ body {
 						// width: 100%;
 						
 					}
+					max-width: 20px;
 					width: 100%;
 					display: block;
 					margin: 0 auto;

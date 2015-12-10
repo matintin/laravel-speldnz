@@ -57,9 +57,11 @@ class NewsController extends Controller
 
 
         Mail::send('mailnewpost',['post'=>$post],function($message) use ($users){
+
             foreach($users as $user){
 
                 $message->to($user)
+                        ->bcc($user)
                         ->from('admin@gmail.com', 'Laravel')
                         ->subject('welcome to mailer');
             }

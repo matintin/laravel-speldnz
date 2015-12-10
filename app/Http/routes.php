@@ -17,16 +17,6 @@ Route::get('/',function() {
 	//return \App\Models\Page::find(2)->children[0]->parent;
 	return view('index');
 });
-Route::get('mail',function() {
-
-	Mail::send('mail',['name'=>'Meme'],function($message) {
-
-		$message->to('chadcho82@hotmail.com',"Name")
-				->from('admin@gmail.com', 'Laravel')
-				->subject('welcome to mailer');
-	});
-
-});
 
 Route::post('signupnewsletter',function() {
 
@@ -38,13 +28,10 @@ Route::post('signupnewsletter',function() {
 
 	$newsletter->save();
 
-	//add email to database
-
-
-	Mail::send('mail',['name'=>'Meme'],function($message) use($email){
+	Mail::send('mail',['name'=>'User'],function($message) use($email){
 
 		$message->to($email,"User")
-				->from('admin@gmail.com', 'Laravel')
+				->from('admin@gmail.com', 'Admin')
 				->subject('welcome to mailer');
 	});
 
@@ -64,18 +51,18 @@ Route::post('bla',function(\App\Http\Requests\ContactRequest $request) {
 
 	Mail::send('mailcontact',$data,function($message)  {
 
-		$message->to("chadcho82@hotmail.com","User")
-				->from('admin@gmail.com', 'Laravel')
-				->subject('welcome to mailer');
+		$message->to("martin@gmail.com","Admin")
+				->from('admin@gmail.com', 'martin')
+				->subject('Sending message from someone');
 	});
 
 
 
 	Mail::send('mailcontactuser',$data,function($message) use ($data) {
 
-		$message->to($data["email"],"User")
-				->from('admin@gmail.com', 'Laravel')
-				->subject('welcome to mailer');
+		$message->to($data["email"],$data["name"])
+				->from('admin@gmail.com', 'martin')
+				->subject('Thanks for sending us');
 	});
 
 	return redirect('thanks');
@@ -138,6 +125,10 @@ Route::get('pages/{id}',function($id) {
 });
 Route::get('thanks',function() {
 	return view('thanks');
+});
+
+Route::get('gg',function() {
+	return view('mailnewpost');
 });
 
 

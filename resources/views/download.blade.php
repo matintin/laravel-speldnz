@@ -30,46 +30,12 @@
 
 
 <div class="download-files">
+	@foreach(\App\Models\Download::all() as $download)
 	<div class="download-box">
-		<div class="files">sdsfdg</div>
+		<div class="files">{{$download->files}}</div>
 		<div class="check-box"><img src="http://localhost/laravel-speldnz/public/asset/icons/add2.png" alt=""></div>
 	</div>
-	<div class="download-box">
-		<div class="files">agadgag</div>
-		<div class="check-box"><img src="http://localhost/laravel-speldnz/public/asset/icons/add2.png" alt=""></div>
-	</div>
-	<div class="download-box">
-		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box"><img src="http://localhost/laravel-speldnz/public/asset/icons/add2.png" alt=""></div>
-	</div>
-	<div class="download-box">
-		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box"><img src="http://localhost/laravel-speldnz/public/asset/icons/add2.png" alt=""></div>
-	</div>
-	<div class="download-box">
-		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box"><img src="http://localhost/laravel-speldnz/public/asset/icons/add2.png" alt=""></div>
-	</div>
-	<div class="download-box">
-		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box"><img src="http://localhost/laravel-speldnz/public/asset/icons/add2.png" alt=""></div>
-	</div>
-	<div class="download-box">
-		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box"><img src="http://localhost/laravel-speldnz/public/asset/icons/add2.png" alt=""></div>
-	</div>
-	<div class="download-box">
-		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box"><img src="http://localhost/laravel-speldnz/public/asset/icons/add2.png" alt=""></div>
-	</div>
-	<div class="download-box">
-		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box"><img src="http://localhost/laravel-speldnz/public/asset/icons/add2.png" alt=""></div>
-	</div>
-	<div class="download-box">
-		<div class="files">kjdfhkjshkjshfg</div>
-		<div class="check-box"><img src="http://localhost/laravel-speldnz/public/asset/icons/add2.png" alt=""></div>
-	</div>
+	@endforeach
 </div>
 
 		</div>

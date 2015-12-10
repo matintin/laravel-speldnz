@@ -19,7 +19,7 @@ $(function(){
 
 			if(isLearningOpen=true) {
 				$('#learning-sub-menu').slideUp("slow");
-				$(".plus").attr("src","http://localhost/laravel-speldnz/public/asset/icons/plus.png");
+				$(".plus").attr("src","http://hyonkyong.cho.yoobee.net.nz/_Assignments/WE06/laravel-speldnz/public/asset/icons/plus.png");
 			}
 			isOpen = false;
 		}
@@ -38,7 +38,7 @@ $(function(){
 
 		if(isLearningOpen==false) {
 
-			$(".plus").attr("src","http://localhost/laravel-speldnz/public/asset/icons/minus.png");
+			$(".plus").attr("src","http://hyonkyong.cho.yoobee.net.nz/_Assignments/WE06/laravel-speldnz/public/asset/icons/minus.png");
 
 			$('#learning-sub-menu').slideDown("slow");
 
@@ -46,7 +46,7 @@ $(function(){
 
 		} else {
 			
-			$(".plus").attr("src","http://localhost/laravel-speldnz/public/asset/icons/plus.png");
+			$(".plus").attr("src","http://hyonkyong.cho.yoobee.net.nz/_Assignments/WE06/laravel-speldnz/public/asset/icons/plus.png");
 			$('#learning-sub-menu').slideUp("slow");
 			isLearningOpen=false;
 		}	
@@ -75,14 +75,14 @@ $(function(){
 //---------------------reading-assist----------------------------
 
 	$('.off-box').on("click",function() {
-		$('.circle img').attr("src","asset/icons/circle-on.png");
+		$('.circle img').attr("src","http://hyonkyong.cho.yoobee.net.nz/_Assignments/WE06/laravel-speldnz/public/asset/icons/circle-on.png");
 		$('.on-box').css("border","none").css("background-color","rgba(0,0,0,0)").css("color","#fff").css("font-weight","100");
 		$('.off-box').css("background-color","#fff").css("border","1px #fff solid").css("border-radius","3px").css("color","tomato");
 		$('.on-off-wrap').css("background-color","#CDDC39").css("border","2px #CDDC39 solid");
 	});
 
 	$('.on-box').on("click",function() {
-		$('.circle img').attr("src","asset/icons/circle-off.png");
+		$('.circle img').attr("src","http://hyonkyong.cho.yoobee.net.nz/_Assignments/WE06/laravel-speldnz/public/asset/icons/circle-off.png");
 		$('.off-box').css("border","none").css("background-color","rgba(0,0,0,0)").css("color","#fff").css("font-weight","100");
 		$('.on-box').css("background-color","#fff").css("border","1px #fff solid").css("border-radius","3px").css("color","tomato");
 		$('.on-off-wrap').css("background-color","#888").css("border","2px #888 solid");
@@ -110,7 +110,7 @@ var isTextOpen = false;
 	$('.image-wrap').each(function(i,el) {
 		if($(el).data("shown") == "1") {
 			$(this).next().slideDown();
-			$(this).children().attr("src","http://localhost/laravel-speldnz/public/asset/icons/minus.png");
+			$(this).children().attr("src","http://hyonkyong.cho.yoobee.net.nz/_Assignments/WE06/laravel-speldnz/public/asset/icons/minus.png");
 		}
 	});
 
@@ -118,13 +118,13 @@ var isTextOpen = false;
 		if(isTextOpen == false) {
 
 			$(this).next().slideDown();
-			$(this).children().attr("src","http://localhost/laravel-speldnz/public/asset/icons/minus.png");
+			$(this).children().attr("src","http://hyonkyong.cho.yoobee.net.nz/_Assignments/WE06/laravel-speldnz/public/asset/icons/minus.png");
 
 			isTextOpen = true;
 		}else {
 
 			$(this).next().slideUp();
-			$(this).children().attr("src","http://localhost/laravel-speldnz/public/asset/icons/plus.png");	
+			$(this).children().attr("src","http://hyonkyong.cho.yoobee.net.nz/_Assignments/WE06/laravel-speldnz/public/asset/icons/plus.png");	
 
 			isTextOpen = false;
 		}
