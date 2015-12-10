@@ -52,9 +52,11 @@ Route::post('signupnewsletter',function() {
 
 });
 
+Route::post('bla',function(\App\Http\Requests\ContactRequest $request) {
 
+	$contact = \App\Models\Contact::create($request->all());
 
-Route::post('bla',function() {
+	$contact->save();
 
 	$data = Request::all();
 
@@ -62,14 +64,21 @@ Route::post('bla',function() {
 
 	Mail::send('mailcontact',$data,function($message)  {
 
-		$message->to("admin email","User")
+		$message->to("chadcho82@hotmail.com","User")
 				->from('admin@gmail.com', 'Laravel')
 				->subject('welcome to mailer');
 	});
 
 
 
-	//redirect
+	Mail::send('mailcontactuser',$data,function($message) use ($data) {
+
+		$message->to($data["email"],"User")
+				->from('admin@gmail.com', 'Laravel')
+				->subject('welcome to mailer');
+	});
+
+	return redirect('thanks');
 
 });
 
@@ -126,14 +135,6 @@ Route::get('logout',"LoginController@logout");
 Route::get('pages/{id}',function($id) {
 	$page = \App\Models\Page::find($id);
 	return view('page',compact("page"));
-});
-
-Route::post('bla',function(\App\Http\Requests\ContactRequest $request) {
-	$contact = \App\Models\Contact::create($request->all());
-
-	$contact->save();
-
-	return redirect('thanks');
 });
 Route::get('thanks',function() {
 	return view('thanks');

@@ -1,7 +1,4 @@
-@extends('template.subPage')
 
-
-@section('content')
 <div class="navigation">
 	<a href="{{url('/')}}" class="page-nav">Home</a>
 	
@@ -29,15 +26,14 @@
 			{!! $post->content !!}
 			
 			</div>	
-
+			@endif
 
 		</div><!-- accordion-wrap -->
 
-		@endforeach
 
 	</div><!-- about-content -->
 
 		</div>
 	</div><!-- container -->
 </div><!-- navigation -->
-@stop			
+	

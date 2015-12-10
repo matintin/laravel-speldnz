@@ -57,10 +57,12 @@ class NewsController extends Controller
 
 
         Mail::send('mailnewpost',['post'=>$post],function($message) use ($users){
+            foreach($users as $user){
 
-            $message->to($users)
-                    ->from('admin@gmail.com', 'Laravel')
-                    ->subject('welcome to mailer');
+                $message->to($user)
+                        ->from('admin@gmail.com', 'Laravel')
+                        ->subject('welcome to mailer');
+            }
         });
 
         return redirect('news');

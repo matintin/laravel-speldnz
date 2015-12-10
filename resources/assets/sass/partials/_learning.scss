@@ -111,12 +111,15 @@
 		flex-wrap:wrap;
 		margin-bottom: .8em;
 		color:#41486c;
+		width: 98%;
+		padding-left:2%;
 		h3 {
 			margin: 0 !important;
 			flex: 1 0 8em;
-			display: inline-block;
+			display: block;
 			font-size: .95em;
 			color: #41486c !important;
+			
 		}//news&event
 
 		span {
@@ -232,7 +235,7 @@
 	.learning-dyslexia-wrap {
 
 		.five {
-			width: 105%;
+			width: 100%;
 			@media only screen and (min-width:44em) {
 				width: 100%;
 			}
