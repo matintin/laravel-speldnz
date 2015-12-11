@@ -36,4 +36,8 @@ class User extends Model implements AuthenticatableContract,
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    public function downloads(){
+        return $this->belongsToMany('\App\Models\Download');
+    }
 }
